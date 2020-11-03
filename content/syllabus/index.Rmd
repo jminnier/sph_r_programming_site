@@ -113,14 +113,7 @@ Classes will be recorded, but please do not use this as an excuse to miss class.
 
 ## Grading Policy
 
-Grades will be based on the following:
-
-- In class discussion/short function presentation 15%
-- Midterm 20%
-- Homework (from labs) 45%
-- Final Project 20%
-
-This course will be graded on a Pass/Fail Basis. Pass is defined as a grade of at least 70%.
+TBD
 
 ### Late Policy
 
