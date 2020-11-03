@@ -3,20 +3,20 @@ lessons:
     header: True
 
   - title: '**Part 1: Intro to R/RStudio, Functions, Vectors, Data Types**'
-    date: "January 7"
+    date: "January 6"
   #  reading: "01-reading"
   #  class: "01-class"
 
   - title: '**Part 2: Loading Data, `data.frame`s, and `ggplot2`**'
-    date: "January 14"
+    date: "January 13"
   #  assignment: "01-problem-set"
   #  class: "02-class"
 
   - title: "**Part 3: `ggplot2`, factors, boxplots, `dplyr`: subsetting using `filter()`/`select()`**"
-    date: "January 21"
+    date: "January 20"
 
   - title: '**Part 4. `dplyr`: `mutate()`, `group_by()`/`summarize()`/`across`**'
-    date: "January 28"
+    date: "January 27"
 #    reading: "02-reading"
 #    class: "03-class"
 
@@ -24,26 +24,26 @@ lessons:
     header: True
 
   - title: '**Part 5. More about manipulating factors (`forcats`) and dates (`lubridate`)/doing things with multiple tables/conditionals**'
-    date: "February 5"
+    date: "February 4"
 #    class: "04-class"
 
   - title: "**Part 6: Functions/For loops/batch processing/`purrr`**"
-    date: "February 12"
+    date: "February 11"
 
   - title: "**Part 7. Intro to stats/formulas/`broom`**"
-    date: "February 19"
+    date: "February 18"
 #    class: "05-class"
 #    reading: "03-reading"
     
   - title: "**Part 8. `tidymodels`/machine learning basics/simulation**"
-    date: "February 26"
+    date: "February 25"
 
   - title: "**Part 9. Intro to `Bioconductor`**"
-    date: "March 4"
+    date: "March 3"
 #    class: "07-class"
 #    reading: "04-reading"
     
   - title: "**Wrap Up/Your choice: `shiny/plotly` (interactive graphics), `leaflet` (interactive maps), `tidytext` (text processing)**"
-    date: "March 11"
+    date: "March 10"
 #    class: "08-class"
 
