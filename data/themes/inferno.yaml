@@ -9,12 +9,12 @@ primary: "#000066"
 
 # Links
 link: "#0066CC"
-link_hover: "#66CC00"
+link_hover: "#FF8000"
 
 # Menu
 menu_primary: "#ffffff"
 menu_text: "#000066"
-menu_text_active: "#66CC00"
+menu_text_active: "#FF8000"
 menu_title: "#000066"
 
 # Home sections
