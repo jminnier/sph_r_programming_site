@@ -1,14 +1,14 @@
 lessons:
-  - title: '<span class="fake-header-table">Part 1: Image Processing</span>'
+  - title: '<span class="fake-header-table">Part 1: Tidyverse Basics</span>'
     header: True
 
-  - title: '**Lecture 1: Introduction to R/Loading Images**'
-    date: "March 31"
+  - title: '**Lecture 1: Introduction/Class Expectations/Data Structures in R**'
+    date: "January 7"
     reading: "01-reading"
     class: "01-class"
 
   - title: '**Lab 1: Intro to RStudio/Loading Images**'
-    date: "April 2"
+    date: "January 7"
     assignment: "01-problem-set"
     class: "02-class"
 
