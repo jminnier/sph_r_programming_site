@@ -17,4 +17,4 @@ design:
 
 {{< courseinfo >}}
 
-{{< figure src="/img/analysis-flowchart.png" alt="Course map" >}}
+{{< figure src="/img/data-science-workflow.png" alt="Data Science Workflow from R for Data Science" >}}
