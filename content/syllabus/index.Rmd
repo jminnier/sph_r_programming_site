@@ -34,20 +34,15 @@ Part 8. Tidymodels/machine learning basics/simulation (infer?/permutation)
 Part 9. Intro to Bioconductor
 Part 10. Wrap/up (shiny/interactive graphics) shiny, leaflet, plotly, tidytext
 
-1.  **Learn** and **execute** the basic steps of image analysis in R.
-2.  **Assess** whether image processing algorithms are working correctly.
-3.  **Understand** basic spatial statistics and how to **assess** null models of spatial data.
-4.  **Execute** and **Interpret** basic spatial statistics on data that are involved with fluoresence microscopy analysis.
-
 ## Course Website
 
 All course information will be available here:
 
-https://stats4neuro.netlify.com/
+https://sphr.netlify.com/
 
 Course discussions will be done in the class Slack Workspace. Invites will be sent before class.
 
-https://neus643.slack.com
+https://sphr.slack.com
 
 Lab Assignments will be done in the class RStudio.cloud workspace. Students should register at https://RStudio.cloud before the lab. Link to join the workspace will be sent out before the first lab.
 
@@ -120,7 +115,7 @@ Classes will be recorded, but please do not use this as an excuse to miss class.
 
 Grades will be based on the following:
 
-- In class discussion 15%
+- In class discussion/short function presentation 15%
 - Midterm 20%
 - Homework (from labs) 45%
 - Final Project 20%
@@ -150,10 +145,10 @@ Class grades are due to the Registrar by the Friday following the week of finals
 ## Copyright Information
 
 Every reasonable effort has been made to protect the copyright requirements of materials used in this course. Class participants are warned not to copy, audio, or videotape in violation of copyright laws.
+
 Journal articles will be kept on reserve at the library or online for student access. Copyright law does allow for making one personal copy of each article from the original article. This limit also applies to electronic sources.
 
-To comply with the fair use fair use doctrine of the US copyright law, Sakai course sites close three weeks after grades are posted with the Registrar. Please be sure to download all course material you wish to
-keep before this time as you will have no further access to your courses.
+To comply with the fair use fair use doctrine of the US copyright law, Sakai course sites close three weeks after grades are posted with the Registrar. Please be sure to download all course material you wish to keep before this time as you will have no further access to your courses.
 
 ## Communication Policy
 
