@@ -13,8 +13,8 @@ hero_media: r-packages.png
 design:
   background:
     # Background gradient
-    gradient_start: '#000099'
-    gradient_end: '#000099'
+    gradient_start: '#000066'
+    gradient_end: '#000066'
 
     # Text color (true=light or false=dark).
     text_color_light: true
