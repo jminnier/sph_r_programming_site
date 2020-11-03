@@ -103,22 +103,22 @@ instructor:
 #  appointment_url: https://calendly.com/andrewheiss/meeting/
 
 course:
-  number: "NEUS 643"
-  semester: "Spring 2020"
-  days: "Tuesday/Thursday"
-  time: "1:00–2:00 PM"
+  number: "BSTA 504"
+  semester: "Winter 2021"
+  days: "Thursday"
+  time: "3:00–6:00 PM"
   location: "Online"
-  dates: "March 31 – June 2, 2020"
-  github: "laderast/stats_for_neuroscientists"
+  dates: "January 7 – March 21, 2020"
+  github: "laderast/sph_r_programming_site"
   copyrightYear: "2020"
 
 university: 
-  name: Oregon Health & Science University
+  name: Oregon Health & Science University / Portland State University
   url: "https://www.ohsu.edu"
 
 school:
-  name: Neuroscience Graduate Program
-  url: "https://www.ohsu.edu/school-of-medicine/neuroscience-graduate-program"
+  name: OHSU/PSU School of Public Health
+  url: "https://ohsu-psu-sph.org/"
 
 
 ############################
