@@ -19,7 +19,7 @@ This course is meant to be a gentle introduction to data wrangling and visualiza
 
 ## Credit Hours
 
-2 credit hours. 
+3 credit hours. 
 
 ## Learning Objectives
 
@@ -29,16 +29,16 @@ This course is meant to be a gentle introduction to data wrangling and visualiza
 4. **Visualize** datasets using **ggplot2** and understand how to build basic plots using **ggplot2** syntax.
 5. **Filter** and **format** data in R for use with various routines.
 6. **Execute** and **Interpret** some basic statistics in R.
-7. **Automate** repetitive tasks in R, such as loading a folder of files
-8. **Execute** basic machine learning workflows using `tidymodels`
-9. **Learn** about Bioconductor Data Structures and conduct simple analysis
-10. **Your Choice**: `shiny`, `leaflet` or `tidytext`
+7. **Automate** repetitive tasks in R, such as loading a folder of files.
+8. **Execute** basic machine learning workflows using `tidymodels`.
+9. **Learn** about Bioconductor Data Structures and conduct simple analysis with these structures.
+10. **Your Choice**: `shiny`, `leaflet` or `tidytext`.
 
 ## Course Website
 
 All course information will be available here:
 
-https://sphr.netlify.com/
+https://sph-r-programming.netlify.com/
 
 Course discussions will be done in the class Slack Workspace. Invites will be sent before class.
 
