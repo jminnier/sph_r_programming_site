@@ -80,10 +80,12 @@ If you are disruptive to class learning or disparaging to other students, I may 
 
 We will be drawing on the following online textbooks during class and labs. These books are online and free, though you can order them as textbooks if you prefer that format.
 
-*R for Data Science*. Garret Grolemund and Hadley Wickham. <https://r4ds.had.co.nz/>
-
-*Getting Used to R, RStudio, and RMarkdown*. Chester Ismay.
+**Getting Used to R, RStudio, and RMarkdown**. Chester Ismay.
 <https://ismayc.github.io/rbasics-book/>
+
+**RMarkdown for Scientists**. Nick Tierney. <https://rmd4sci.njtierney.com/>
+
+**R for Data Science**. Garret Grolemund and Hadley Wickham. <https://r4ds.had.co.nz/>
 
 
 ## Words of Encouragement
