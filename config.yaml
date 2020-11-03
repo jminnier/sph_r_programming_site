@@ -1,6 +1,6 @@
-baseurl: https://stats_for_neuroscientists.netlify.com/
+baseurl: https://bsta_r_program.netlify.com/
 defaultContentLanguage: en
-title: "Stats for Neuroscientists"
+title: "R Programming"
 theme: hugo-academic
 
 
