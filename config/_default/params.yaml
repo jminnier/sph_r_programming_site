@@ -37,7 +37,7 @@ font_size: "L"
 site_type: "Course"
 
 # Description for social sharing and search engines. If undefined, superuser role is used in place.
-description: "Understand and apply image processing techniques to microscopy images"
+description: "Learn tips and tricks for effectively using R with Data"
 
 # Display a logo in navigation bar rather than title (optional).
 #   To enable, place an image in `static/img/` and reference its filename below. To disable, set the value to "".
@@ -74,7 +74,7 @@ privacy_pack: false
 # Enable visitors to edit pages?
 #   `repo` defines the repository URL. `editable` defines which page types can be edited.
 edit_page:
-  repo_url: 'https://github.com/laderast/stats_for_neuroscientists'
+  repo_url: 'https://github.com/laderast/sph_r_programming_site'
   content_dir: ''
   repo_branch: master
   editable:

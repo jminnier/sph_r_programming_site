@@ -5,7 +5,7 @@ headless: true
 active: true
 weight: 10
 
-title: "Statistics for Neuroscientists"
+title: "BSTA 504: R Programming"
 
 # Hero image (optional). Enter filename of an image in the `static/img/` folder.
 hero_media: HeLa_cells.jpg
@@ -13,12 +13,12 @@ hero_media: HeLa_cells.jpg
 design:
   background:
     # Background gradient
-    gradient_start: '#456355'
-    gradient_end: '#456355'
+    gradient_start: '#000099'
+    gradient_end: '#000099'
 
     # Text color (true=light or false=dark).
     text_color_light: true
 
 cta_note:
-  label: Spring 2020<br>Neuroscience Graduate Program<br>Oregon Health & Science University
+  label: Winter 2021<br>OHSU/PSU School of Public Health<br>Oregon Health & Science University
 ---
