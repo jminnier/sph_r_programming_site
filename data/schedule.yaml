@@ -1,106 +1,49 @@
 lessons:
-  - title: '<span class="fake-header-table">Part 1: Tidyverse Basics</span>'
+  - title: '<span class="fake-header-table">Part 1: `tidyverse` Basics</span>'
     header: True
 
-  - title: '**Lecture 1: Introduction/Class Expectations/Data Structures in R**'
+  - title: '**Part 1: Intro to R/RStudio, Functions, Vectors, Data Types**'
     date: "January 7"
-    reading: "01-reading"
-    class: "01-class"
+  #  reading: "01-reading"
+  #  class: "01-class"
 
-  - title: '**Lab 1: Intro to RStudio/Loading Images**'
-    date: "January 7"
-    assignment: "01-problem-set"
-    class: "02-class"
+  - title: '**Part 2: Loading Data, `data.frame`s, and `ggplot2`**'
+    date: "January 14"
+  #  assignment: "01-problem-set"
+  #  class: "02-class"
 
-  - title: "Notebook 1 Due"
-    date: "April 9"
+  - title: "**Part 3: `ggplot2`, factors, boxplots, `dplyr`: subsetting using `filter()`/`select()`**"
+    date: "January 21"
 
-  - title: '**Lecture 2: Image Operations/Filtering Images**'
-    date: "April 7"
-    reading: "02-reading"
-    class: "03-class"
+  - title: '**Part 4. `dplyr`: `mutate()`, `group_by()`/`summarize()`/`across`**'
+    date: "January 28"
+#    reading: "02-reading"
+#    class: "03-class"
 
-  - title: '**Lab 2: Image Operations/Filtering Images**'
-    date: "April 9"
-    class: "04-class"
+  - title: '<span class="fake-header-table">Part 2: Intermediate Topics</span>'
+    header: True
 
-  - title: "**Notebook 2 due**"
-    date: "April 16"
+  - title: '**Part 5. More about manipulating factors (`forcats`) and dates (`lubridate`)/doing things with multiple tables/conditionals**'
+    date: "February 5"
+#    class: "04-class"
 
-  - title: "**Lecture 3: Binarizing Images**"
-    date: "April 14"
-    class: "05-class"
-    reading: "03-reading"
+  - title: "**Part 6: Functions/For loops/batch processing/`purrr`**"
+    date: "February 12"
+
+  - title: "**Part 7. Intro to stats/formulas/`broom`**"
+    date: "February 19"
+#    class: "05-class"
+#    reading: "03-reading"
     
-  - title: "**Lab 3: Binarizing Image Lab**"
-    date: "April 16"
+  - title: "**Part 8. `tidymodels`/machine learning basics/simulation**"
+    date: "February 26"
 
-  - title: "**Lecture 4: Image Segmentation Part 1: Identifying Nuclei**"
-    date: "April 21"
-    class: "07-class"
-    reading: "04-reading"
+  - title: "**Part 9. Intro to `Bioconductor`**"
+    date: "March 4"
+#    class: "07-class"
+#    reading: "04-reading"
     
-  - title: "**Discussion: Microscopy Pitfalls**"
-    date: "April 23"
-    class: "08-class"
+  - title: "**Wrap Up/Your choice: `shiny/plotly` (interactive graphics), `leaflet` (interactive maps), `tidytext` (text processing)**"
+    date: "March 11"
+#    class: "08-class"
 
-  - title: "**Notebook 3 Due**"
-    date: "April 28"
-    
-  - title: "**Lab 4: Image Segmentation Part 1**"
-    date: "April 28"
-    class: "09-class"
-    
-  - title: "**Lecture 5: Image Segmentation Part 2: Cell Bodies**"
-    date: "April 30"
-    class: "10-class"
-    reading: "05-reading"
-
-  - title: "**Lab 5: Image Segmentation Part 2**"
-    date: "May 3"
-
-  - title: "**Review Session**"
-
-  - title: '<span class="fake-header-table">Part 2: Spatial Statistics</span>'
-    header: true
-
-  - title: "**Lecture: Introduction to Metadata and Experimental Design"
-    date: "May 12"
-    class: "12-class"
-    reading: "06-reading"
-
-  - title: "**Lecture: Point Estimates and Confidence Intervals**"
-    date: "May 14"
-    class: "13-class"
-    reading: "07-reading"
-    
-  - title: "**Lecture: Hypothesis Testing**"
-    date: "May 19"
-    class: "14-class"
-    reading: "08-reading"
-    
-  - title: "**Lab 7: Colocalization via Correlation"
-    date: "May 21"
-    
-  - title: "**Lecture: Point Pattern Analysis**"
-    date: "May 26"
-    class: "15-class"
-    reading: "09-reading"
-  
-  - title: "**Lab: Point Pattern Analysis** - CANCELLED"
-    date: "May 28"
-
-  - title: "**Lab 8: Pipelines and Exploring Features**"
-    date: "June 2"
-    class: "16-class"
-    reading: "10-reading"
-    
-  - title: "**Lab 9: Features, Dimension Reduction, and Clustering**"
-    date: "June 4"
-    class: "17-class"
-    reading: "11-reading"
-    
-  - title: "**Lecture: Machine Learning**"
-    date: "June 9"
-    class: "18-class"
-    reading: "12-reading"
