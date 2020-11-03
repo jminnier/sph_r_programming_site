@@ -1,0 +1,42 @@
+---
+title: "Qualtrics Dashboard"
+author: "Ted Laderas"
+date: "4/9/2020"
+output: html_document
+params: 
+  survey_name: "NEUS 643 Class Survey"
+  week: "Lecture Week 1"
+---
+
+```{r setup, include=FALSE}
+library(qualtRics)
+library(DT)
+library(tidyverse)
+```
+
+## Breakdown of Students who have Done Class Surveys
+
+```{r}
+survey_name <- "NEUS 643 Class Survey"
+
+surveys <- all_surveys()
+survey_id <- surveys %>% filter(name == survey_name) %>%
+  pull(id)
+
+fetch_survey(survey_id, verbose=TRUE) %>%
+  group_by(Q1) %>% summarize(count = n()) %>% DT::datatable()
+```
+
+## Breakdown of Students who have Done Lab Surveys
+
+```{r}
+survey_name <- "NEUS 643 Lab Survey"
+
+surveys <- all_surveys()
+survey_id <- surveys %>% filter(name == survey_name) %>%
+  pull(id)
+
+fetch_survey(survey_id, verbose=TRUE) %>%
+  group_by(Q1) %>% summarize(count = n()) %>% DT::datatable()
+```
+

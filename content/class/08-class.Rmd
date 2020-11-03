@@ -1,0 +1,68 @@
+---
+title: "Discussion: Pitfalls of Microscopy"
+linktitle: "8. Discussion: Pitfalls of Microscopy"
+date: "2020-04-22"
+class_date: "2020-04-22"
+output:
+  blogdown::html_page:
+    toc: true
+menu:
+  class:
+    parent: Class sessions
+    weight: 2
+type: docs
+weight: 3
+# pdf: 
+# thumb: 
+editor_options: 
+  chunk_output_type: console
+---
+
+## Discussion
+
+We will be discussing the following article:
+
+- Fluoresecence Microscopy: Avoiding the Pitfalls. https://jcs.biologists.org/content/joces/120/10/1703.full.pdf
+
+Pick two of the pitfalls. 
+
+For each pitfall that you picked, be prepared to discuss the following.
+
+1. In your opinion, is this pitfall an issue when acquiring microscopy images?
+
+2. If you have had any experience with this pitfall, what did you do to overcome it?
+
+3. (Optional): Do you have any images that show this pitfall? Share them with the class
+
+## Post-Class
+
+Please fill out the following survey and we will discuss the results during the next lecture. All responses will be anonymous.
+
+- Clearest Point: What was the most clear part of the lecture?
+- Muddiest Point: What was the most unclear part of the lecture to you?
+- Anything Else: Is there something you'd like me to know?
+
+https://ohsu.ca1.qualtrics.com/jfe/form/SV_e99ek34B878dGap
+
+
+### Muddiest Points
+
+> honestly it was all very clear. I liked this a lot. It was great to hear from different people with different expertise. Also cool to learn about Ted's background and AFM
+
+>	Undersampling and how camera binning related to it.
+
+>	I think I still am trying to reconcile the nuance between flurophore and detector saturation because on the face they both seem like overexposure to lose features. I am guessing the former relates to too many cells brightly expressing the fluorophore whereas detector is simply the user has turned the laser up to high but there is nothing inherently wrong about the image though.
+
+### Clearest Points
+
+> I liked the article a lot, was very helpful
+
+> I enjoyed the discussion of the microscopy pitfalls paper
+
+> It was very helpful the hear the issues that people have come across while imaging, and how they approached troubleshooting them.
+
+> Cross talk and saturation and some methods people have used to deal with these problems.
+
+> I liked the discussion
+
+> I found it really helpful that were sharing their examples of each type of issue. As someone who hasn't done very much imaging at all I found the descriptions in the text helpful but also having real examples really made things visually tangible.
