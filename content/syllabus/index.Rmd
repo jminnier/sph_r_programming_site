@@ -15,14 +15,24 @@ output:
 
 ## Course Description
 
-This course is a gentle introduction to statistical concepts that are relevant to image processing. We will cover steps of the image processing workflow on cellular images, culminating in simple spatial
-analysis on cellular structures in the image. No previous background in statistics is required. The focus of this course is not on programming, but on assessing image processing workflows and understanding their impact on downstream analysis. To do this, we will take a lab notebook approach to image processing, comparing the effect of different methods on each step of the image processing workflow.
+This course is meant to be a gentle introduction to data wrangling and visualization using the `tidyverse` in R. This course focuses on practical data science skills in R (loading data, data wrangling, visualization, automation, machine learning, and running statistical models) that you'll use almost everyday in your work. It is meant for both beginners and students wanting to brush up in on their R skills. 
 
 ## Credit Hours
 
 2 credit hours. 
 
 ## Learning Objectives
+
+Part 1 (Intro to R/RStudio, Functions, Vectors, Data Types)
+Part 2 (Loading Data (xls/haven)), data.frames, and ggplot2
+Part 3 ggplot2, factors, boxplots, dplyr part 1, more flipbook stuff!
+Part 4. dplyr: mutate, group_by/summarize
+Part 5. More about manipulating factors and dates/doing things with multiple tables/conditionals
+Part 6. Functions/For loops/batch processing/purrr
+Part 7. Stats/formulas/broom
+Part 8. Tidymodels/machine learning basics/simulation (infer?/permutation)
+Part 9. Intro to Bioconductor
+Part 10. Wrap/up (shiny/interactive graphics) shiny, leaflet, plotly, tidytext
 
 1.  **Learn** and **execute** the basic steps of image analysis in R.
 2.  **Assess** whether image processing algorithms are working correctly.
@@ -60,8 +70,7 @@ laderast@ohsu.edu
 
 ### Teaching Assistant
 
-Samantha Papdakis  
-papadaks@ohsu.edu
+
 
 ## Code of Conduct
 
@@ -74,13 +83,9 @@ If you are disruptive to class learning or disparaging to other students, I may 
 
 ## Required Texts or Readings
 
-We will be drawing on the following online textbooks during class and labs.
+We will be drawing on the following online textbooks during class and labs. These books are online and free, though you can order them as textbooks if you prefer that format.
 
-*Analyzing fluorescence microscopy images with ImageJ*. Pete Bankhead.
-<https://petebankhead.gitbooks.io/imagej-intro/content/>
-
-*Modern Statistics for Modern Biologists*. Susan Holmes and Wolfgang
-Huber. <http://web.stanford.edu/class/bios221/book/>
+*R for Data Science*. Garret Grolemund and Hadley Wickham. <https://r4ds.had.co.nz/>
 
 *Getting Used to R, RStudio, and RMarkdown*. Chester Ismay.
 <https://ismayc.github.io/rbasics-book/>
