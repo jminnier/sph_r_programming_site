@@ -8,7 +8,7 @@ weight: 10
 title: "BSTA 504: R Programming"
 
 # Hero image (optional). Enter filename of an image in the `static/img/` folder.
-hero_media: HeLa_cells.jpg
+hero_media: r-packages.png
 
 design:
   background:
