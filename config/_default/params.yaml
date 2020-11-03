@@ -105,8 +105,8 @@ instructor:
 course:
   number: "BSTA 504"
   semester: "Winter 2021"
-  days: "Thursday"
-  time: "3:00–6:00 PM"
+  days: "Wednesday"
+  time: "3:05–6:15 PM"
   location: "Online"
   dates: "January 7 – March 17, 2020"
   github: "laderast/sph_r_programming_site"
