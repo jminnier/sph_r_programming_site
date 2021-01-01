@@ -87,7 +87,7 @@ When we're doing the activity, use the hands up in Zoom to indicate that you're 
 If you have questions, please ask them in chat.
 
 ---
-# Let's Try Out Chat
+# Let's Try Out Chat (10 minutes)
 
 Open the chat window (if we are in full screen, press the escape key, and then click on the chat icon)
 
@@ -159,7 +159,6 @@ By the end of this course you will be able to:
 
 ---
 class: center, middle
-
 # Class Logistics
 
 ---
@@ -195,6 +194,7 @@ It helps me to understand why you're in the course and what you want to learn.
 
 - This is *not* a conventional programming course
 - We try to get you doing interesting and useful things from the beginning
+- We use `tidyverse` because it helps you get up and running quickly
 - This is also *not* a full course on statistics or machine learning
 
 ---
@@ -267,6 +267,7 @@ We will highlight any points of confusion.
 - Midterm: Pick a dataset and show that you can explore it, plot it, and transform it to answer a specific question
   - Schedule a meeting to discuss the data
 - Final: Pick a different dataset and build a model using machine learning or statistics and present it
+  - Schedule a meeting to discuss the dataset
 
 ---
 # Class Discord
@@ -286,11 +287,10 @@ When is good link:
 
 Highlight all times that work for you.
 
-
 ---
 # Why R?
 
-R is an extremely powerful language for **statistical modeling**, machine learning, data manipulation, and visualization.
+R is an extremely powerful language for **statistical modeling**, **machine learning**, **data manipulation**, and **visualization**.
 
 It's a *hub* language in that you can access many different kinds of systems (TensorFlow, Databases, Apache Spark) without needing to know other languages.
 
@@ -300,7 +300,6 @@ It's a *hub* language in that you can access many different kinds of systems (Te
 - Learning R can be a difficult, but rewarding process
 - Be patient with yourself, don't beat yourself up
 - We'll try to make it a fun process for you
-
 
 ---
 # R and RStudio
