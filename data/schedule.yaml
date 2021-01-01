@@ -5,7 +5,7 @@ lessons:
   - title: '**Part 1: Introduction to course/expectations, Intro to R/RStudio, Functions, Vectors, Data Types**'
     date: "January 6"
     reading: "01-reading"
-  #  class: "01-class"
+    class: "01-class" 
 
   - title: '**Part 2: Loading Data, `data.frame`s, and `ggplot2`**'
     date: "January 13"
