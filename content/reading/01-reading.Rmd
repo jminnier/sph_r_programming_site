@@ -14,7 +14,8 @@ type: docs
 
 Remember, this reading is mostly supplemental and will help you if there are concepts that are unclear in class.
 
-- Intro to RStudio Cloud - ![](https://www.youtube.com/watch?v=uK1Va_UWQFc) 
+- Intro to RStudio Cloud 
+- ![](https://www.youtube.com/watch?v=uK1Va_UWQFc) 
 - [R and RStudio Basics](https://ismayc.github.io/rbasics-book/3-rstudiobasics.html) - make sure to watch the videos.
 
 ## Optional: Swirl Basics
@@ -23,7 +24,7 @@ I'm going to highlight another resource for learning R concepts: `swirl`. This i
 
 To start it, run the following code in the console in RStudio Cloud:
 
-```{r}
+```{r eval=FALSE}
 library(swirl)
 swirl()
 ```
