@@ -14,7 +14,7 @@ type: docs
 
 Remember, this reading is mostly supplemental and will help you if there are concepts that are unclear in class.
 
-- `r knitr::include_url("https://www.youtube.com/watch?v=uK1Va_UWQFc")` 
+- [Introduction to RStudio Cloud Video](https://www.youtube.com/watch?v=uK1Va_UWQFc) 
 - [R and RStudio Basics](https://ismayc.github.io/rbasics-book/3-rstudiobasics.html) - make sure to watch the videos.
 - [https://ubc-dsci.github.io/introduction-to-datascience/wrangling.html#vectors-and-data-frames](Vectors and Data Frames)
 
@@ -24,7 +24,7 @@ Remember, this reading is mostly supplemental and will help you if there are con
 
 This is a short reference on how to do formatting in Markdown. This is optional, but may be a helpful reference as you continue on.
 
-https://sph-r-programming/reference/markdown.html
+https://sph-r-programming.netlify.app/reference/markdown.html
 
 
 ### Swirl Basics
