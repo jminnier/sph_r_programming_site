@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>NEUS630 Introduction</title>
+    <title>BSTA 504 Introduction</title>
     <meta charset="utf-8" />
     <meta name="author" content="Ted Laderas" />
-    <meta name="date" content="2020-03-31" />
+    <meta name="date" content="2021-01-01" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# NEUS630 Introduction
-## Stats For Neuroscientists
+# BSTA 504 Introduction
+## R Programming
 ### Ted Laderas
-### 2020-03-31
+### 2021-01-01
 
 ---
 
@@ -34,15 +35,16 @@ class: center, middle
 - Bioinformatics/Computational Biology
 - Interactive Visualization
 - Certified RStudio Instructor 
-- Co-founder of [BioData Club](http://biodata-club.github.io)]
+- Co-founder of [BioData Club](http://biodata-club.github.io)] and [Cascadia-R Conference](https://cascadiarconf.com)
 
 .pull-right[&lt;img src="image/week1/ted.jpg" width = 500&gt;]
 
 ---
 # Class Facilitator/TA
 
-- Meet Sam Papadakis from the Fair Lab
-- She will be helping me faciliate online sessions
+- Meet Eric Leung from DMICE
+- He will be helping me faciliate online sessions
+- Also will be grading and will be available for questions
 
 ---
 # Introduction Overview
@@ -92,23 +94,30 @@ Type in Chat:
 - What you hope to learn from this course
 
 ---
-# Rules for Interaction
+# 5 minute meeting
 
-During Lectures:
+Please schedule a time here: 
 
-- Post questions in Chat
-    - Sam will interrupt me to make sure these questions are answered
-- Post answers to questions in chat
-- We'll learn Hack.md for taking collaborative notes next lecture
+It helps me to understand why you're in the course and what you want to learn
+
 
 ---
 # Rules for Interaction
 
-During Labs:
+During Class
 
-- Work within your breakout group to solve 
+- Post questions in Chat
+    - Eric will interrupt me to make sure these questions are answered
+- Post answers to questions in chat if you know them
+- You can unmute as well
+
+---
+# Rules for Interaction
+
+During Class
+
+- Work with your buddy if we're working on a lab 
 - Share screens to talk about issues
-- We'll pop in to each discussion group to help you out
 
 ---
 # Sharing Your Screen
@@ -116,11 +125,23 @@ During Labs:
 &lt;img src = "image/week1/screen sharing.jpg" width = 800&gt;
 
 ---
-# Breakout Rooms
+# Function of the Week
 
-- I'll divide the class into breakout rooms for discussion and labs
-- I'll ask each room for a summary
+- Learn and share about an underrated `tidyverse()` function
+- Pick a week to present here: 
+- Share your experience with the function
+  - Is it useful?
+  - Is it hard to use?
+  - Share an example
+- You will have time to meet with me befor you present
+  
+---
+# Midterm / Final Project
 
+- Midterm: Pick a dataset and show that you can explore it, plot it, and transform it to answer a specific question
+  - Schedule a meeting to discuss the data
+- Final: Pick a different dataset and build a model using machine learning or statistics
+  - 
 ---
 # Let's try the Breakout Rooms
 
@@ -130,14 +151,14 @@ During Labs:
 ---
 # Zoom Recordings/Attendance
 
-- I will record each session and post it as soon it is ready
+- I will record each session and Eric will post it as soon it is ready
 - I will pause recording for breakout rooms (that won't be recorded)
 
 ---
 class: center, middle
 
 # Let's look at the website:
-## http://stats4neuro.netlify.com
+## http://sph-r-programming.netlify.app
 
 ---
 class: center, middle
@@ -145,21 +166,26 @@ class: center, middle
 # Class Logistics
 
 ---
-# The Course This Year
-
-- We will be covering some basic statistics in this course
-- I advise you to also take CONJ 620
-- I will try to limit the math, but there will be a little bit
-
----
 # Learning Objectives
 
 By the end of this course you will be able to:
 
-- **Learn** and **execute** the basic steps of image analysis in R
-- **Assess** whether image processing algorithms are working correctly
-- **Understand** basic statistics and what it can help us with
-- **Execute** and **Interpret** basic spatial statistics on data that are involved with fluoresence microscopy analysis
+1. **Understand** and **utilize** **R/RStudio**.
+2. **Understand** basic data types and data structures in R.
+3. **Familiarize** and **load** data files (Excel, Comma Separated Value files) into R/Rstudio, with tips on formatting.
+4. **Visualize** datasets using **ggplot2** and understand how to build basic plots using **ggplot2** syntax.
+5. **Filter** and **format** data in R for use with various routines.
+6. **Execute** and **Interpret** some basic statistics in R.
+7. **Automate** repetitive tasks in R, such as loading a folder of files.
+8. **Execute** basic machine learning workflows using `tidymodels`.
+9. **Your Choice**: `shiny`, `leaflet` or `tidytext`.
+
+---
+# Caveat Emptor
+
+- This is *not* a conventional programming course
+- We try to get you doing interesting and useful things from the beginning
+- This is also *not* a full course on statistics or machine learning
 
 ---
 # My Approach to Teaching
@@ -169,7 +195,7 @@ I think students learn the best when they're actually looking and thinking about
 This means we will be looking at lots of data.
 
 ---
-# Social Learning and Labs
+# Social Learning Works
 
 I also think that we learn best when we are discussing data together.
 
@@ -189,13 +215,12 @@ I want to normalize your own curiosity and fuel your desire to learn more.
 If you are disruptive to class learning or disparaging to other students, I may mute you for the day.
 
 ---
-# Class Slack
+# Code of Conduct Violations
 
-I have created a class Slack here: http://neus643.slack.com - the invite link should have been sent out.
+Please report them here: 
 
-I will try to answer questions there when I can. We'll take a tour of class next week.
-
-If you have a question, please ask it in a public channel, rather than a private message, so it can benefit everyone.
+---
+# Class Discord
 
 - [Slack 101 Videos](https://slack.com/resources/slack-101)
 
@@ -206,28 +231,27 @@ Please try to attend class.
 
 There is a post-class survey that will be posted. Please fill it out, as it counts as attendance.
 
+If you can't attend class, please let me know.
+
 ---
 # Office Hours
 
 I will be available for office hours/drop in time 2 Hours a week (Sam will be available once a week). You're free to sign in to the Zoom Room and work on homework at this time.
 
-When is good link: http://whenisgood.net/rretq92
+When is good link: 
 
 Highlight all times that work for you.
 
 ---
-# One Note about Scheduling
-
-I only work 4 days a week. I'm not available on Wednesdays.
-
----
 # Class Assignments
 
-Class Assignments will be done in RStudio Notebooks (more during lab)
+Class Assignments will be done in RStudio Notebooks
 
 Assignments will be submitted through Sakai. 
 
-We will do our best to return it to you by the following Monday.
+We will do our best to return it to you within a week.
+
+We will highlight any points of confusion
 
 ---
 # Why R?
@@ -237,17 +261,6 @@ R is an extremely powerful language for **statistical modeling**, machine learni
 It's a *hub* language in that you can access many different kinds of systems (TensorFlow, Databases, Apache Spark) without needing to know other languages.
 
 ---
-# This is Not a Programming Course
-
-Most of the assignments will have you assessing the *impact* of a method on image data. 
-
-We'll use some simple tools to do this.
-
-The writing is the most important part of these assignments, not the coding. 
-
-I want to see you thinking and observing about the data.
-
----
 # R is Not Easy
 
 - Learning R can be a difficult, but rewarding process
@@ -255,33 +268,15 @@ I want to see you thinking and observing about the data.
 - We'll try to make it a fun process for you
 
 ---
-# R-Bootcamp
-
-I am also teaching a 1 credit course this term called the R-Bootcamp that starts the week of April 6.
-
-The focus is more on visualization, data wrangling, and simple statistics.
-
-There should be an announcement sent out this week.
-
----
 # Grading Breakdown
 
-Class is Pass/Fail
-
-- In class discussion 15%
-- Midterm 20%
-- Homework (from labs) 45%
+- In class discussion 10%
+- Midterm 15%
+- Homework Assignment (from labs) 50%
 - Final Project 20%
 
 ---
 # Format of Class
-
-- "Lecture Days"
-    - Discussion of Previous Week (15 min)
-    - Lectures (45 min)
-
-- "Lab Days"
-    - In-Class Labs (1 hr)
 
 - Office Hours (2 hrs/week)
 
@@ -289,10 +284,15 @@ Class is Pass/Fail
 # R and RStudio
 
 - In-class labs and assignments will be done with [RStudio.cloud](http://rstudio.cloud)
-- We'll take a guided tour of RStudio Cloud next class
-- Invite to the class workspace will be sent out before Thursday
-- Links to the Labs will be sent out day of class via Sakai
-- Submissions of notebooks will be via Sakai (we will talk about this)
+- We'll take a guided tour of RStudio Cloud
+
+---
+# Other Resources/Events (Optional)
+
+- [PDX R User Group Meetup]() (monthly)
+- BioData Club: Intro to Shiny Workshop (1/21) 
+  - Sign up here: 
+- Cascadia R Conference 2021 will be online in May or June
 
 ---
 class: center, middle
@@ -346,6 +346,32 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
 // adds .remark-code-has-line-highlighted class to <pre> parent elements
 // of code chunks containing highlighted lines with class .remark-code-line-highlighted
 (function(d) {
@@ -363,17 +389,6 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   }
   preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
 })(document);</script>
-
-<script>
-(function() {
-  var links = document.getElementsByTagName('a');
-  for (var i = 0; i < links.length; i++) {
-    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
-      links[i].target = '_blank';
-    }
-  }
-})();
-</script>
 
 <script>
 slideshow._releaseMath = function(el) {

@@ -105,11 +105,22 @@ knitr::include_graphics("/img/syllabus/hosrt_error_tweet.png", error = FALSE)
 
 [![Alison Horst: Gator error](/img/syllabus/gator_error.jpg)](https://twitter.com/allison_horst/status/1213275783675822080)
 
+
+## LeaRning is Social
+
+The students who have a bad time in my workshops and courses are the ones who don't work with each other to learn. We are a learning community, and we should help each other to learn.
+
+If you understand something and someone is struggling with it, try and help them. If you are struggling, take a breath, and try to pinpoint what you are struggling with. 
+
+Our goal is to be better programmers each day, not to be the perfect programmer. There's no such thing as a perfect programmer. I've been learning new things almost every day.
+
+
 ## Attendance Requirements
 
 Online attendance is required. Please let me know if you have to miss class. If you miss a lab day, know that you are responsible for finishing the lab and understanding the content.
 
-Classes will be recorded, but please do not use this as an excuse to miss class.
+Classes will be recorded, but please do not use this as an excuse to miss class. Again, those who are curious and ask questions will learn quite a bit. 
+
 
 ## Grading Policy
 

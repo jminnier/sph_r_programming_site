@@ -1,8 +1,8 @@
 ---
-title: "Introduction to R/RStudio and Images"
-linktitle: "1: Introduction to R/RStudio and Images"
-date: "2020-01-15"
-read_date: "2020-01-15"
+title: "Introduction to R/RStudio/Vectors/For Loops"
+linktitle: "1: Introduction to R/RStudio/Vectors/"
+date: "2021-01-07"
+read_date: "2021-01-15"
 menu:
   reading:
     parent: Readings
@@ -12,7 +12,27 @@ type: docs
 
 ## Required
 
+Remember, this reading is mostly supplemental and will help you if there are concepts that are unclear in class.
+
+- Intro to RStudio Cloud - ![](https://www.youtube.com/watch?v=uK1Va_UWQFc) 
 - [R and RStudio Basics](https://ismayc.github.io/rbasics-book/3-rstudiobasics.html) - make sure to watch the videos.
-- [Images and Pixels](https://petebankhead.gitbooks.io/imagej-intro/content/chapters/images_and_pixels/images_and_pixels.html)
-- [Types and Bit Depths](https://petebankhead.gitbooks.io/imagej-intro/content/chapters/bit_depths/bit_depths.html)
+
+## Optional: Swirl Basics
+
+I'm going to highlight another resource for learning R concepts: `swirl`. This is a software package for R.
+
+To start it, run the following code in the console in RStudio Cloud:
+
+```{r}
+library(swirl)
+swirl()
+```
+
+You'll want to take a look at the `R Programming` course, especially the following sections:
+
+1. Basic Building Blocks
+3. Sequences of Numbers
+4. Vectors
+5. Missing values
+
 

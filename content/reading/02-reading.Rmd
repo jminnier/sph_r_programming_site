@@ -1,8 +1,8 @@
 ---
-title: "Week 2: Preprocessing and filtering"
-linktitle: "Week 2. Preprocessing and Filtering"
-date: "2020-01-22"
-read_date: "2020-01-22"
+title: "Week 2: Data Frames/Loading Data/ggplot2"
+linktitle: "Week 2: Data Frames/Loading Data/ggplot2"
+date: "2020-01-14"
+read_date: "2020-01-21"
 menu:
   reading:
     parent: Readings
@@ -12,6 +12,5 @@ type: docs
 
 ## Required
 
-- Fluoresecence Microscopy: Avoiding the Pitfalls. https://jcs.biologists.org/content/joces/120/10/1703.full.pdf
-- [Manipulating Individual Pixels](https://petebankhead.gitbooks.io/imagej-intro/content/chapters/point_operations/point_operations.html)
-- [Filters from Bankhead](https://petebankhead.gitbooks.io/imagej-intro/content/chapters/filters/filters.html)
+- [Data Organization in Spreadsheets](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989) by Kara Woo and Karl Broman - if there is one paper that I think is useful for everyone, it's this one.
+- [Absolute and Relative File Paths](https://ubc-dsci.github.io/introduction-to-datascience/reading.html#absolute-and-relative-file-paths) - sometimes understanding file paths can be difficult. This is a great follow up reading. The video is very helpful as well. 
