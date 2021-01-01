@@ -100,14 +100,6 @@ Type in Chat:
 - What you hope to learn from this course
 
 ---
-# 5 minute meeting
-
-Please schedule a time here: 
-
-It helps me to understand why you're in the course and what you want to learn
-
-
----
 # Rules for Interaction
 
 During Class
@@ -130,24 +122,7 @@ During Class
 
 <img src = "image/week1/screen sharing.jpg" width = 800>
 
----
-# Function of the Week
 
-- Learn and share about an underrated `tidyverse()` function
-- Pick a week to present here: 
-- Share your experience with the function
-  - Is it useful?
-  - Is it hard to use?
-  - Share an example
-- You will have time to meet with me befor you present
-  
----
-# Midterm / Final Project
-
-- Midterm: Pick a dataset and show that you can explore it, plot it, and transform it to answer a specific question
-  - Schedule a meeting to discuss the data
-- Final: Pick a different dataset and build a model using machine learning or statistics
-  - 
 ---
 # Let's try the Breakout Rooms
 
@@ -167,11 +142,6 @@ class: center, middle
 ## http://sph-r-programming.netlify.app
 
 ---
-class: center, middle
-
-# Class Logistics
-
----
 # Learning Objectives
 
 By the end of this course you will be able to:
@@ -181,29 +151,16 @@ By the end of this course you will be able to:
 3. **Familiarize** and **load** data files (Excel, Comma Separated Value files) into R/Rstudio, with tips on formatting.
 4. **Visualize** datasets using **ggplot2** and understand how to build basic plots using **ggplot2** syntax.
 5. **Filter** and **format** data in R for use with various routines.
-6. **Execute** and **Interpret** some basic statistics in R.
+6. **Manipulate** and **combine** multiple files.
 7. **Automate** repetitive tasks in R, such as loading a folder of files.
-8. **Execute** basic machine learning workflows using `tidymodels`.
-9. **Your Choice**: `shiny`, `leaflet` or `tidytext`.
+8. **Execute** and **Interpret** some basic statistics in R.
+9. **Execute** basic machine learning workflows using `tidymodels`, including PCA, resampling, and Supervised Learning.
+10. **Your Choice**: `shiny`, `leaflet`, `tidytext` or `Bioconductor`.
 
 ---
-# Caveat Emptor
+class: center, middle
 
-- This is *not* a conventional programming course
-- We try to get you doing interesting and useful things from the beginning
-- This is also *not* a full course on statistics or machine learning
-
----
-# My Approach to Teaching
-
-I think students learn the best when they're actually looking and thinking about data.
-
-This means we will be looking at lots of data.
-
----
-# Social Learning Works
-
-I also think that we learn best when we are discussing data together.
+# Class Logistics
 
 ---
 class:center, middle
@@ -225,10 +182,53 @@ If you are disruptive to class learning or disparaging to other students, I may 
 
 Please report them here: 
 
----
-# Class Discord
 
-- [Slack 101 Videos](https://slack.com/resources/slack-101)
+---
+# 5 minute meeting
+
+Please schedule a time here: 
+
+It helps me to understand why you're in the course and what you want to learn.
+
+---
+# Caveat Emptor
+
+- This is *not* a conventional programming course
+- We try to get you doing interesting and useful things from the beginning
+- This is also *not* a full course on statistics or machine learning
+
+---
+# My Approach to Teaching
+
+I think students learn the best when they're actually looking and thinking about data.
+
+This means we will be looking at lots of data.
+
+---
+# Social Learning Works
+
+I also think that we learn best when we are discussing data together.
+
+You'll be assigned a buddy to work on projects with
+
+---
+# Format of Class
+
+- Review of muddiest points (10-15 minutes)
+- Main Learning (2 hours)
+- Function of the Week presentations (20 minutes)
+- Wrap Up/Questions (remaining time)
+
+We'll take 5 minute breaks at the top of each hour.
+
+---
+# Grading Breakdown
+
+- Attendance 10%
+- Midterm Project 15%
+- Function of the Week 5%
+- Homework Assignments 45%
+- Final Project 20%
 
 ---
 # Class Attendance Policy
@@ -240,6 +240,44 @@ There is a post-class survey that will be posted. Please fill it out, as it coun
 If you can't attend class, please let me know.
 
 ---
+# Class Assignments
+
+Class Assignments will be done in RStudio Notebooks 
+
+Assignments will be submitted through Sakai. 
+
+We will do our best to return it to you within a week.
+
+We will highlight any points of confusion.
+
+---
+# Function of the Week
+
+- Starts in Week 3
+- Learn and share about an underrated `tidyverse()` function (5 minutes max)
+- Share your experience with the function
+  - Is it useful?
+  - Is it hard to use?
+  - Share an example
+- You will have time to meet with me before you present
+  
+---
+# Midterm / Final Project
+
+- Midterm: Pick a dataset and show that you can explore it, plot it, and transform it to answer a specific question
+  - Schedule a meeting to discuss the data
+- Final: Pick a different dataset and build a model using machine learning or statistics and present it
+
+---
+# Class Discord
+
+- Invitation to Class Discord is on Sakai and emailed to you
+- Use to ask questions
+- If you know the answer, try to help out
+- I will try and review once a day
+- Video channels for working together
+
+---
 # Office Hours
 
 I will be available for office hours/drop in time 2 Hours a week (Sam will be available once a week). You're free to sign in to the Zoom Room and work on homework at this time.
@@ -248,16 +286,6 @@ When is good link:
 
 Highlight all times that work for you.
 
----
-# Class Assignments
-
-Class Assignments will be done in RStudio Notebooks
-
-Assignments will be submitted through Sakai. 
-
-We will do our best to return it to you within a week.
-
-We will highlight any points of confusion
 
 ---
 # Why R?
@@ -273,24 +301,12 @@ It's a *hub* language in that you can access many different kinds of systems (Te
 - Be patient with yourself, don't beat yourself up
 - We'll try to make it a fun process for you
 
----
-# Grading Breakdown
-
-- In class discussion 10%
-- Midterm 15%
-- Homework Assignment (from labs) 50%
-- Final Project 20%
-
----
-# Format of Class
-
-- Office Hours (2 hrs/week)
 
 ---
 # R and RStudio
 
 - In-class labs and assignments will be done with [RStudio.cloud](http://rstudio.cloud)
-- We'll take a guided tour of RStudio Cloud
+- We'll take a guided tour of RStudio Cloud next
 
 ---
 # Other Resources/Events (Optional)
@@ -298,7 +314,7 @@ It's a *hub* language in that you can access many different kinds of systems (Te
 - [PDX R User Group Meetup]() (monthly)
 - BioData Club: Intro to Shiny Workshop (1/21) 
   - Sign up here: 
-- Cascadia R Conference 2021 will be online in May or June
+- Cascadia R Conference 2021 will be online in late May or early June
 
 ---
 class: center, middle
