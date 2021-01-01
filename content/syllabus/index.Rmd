@@ -81,6 +81,8 @@ We will be drawing on the following online textbooks during class and labs. Thes
 **Getting Used to R, RStudio, and RMarkdown**. Chester Ismay.
 <https://ismayc.github.io/rbasics-book/>
 
+**Introduction to Data Science**. Tiffany Timbers, Trevor Campbell, Melissa Lee. <https://ubc-dsci.github.io/introduction-to-datascience/>
+
 **RMarkdown for Scientists**. Nick Tierney. <https://rmd4sci.njtierney.com/>
 
 **R for Data Science**. Garret Grolemund and Hadley Wickham. <https://r4ds.had.co.nz/>
@@ -117,14 +119,19 @@ Our goal is to be better programmers each day, not to be the perfect programmer.
 
 ## Attendance Requirements
 
-Online attendance is required. Please let me know if you have to miss class. If you miss a lab day, know that you are responsible for finishing the lab and understanding the content.
+Online attendance is required. Please let me know in advance if you have to miss class, or if you have an emergency. 
 
 Classes will be recorded, but please do not use this as an excuse to miss class. Again, those who are curious and ask questions will learn quite a bit. 
 
 
 ## Grading Policy
 
-TBD
+- Attendance 10%
+- Midterm Project 15%
+- Function of the Week 5%
+- Homework Assignments 45%
+- Final Project 20%
+
 
 ### Late Policy
 
