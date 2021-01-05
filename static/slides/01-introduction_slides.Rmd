@@ -16,13 +16,11 @@ output:
 
 ```{r xaringan-themer, include = FALSE}
 library(xaringanthemer)
-mono_light(
+style_mono_accent(
   base_color = "midnightblue",
   header_font_google = google_font("Josefin Sans"),
-  text_font_google   = google_font("Montserrat", "300", "300i"),
-  code_font_google   = google_font("Droid Mono"),
   link_color = "steelblue",
-  text_font_size = "28px",
+  text_font_size = "26px",
   footnote_font_size = "22px"
 )
 ```
@@ -33,23 +31,29 @@ xaringanExtra::use_panelset()
 xaringanExtra::use_tachyons()
 ```
 
-class: center, middle
-
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
 ```
+
+class: center, middle
+
 # Welcome
 
 ---
-# [Ted Laderas, PhD](https://laderast.ohsu.edu) 
+# Ted Laderas, PhD
 
 .pull-left[
-- Assistant Professor, Division of Bioinformatics and Computational Biology, Department of Medical Informatics and Clinical Epidemiology 
+- Assistant Professor, Department of Medical Informatics and Clinical Epidemiology 
 - Interactive Visualization/Flow Cytometry
-- Certified RStudio/Carpentries Instructor 
-- Co-founder of [BioData Club](http://biodata-club.github.io)] and [Cascadia-R Conference](https://cascadiarconf.com)
-
-.pull-right[<img src="image/week1/ted.jpg" width = 500>]
+- Certified RStudio/Carpentries Instructor
+- Co-founder of
+  - [BioData Club](http://biodata-club.github.io)
+  - [Cascadia-R Conference](https://cascadiarconf.com)
+- https://laderast.github.io 
+]
+.pull-right[
+<img src="image/week1/ted.jpg" width = 400>
+]
 
 ---
 # Class Facilitator/TA
@@ -61,6 +65,7 @@ options(htmltools.dir.version = FALSE)
 ---
 # Introduction Overview
 
+- Code of Conduct
 - Introduction to Zoom
 - Learning Objectives
 - Class Logistics
@@ -76,13 +81,32 @@ options(htmltools.dir.version = FALSE)
     - You can end up as a collaborator!
 
 ---
+class:center, middle
+# This is a Safe Space to Ask Questions
+
+---
+# Code of Conduct
+
+This class is governed by the [BioData Club Code of Conduct](https://biodata-club.github.io/code_of_conduct/).
+
+This class is meant to be a psychologically safe space where it's ok to ask questions.
+
+I want to normalize your own curiosity and fuel your desire to learn more.
+
+If you are disruptive to class learning or disparaging to other students, I may mute you for the day.
+
+---
+# Code of Conduct Violations
+
+Please report them here: 
+
+---
 # Tour of Zoom
 
 - We'll be using zoom for our classes
 - Let's do a quick guided tour
 
 ---
-
 <iframe width="1000" height = "600" src="https://www.youtube.com/embed/5iap0Ffl5Lg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
@@ -160,26 +184,6 @@ By the end of this course you will be able to:
 ---
 class: center, middle
 # Class Logistics
-
----
-class:center, middle
-# This is a Safe Space to Ask Questions
-
----
-# Code of Conduct
-
-This class is governed by the [BioData Club Code of Conduct](https://biodata-club.github.io/code_of_conduct/).
-
-This class is meant to be a psychologically safe space where it's ok to ask questions.
-
-I want to normalize your own curiosity and fuel your desire to learn more.
-
-If you are disruptive to class learning or disparaging to other students, I may mute you for the day.
-
----
-# Code of Conduct Violations
-
-Please report them here: 
 
 ---
 class: center, middle
@@ -327,11 +331,6 @@ It's a *hub* language in that you can access many different kinds of systems (Te
 
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
  "I have used other standard softwares for my stats during my doctoral program and was always intimidated by R. I am so glad I found this course, after going through numerous online videos & courses. It is taking me time to learn through your course, but I am confident that this time I will get through it."]
-
----
-# Testimonies
-
-.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[ "I was new to R and had been going through numerous resources to self teach. Your course helped me gain confidence with R and my script writing as although I had learned some of the content before I was unsure if some of my methods were best practice etc."]
 
 ---
 # R and RStudio
