@@ -168,6 +168,7 @@ During Class
 
 - I will record each session and Eric will post it as soon it is ready
 - I will pause recording for breakout rooms (that won't be recorded)
+- Remind me to start recording when class starts
 
 ---
 # Learning Objectives
