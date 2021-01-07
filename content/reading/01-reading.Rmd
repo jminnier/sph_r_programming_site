@@ -16,7 +16,7 @@ Remember, this reading is mostly supplemental and will help you if there are con
 
 - [Introduction to RStudio Cloud Video](https://www.youtube.com/watch?v=uK1Va_UWQFc) 
 - [R and RStudio Basics](https://ismayc.github.io/rbasics-book/3-rstudiobasics.html) - make sure to watch the videos.
-- [https://ubc-dsci.github.io/introduction-to-datascience/wrangling.html#vectors-and-data-frames](Vectors and Data Frames)
+- [Vectors and Data Frames](https://ubc-dsci.github.io/introduction-to-datascience/wrangling.html#vectors-and-data-frames)
 
 ## Optional 
 
