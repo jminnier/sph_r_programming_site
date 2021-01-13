@@ -38,3 +38,39 @@ Please fill out the following survey and we will discuss the results during the 
 
 https://ohsu.ca1.qualtrics.com/jfe/form/SV_0rjxy6FgXapnMk5
 
+
+## Muddiest Points 
+
+> For Loops. I still don't understand how to read the for loop code and what exactly it is doing.
+
+> The "For loops" though I know you mentioned we would do more on that later
+
+> The most unclear point was "loops", but I think that's because it was an introduction today. I know the class notes said we would be covering more of this later, so I'm not concerned about this being unclear.
+
+Thanks for letting me know. We will be talking more about this today.
+
+> The only thing I'll say is that I dont really have a great understanding of what machine learning is or its application in public health. I know we're not learning about that until the end but maybe explain it ahead of time so we know more about what it is and its purpose?
+
+## Clearest Points
+
+> overall it was quite clear. I know we started slow but honestly that was welcome. Its been a while since I've used R and my brain isnt firing on all cylinders. I understood everything
+
+> The whole class today was clear. The pacing is perfect and I really appreciate how you went through code line by line.
+
+## Thanks for Letting Me Know
+
+> [I] am coming into this class 15 minutes after biostats--as are many of my classmates--so if energy or participation seems low its likely just fatigue.
+
+Thanks for letting me know - I'm keeping the pace pretty slow at the beginning.
+
+> I wish this class was offered before the Biostats series.
+
+> I am already learning so much and wish this class had been available prior to taking biostats! It certainly would have saved lots of tears and grief. 
+
+> I wish we had this course mandatory before the BSTA sequence starts, I learnt R instead of hypothesis testing on BSTA 511. 
+
+I will have this conversation with Biostats about this.
+
+>  Many of the students in this course are in the BSTA 511/512/513 sequence and use a LOT of R already. The professor who recommended this class to me implied it was for people already familiar with R. Is it possible to include maybe some not for credit (so it's fair for the beginners) more difficult problems?
+
+For right now, it's okay to skip class, if you can get through the lab and the assignment. Please still fill out the survey, though. As we get into more complicated topics (like `dplyr`), I have some intermediate level tutorials in my `{tidyowl}` package that you can go through.
