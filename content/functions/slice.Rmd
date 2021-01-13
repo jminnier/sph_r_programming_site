@@ -5,7 +5,7 @@ author: "Ted Laderas"
 date: "2021-01-13"
 read_date: "2021-01-13"
 menu:
-  reading:
+  class:
     parent: Functions
     weight: 1
 type: docs
