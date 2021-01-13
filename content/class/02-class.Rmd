@@ -1,8 +1,8 @@
 ---
-title: "Part 1: Introduction to R/Rstudio/Vectors/For Loops"
-linktitle: "1.  Introduction to R/Rstudio/Vectors/For Loops"
-date: "2021-01-06"
-class_date: "2020-01-06"
+title: "Part 2: Loading Data, data.frames, and ggplot2"
+linktitle: "Part 2: Loading Data, data.frames, and ggplot2"
+date: "2020-03-31"
+class_date: "2020-03-31"
 output:
   blogdown::html_page:
     toc: true
@@ -20,12 +20,12 @@ editor_options:
 
 ## Slides
 
-### For loops
+### Class Introduction
 
-Open the class introduction slides in a separate window: <a href="https://sph-r-programming.netlify.com/slides/01-introduction_slides#1" target="_blank">https://sph-r-programming.netlify.com/01-introduction_slides#1</a>
+Open the class introduction slides in a separate window: <a href="https://sph-r-programming.netlify.com/slides/02-for_loops#1" target="_blank">https://sph-r-programming.netlify.com/slides/02-for_loops#1</a>
 
 ```{r echo=FALSE}
-knitr::include_url('https://sph-r-programming.netlify.com/slides/01-introduction_slides#1')
+knitr::include_url('https://sph-r-programming.netlify.com/slides/02-for_loops#1')
 ```
 
 ### Post-Class

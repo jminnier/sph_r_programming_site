@@ -1,0 +1,58 @@
+---
+title: "For Loops"
+subtitle: "R Programming"
+author: "Ted Laderas"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: xaringan-themer.css
+    nature:
+      ratio: '16:9'
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r xaringan-themer, include = FALSE}
+library(xaringanthemer)
+style_mono_accent(
+  base_color = "midnightblue",
+  header_font_google = google_font("Josefin Sans"),
+  link_color = "steelblue",
+  text_font_size = "26px",
+  footnote_font_size = "22px"
+)
+```
+
+```{r xaringanExtra, echo=FALSE}
+xaringanExtra::use_xaringan_extra(c("tile_view", "logo", "tachyons"))
+xaringanExtra::use_panelset()
+xaringanExtra::use_tachyons()
+```
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+class: center, middle
+
+# For Loops
+
+---
+
+<img src = "image/week2/for_loop1.jpg" width = 800>
+
+---
+
+<img src = "image/week2/for_loop2.jpg" width = 800>
+
+---
+
+<img src = "image/week2/for_loop3.jpg" width = 800>
+
+---
+
+<img src = "image/week2/for_loop.jpg" width = 800>
+
+[Image from Allison Horst](https://github.com/allisonhorst/stats-illustrations)
