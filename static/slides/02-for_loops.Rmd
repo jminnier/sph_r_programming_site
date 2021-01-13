@@ -88,12 +88,12 @@ class: center, middle
 # ggplot2 slides
 ---
 
-<img src = "image/week2/ggplot2_exploratory.jpg" width = 800>
+<img src = "image/week2/ggplot2_exploratory.png" width = 600>
 
 [Image from Allison Horst](https://github.com/allisonhorst/stats-illustrations)
 
 ---
 
-<img src = "image/week2/khealy_ggplot_part1.jpg" width = 800>
+<img src = "image/week2/khealy_ggplot1_part1.jpg" width = 700>
 
 Image from Kieran Healy
