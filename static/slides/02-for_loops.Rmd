@@ -56,3 +56,44 @@ class: center, middle
 <img src = "image/week2/for_loop.jpg" width = 800>
 
 [Image from Allison Horst](https://github.com/allisonhorst/stats-illustrations)
+
+---
+class: center, middle
+
+# Paths and Projects
+
+---
+
+<img src = "image/week2/project2.JPG" width = 800>
+
+---
+class: center, middle
+
+# Tidy Data
+
+---
+
+<img src = "image/week2/tidydata_1.jpg" width = 800>
+
+[Image from Allison Horst](https://github.com/allisonhorst/stats-illustrations)
+---
+
+<img src = "image/week2/tidydata_2.jpg" width = 800>
+
+[Image from Allison Horst](https://github.com/allisonhorst/stats-illustrations)
+
+---
+class: center, middle
+
+# ggplot2 slides
+---
+
+<img src = "image/week2/ggplot2_exploratory.jpg" width = 800>
+
+[Image from Allison Horst](https://github.com/allisonhorst/stats-illustrations)
+
+---
+
+<img src = "image/week2/khealy_ggplot_part1.jpg" width = 800>
+
+Image from Kieran Healy
