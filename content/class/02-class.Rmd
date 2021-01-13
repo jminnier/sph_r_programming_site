@@ -28,6 +28,10 @@ Open the class introduction slides in a separate window: <a href="https://sph-r-
 knitr::include_url('https://sph-r-programming.netlify.com/slides/02-for_loops#1')
 ```
 
+### Function of the Week Assignment
+
+Please refer to the `function_assignment` project in the RStudio Cloud workspace. We will go over this in class.
+
 ### Post-Class
 
 Please fill out the following survey and we will discuss the results during the next lecture. All responses will be anonymous.
