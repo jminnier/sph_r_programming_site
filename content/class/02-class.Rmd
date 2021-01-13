@@ -20,9 +20,9 @@ editor_options:
 
 ## Slides
 
-### Class Introduction
+### For Loops / Projects / ggplot2
 
-Open the class introduction slides in a separate window: <a href="https://sph-r-programming.netlify.com/slides/02-for_loops#1" target="_blank">https://sph-r-programming.netlify.com/slides/02-for_loops#1</a>
+Open the slides in a separate window: <a href="https://sph-r-programming.netlify.com/slides/02-for_loops#1" target="_blank">https://sph-r-programming.netlify.com/slides/02-for_loops#1</a>
 
 ```{r echo=FALSE}
 knitr::include_url('https://sph-r-programming.netlify.com/slides/02-for_loops#1')
