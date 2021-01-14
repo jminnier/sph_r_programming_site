@@ -44,6 +44,6 @@ https://ohsu.ca1.qualtrics.com/jfe/form/SV_0rjxy6FgXapnMk5
 
 ## Projects in RStudio Desktop
 
-There were some questions about RStudio Desktop and projects, so here is a short video on how to setup projects in RStudio Desktop. We'll have a session to install RStudio Desktop to your own machine.
+There were some questions about RStudio Desktop and projects, so here is a short video on how to setup projects in RStudio Desktop. We'll have a session to install RStudio Desktop to your own machine in the future.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QDDGhLPOMqA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="650" height="315" src="https://www.youtube.com/embed/D22THnoPA6w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
