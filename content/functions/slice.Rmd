@@ -13,8 +13,6 @@ type: docs
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# `dplyr::slice()`
-
 In this document, I will introduce the `slice()` function and show what it's for.
 
 ```{r}
