@@ -10,10 +10,11 @@ lessons:
   - title: '**Part 2: Loading Data, `data.frame`s, and `ggplot2`**'
     date: "January 13"
     reading: "02-reading"
-  #  class: "02-class"
+    class: "02-class"
 
   - title: "**Part 3: `ggplot2`, factors, boxplots, `dplyr`: subsetting using `filter()`/`select()`**"
     date: "January 20"
+    reading: "03-reading"
 
   - title: '**Part 4. `dplyr`: `mutate()`, `group_by()`/`summarize()`/`across`, writing functions**'
     date: "January 27"
