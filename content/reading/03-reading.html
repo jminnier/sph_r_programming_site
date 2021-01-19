@@ -1,0 +1,43 @@
+---
+title: "Week 3: Data Frames/Loading Data/ggplot2"
+linktitle: "Week 3: Data Frames/Loading Data/ggplot2"
+date: "2020-01-20"
+read_date: "2020-01-27"
+menu:
+  reading:
+    parent: Readings
+    weight: 2
+type: docs
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+
+<div id="required" class="section level2">
+<h2>Required</h2>
+<ul>
+<li><a href="https://ubc-dsci.github.io/introduction-to-datascience/wrangling.html#combining-functions-using-the-pipe-operator">Combining functions usin g the pipe operator, %&gt;%</a> - if you’re confused about <code>%&gt;%</code>, please read this.</li>
+</ul>
+</div>
+<div id="optional" class="section level2">
+<h2>Optional</h2>
+<div id="customizing-ggplot2" class="section level3">
+<h3>Customizing ggplot2</h3>
+<p>If you are interested in learning more about ggplot:</p>
+<ul>
+<li>Documentation for all <code>ggplot</code> features is available <a href="https://ggplot2.tidyverse.org">here</a>.</li>
+<li>RStudio also publishes a <a href="https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf">ggplot cheat sheet</a> that is really handy!</li>
+<li><a href="http://zevross.com/blog/2014/08/04/beautiful-plotting-in-r-a-ggplot2-cheatsheet-3/">Customizing ggplot2 Cheatsheet</a> is also handy, because it organizes ggplot2 commands by task.</li>
+</ul>
+</div>
+<div id="using-tidyselect-intermediate-level" class="section level3">
+<h3>Using <code>tidyselect</code> (Intermediate Level)</h3>
+<p>Remember, <code>select()</code> works on columns.</p>
+<p><code>tidyselect</code> lets you select columns by matching names. In conjunction with the <code>across()</code> command, you can apply the same operation to multiple columns at once. This is especially handy when you need to produce a summary on all numeric columns.</p>
+<p>You can run the <code>tidyselect</code> tutorial by running the code in your terminal:</p>
+<pre><code>library(tidyowl)
+learn_tidyselect()</code></pre>
+</div>
+</div>
