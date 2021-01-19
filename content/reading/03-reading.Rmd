@@ -2,17 +2,16 @@
 title: "Part 3: `ggplot2`, factors, boxplots, `dplyr`: subsetting using `filter()`/`select()`"
 linktitle: "Part 3: `ggplot2`, factors, boxplots, `dplyr`: subsetting using `filter()`/`select()`"
 date: "2020-01-20"
-read_date: "2020-01-27"
 menu:
   reading:
     parent: Readings
-    weight: 2
+    weight: 3
 type: docs
 ---
 
 ## Required
 
-- [Combining functions usin g the pipe operator, %>%](https://ubc-dsci.github.io/introduction-to-datascience/wrangling.html#combining-functions-using-the-pipe-operator) - if you're confused about `%>%`, please read this.
+- [Combining functions using the pipe operator, %>%](https://ubc-dsci.github.io/introduction-to-datascience/wrangling.html#combining-functions-using-the-pipe-operator) - if you're confused about `%>%`, please read this.
 - [ggplot2 BERD workshop slides](https://sph-r-programming.netlify.app/ggplot_flipbookr_berd/04_ggplot_slides.html) - lots more on different `geoms` and how to customize plots
 
 ## Optional
