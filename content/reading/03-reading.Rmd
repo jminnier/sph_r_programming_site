@@ -11,8 +11,13 @@ type: docs
 
 ## Required
 
-- [Combining functions using the pipe operator, %>%](https://ubc-dsci.github.io/introduction-to-datascience/wrangling.html#combining-functions-using-the-pipe-operator) - if you're confused about `%>%`, please read this.
+### `ggplot2`
+
 - [ggplot2 BERD workshop slides](https://sph-r-programming.netlify.app/ggplot_flipbookr_berd/04_ggplot_slides.html) - lots more on different `geoms` and how to customize plots
+
+### `dplyr`
+
+- [Combining functions using the pipe operator, %>%](https://ubc-dsci.github.io/introduction-to-datascience/wrangling.html#combining-functions-using-the-pipe-operator) - if you're confused about `%>%`, please read this.
 
 ## Optional
 
