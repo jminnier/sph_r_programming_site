@@ -3,7 +3,6 @@ title: "dplyr::slice()"
 linktitle: "dplyr::slice"
 author: "Ted Laderas"
 date: "2021-01-13"
-read_date: "2021-01-13"
 menu:
   functions:
     weight: 1
