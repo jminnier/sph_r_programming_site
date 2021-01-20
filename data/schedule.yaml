@@ -19,15 +19,15 @@ lessons:
 
   - title: '**Part 4. `dplyr`: `mutate()`, `group_by()`/`summarize()`/`across`, writing functions**'
     date: "January 27"
-#    reading: "03-reading"
-#    class: "03-class"
-
-  - title: '<span class="fake-header-table">Part 2: Intermediate Topics</span>'
-    header: True
+#    reading: "04-reading"
+#    class: "04-class"
 
   - title: '**Part 5. More about manipulating factors (`forcats`) and dates (`lubridate`)/doing things with multiple tables/for loops**'
     date: "February 4"
 #    class: "04-class"
+
+  - title: '<span class="fake-header-table">Part 2: Intermediate Topics</span>'
+    header: True
 
   - title: '**Take Home Midterm Assigned**'
     date: "February 4"
@@ -46,7 +46,7 @@ lessons:
   - title: "**Part 8. `tidymodels`/machine learning basics/simulation**"
     date: "February 25"
     
-  - title: "Final Project Assigned"
+  - title: "**Final Project Assigned**"
     date: "February 25"
 
   - title: "**Part 9. Intro to `Bioconductor`**"
