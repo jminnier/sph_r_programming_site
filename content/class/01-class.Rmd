@@ -18,6 +18,10 @@ editor_options:
   chunk_output_type: console
 ---
 
+## Class Video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yCPcijCj15c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Slides
 
 ### For loops

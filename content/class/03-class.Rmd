@@ -18,6 +18,10 @@ editor_options:
   chunk_output_type: console
 ---
 
+## Class Video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2U5xh8cn_JU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Slides
 
 Open the slides in a separate window: <a href="https://sph-r-programming.netlify.com/slides/03-ggplot2-dplyr-part1#1" target="_blank">https://sph-r-programming.netlify.com/slides/03-ggplot2-dplyr-part1#1</a>
