@@ -14,6 +14,8 @@ type: docs
 <script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
 
 
+<div id="ted-laderas" class="section level2">
+<h2>Ted Laderas</h2>
 <p>In this document, I will introduce the <code>slice()</code> function and show what it’s for.</p>
 <pre class="r"><code>library(tidyverse)</code></pre>
 <pre><code>## -- Attaching packages --------------------------------------- tidyverse 1.3.0 --</code></pre>
@@ -29,6 +31,7 @@ type: docs
 ## x dplyr::lag()    masks stats::lag()</code></pre>
 <pre class="r"><code>library(palmerpenguins)
 data(penguins)</code></pre>
+</div>
 <div id="what-is-it-for" class="section level2">
 <h2>What is it for?</h2>
 <p>Say you want the first 7 rows of a table. Well, <code>slice()</code> is an easy way to do that. The <code>slice()</code> function accepts two arguments: The first is the dataset, and the second is the <code>range</code> of values you want to extract.</p>

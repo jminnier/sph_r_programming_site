@@ -1,0 +1,77 @@
+---
+title: 'ggplot2::geom_smooth()'
+author: "Jessica Kramarz"
+date: "2021-01-20"
+menu:
+  functions:
+    weight: 2
+type: docs
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+
+<div id="jessica-kramarz" class="section level2">
+<h2>Jessica Kramarz</h2>
+<p>In this document, I will introduce the <strong>geom_smooth()</strong> function and show what it’s for.</p>
+<pre class="r"><code>#load ggplot2
+library(ggplot2)
+#example dataset
+library(palmerpenguins)
+data(penguins)</code></pre>
+</div>
+<div id="what-is-it-for" class="section level2">
+<h2>What is it for?</h2>
+<p>This function helps aid the eye in seeing patterns in the presence of overplotting.</p>
+<p>Below we see a plot from the penguins data showing body mass in grams by bill length in mm. Below the plot is not using the <strong>geom_smooth()</strong> function.</p>
+<pre class="r"><code>ggplot(penguins, aes(body_mass_g, bill_length_mm)) +
+  geom_point() + labs(title=&quot;Bill length (mm) vs Body mass (g)&quot;) +
+  xlab(&quot;Body Mass (g)&quot;) +
+  ylab(&quot;Bill Length (mm)&quot;)</code></pre>
+<pre><code>## Warning: Removed 2 rows containing missing values (geom_point).</code></pre>
+<p><img src="/functions/fxns-geom_smooth-KRAMARZ_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p>While a general trend can be identified of <em>bill length (mm)</em> increasing with <em>body mass (g)</em>, it becomes more clear and easier to identify with the <strong>geom_smooth()</strong> function included.</p>
+<pre class="r"><code>ggplot(penguins, aes(body_mass_g, bill_length_mm)) +
+  geom_point() +
+  geom_smooth() +
+    labs(title=&quot;Bill length (mm) vs Body mass (g)&quot;) +
+  xlab(&quot;Body Mass (g)&quot;) +
+  ylab(&quot;Bill Length (mm)&quot;)</code></pre>
+<pre><code>## `geom_smooth()` using method = &#39;loess&#39; and formula &#39;y ~ x&#39;</code></pre>
+<pre><code>## Warning: Removed 2 rows containing non-finite values (stat_smooth).</code></pre>
+<pre><code>## Warning: Removed 2 rows containing missing values (geom_point).</code></pre>
+<p><img src="/functions/fxns-geom_smooth-KRAMARZ_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>Without specification of <strong>method</strong> in the argument, the <strong>geom_smooth()</strong> function will default to <strong>loess</strong>. <strong>Loess</strong> is a type of smoothing which is generally done with data that has 1000 observations or less, as it can be time consuming if they exceed 1000. If the observations are greater than 1,000, <strong>gam()</strong> is the default smoothing method.</p>
+<p>Another helpful modeling function to know is <strong>geom_smooth(method=“lm”)</strong>, this creates a straight line or linear fit. This could be helpful when trying to determine if a relationship is linear.</p>
+<pre class="r"><code>ggplot(penguins, aes(body_mass_g, bill_length_mm)) +
+  geom_point() +
+  geom_smooth(method=&#39;lm&#39;) +
+    labs(title=&quot;Bill length (mm) vs Body mass (g)&quot;) +
+  xlab(&quot;Body Mass (g)&quot;) +
+  ylab(&quot;Bill Length (mm)&quot;)</code></pre>
+<pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
+<pre><code>## Warning: Removed 2 rows containing non-finite values (stat_smooth).</code></pre>
+<pre><code>## Warning: Removed 2 rows containing missing values (geom_point).</code></pre>
+<p><img src="/functions/fxns-geom_smooth-KRAMARZ_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p>Additionally, without specification of <strong>formula</strong> in the argument the function will default the <strong>formula</strong> to ‘y~x’ for smoothing. If you think a quadratic fucntion might be a good approximation for the fit of your data, we can go back in to the linear model and change the formula to include a squared term for x: <strong>geom_smooth(method = “lm”, formula = y ~x + I(x^2))</strong>. However, for our data, the linear relationship is rather strong.</p>
+<p>Also by default, the function will display confidence intervals around the smooth. Since the function is <em>TRUE</em> by default, set <strong>se = FALSE</strong>, as done below, to remove the confidence intervals.</p>
+<pre class="r"><code>ggplot(penguins, aes(body_mass_g, bill_length_mm)) +
+  geom_point() +
+  geom_smooth(se = FALSE) +
+    labs(title=&quot;Bill length (mm) vs Body mass (g)&quot;) +
+  xlab(&quot;Body Mass (g)&quot;) +
+  ylab(&quot;Bill Length (mm)&quot;)</code></pre>
+<pre><code>## `geom_smooth()` using method = &#39;loess&#39; and formula &#39;y ~ x&#39;</code></pre>
+<pre><code>## Warning: Removed 2 rows containing non-finite values (stat_smooth).</code></pre>
+<pre><code>## Warning: Removed 2 rows containing missing values (geom_point).</code></pre>
+<p><img src="/functions/fxns-geom_smooth-KRAMARZ_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+</div>
+<div id="is-it-helpful" class="section level2">
+<h2>Is it helpful?</h2>
+<p>This function can be helpful as it can be hard to observe trends with just data points alone. This can be especially helpful when trying to understand regressions.</p>
+<p>To learn about more of the functions of <strong>geom_smooth()</strong> try typing “<strong>?geom_smooth</strong>” into your R console.</p>
+<pre class="r"><code>?geom_smooth</code></pre>
+<pre><code>## starting httpd help server ... done</code></pre>
+</div>

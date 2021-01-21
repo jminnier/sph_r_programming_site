@@ -1,0 +1,47 @@
+---
+title: 'dplyr::slice_max()'
+author: "Bradley Hopkins"
+date: "`r Sys.Date()`"
+menu:
+  functions:
+    weight: 3
+type: docs
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Bradley Hopkins
+
+In this document, I will introduce the `slice_max()` function and show what it's for.
+
+```{r}
+#load tidyverse up
+library(tidyverse)
+library(dplyr)
+```
+
+## What is it for?
+
+`slice_max()` is a sub-function of `slice()`, the function we discussed last week. Like `slice()`, `slice_max()` also makes it easier to visualize a data frame by providing a look at what is contained inside. What makes `slice_max()` unique is that it allows us to specify a variable we want to sort by and then returns the maximum values for that variable in the number of rows we specify. The difference between `slice_()` and `slice_max()` is demonstrated below.
+
+```{r}
+mtcars %>% slice(n = 1:5)
+```
+
+```{r}
+mtcars %>% slice_max(order_by = mpg, n = 5)
+```
+
+Take note of how the output for `slice_max()` has returned the rows of `mtcars` with the highest values for the variable `mpg` in descending order.
+
+## Is it helpful?
+
+This function is similar to its parent function `slice()`, but fills a slightly different niche. As with `slice()`, `slice_max()` is most useful because it can be used with `%>%`. This makes it slightly easier to pare down and organize a set of data compared to entering a `[row, column]` reference with the data frame. This function can also be combined with other methods of sorting data to produce more interesting results. In the example below, we filter `mtcars` down to only 6-cylinder cars first and then pipe into `slice_max()` to produce a list of 6-cylinder cars with the highest mpg:
+
+```{r}
+mtcars %>% filter(cyl == 6) %>% slice_max(order_by = mpg, n = 5)
+```
+
+This function is useful for visualizing data, providing users with a tool that can help users better understand the hierarchy of certain variables. It may even provide some utility in organizing and sorting data if used as part of a more complex pipeline of functions.

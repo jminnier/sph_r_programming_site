@@ -1,0 +1,64 @@
+---
+title: 'dplyr::slice_max()'
+author: "Bradley Hopkins"
+date: "2021-01-20"
+menu:
+  functions:
+    weight: 3
+type: docs
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+
+<div id="bradley-hopkins" class="section level2">
+<h2>Bradley Hopkins</h2>
+<p>In this document, I will introduce the <code>slice_max()</code> function and show what it’s for.</p>
+<pre class="r"><code>#load tidyverse up
+library(tidyverse)</code></pre>
+<pre><code>## -- Attaching packages --------------------------------------- tidyverse 1.3.0 --</code></pre>
+<pre><code>## v ggplot2 3.3.2     v purrr   0.3.4
+## v tibble  3.0.4     v dplyr   1.0.2
+## v tidyr   1.1.2     v stringr 1.4.0
+## v readr   1.4.0     v forcats 0.5.0</code></pre>
+<pre><code>## Warning: package &#39;tibble&#39; was built under R version 4.0.3</code></pre>
+<pre><code>## Warning: package &#39;readr&#39; was built under R version 4.0.3</code></pre>
+<pre><code>## Warning: package &#39;dplyr&#39; was built under R version 4.0.3</code></pre>
+<pre><code>## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()</code></pre>
+<pre class="r"><code>library(dplyr)</code></pre>
+</div>
+<div id="what-is-it-for" class="section level2">
+<h2>What is it for?</h2>
+<p><code>slice_max()</code> is a sub-function of <code>slice()</code>, the function we discussed last week. Like <code>slice()</code>, <code>slice_max()</code> also makes it easier to visualize a data frame by providing a look at what is contained inside. What makes <code>slice_max()</code> unique is that it allows us to specify a variable we want to sort by and then returns the maximum values for that variable in the number of rows we specify. The difference between <code>slice_()</code> and <code>slice_max()</code> is demonstrated below.</p>
+<pre class="r"><code>mtcars %&gt;% slice(n = 1:5)</code></pre>
+<pre><code>##                    mpg cyl disp  hp drat    wt  qsec vs am gear carb
+## Mazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4
+## Mazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4
+## Datsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1
+## Hornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1
+## Hornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2</code></pre>
+<pre class="r"><code>mtcars %&gt;% slice_max(order_by = mpg, n = 5)</code></pre>
+<pre><code>##                 mpg cyl disp  hp drat    wt  qsec vs am gear carb
+## Toyota Corolla 33.9   4 71.1  65 4.22 1.835 19.90  1  1    4    1
+## Fiat 128       32.4   4 78.7  66 4.08 2.200 19.47  1  1    4    1
+## Honda Civic    30.4   4 75.7  52 4.93 1.615 18.52  1  1    4    2
+## Lotus Europa   30.4   4 95.1 113 3.77 1.513 16.90  1  1    5    2
+## Fiat X1-9      27.3   4 79.0  66 4.08 1.935 18.90  1  1    4    1</code></pre>
+<p>Take note of how the output for <code>slice_max()</code> has returned the rows of <code>mtcars</code> with the highest values for the variable <code>mpg</code> in descending order.</p>
+</div>
+<div id="is-it-helpful" class="section level2">
+<h2>Is it helpful?</h2>
+<p>This function is similar to its parent function <code>slice()</code>, but fills a slightly different niche. As with <code>slice()</code>, <code>slice_max()</code> is most useful because it can be used with <code>%&gt;%</code>. This makes it slightly easier to pare down and organize a set of data compared to entering a <code>[row, column]</code> reference with the data frame. This function can also be combined with other methods of sorting data to produce more interesting results. In the example below, we filter <code>mtcars</code> down to only 6-cylinder cars first and then pipe into <code>slice_max()</code> to produce a list of 6-cylinder cars with the highest mpg:</p>
+<pre class="r"><code>mtcars %&gt;% filter(cyl == 6) %&gt;% slice_max(order_by = mpg, n = 5)</code></pre>
+<pre><code>##                 mpg cyl  disp  hp drat    wt  qsec vs am gear carb
+## Hornet 4 Drive 21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1
+## Mazda RX4      21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4
+## Mazda RX4 Wag  21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4
+## Ferrari Dino   19.7   6 145.0 175 3.62 2.770 15.50  0  1    5    6
+## Merc 280       19.2   6 167.6 123 3.92 3.440 18.30  1  0    4    4</code></pre>
+<p>This function is useful for visualizing data, providing users with a tool that can help users better understand the hierarchy of certain variables. It may even provide some utility in organizing and sorting data if used as part of a more complex pipeline of functions.</p>
+</div>
