@@ -1,0 +1,55 @@
+---
+title: "Part 4. `dplyr`: `mutate()`, `group_by()`/`summarize()`/`across`"
+linktitle: "Part 4. `dplyr`: `mutate()`, `group_by()`/`summarize()`/`across`"
+date: "2021-01-27"
+class_date: "2021-01-27"
+output:
+  blogdown::html_page:
+    toc: true
+menu:
+  class:
+    parent: Class sessions
+    weight: 4
+type: docs
+weight: 4
+# pdf: 
+# thumb: 
+editor_options: 
+  chunk_output_type: console
+---
+
+## Class Video
+
+To be posted after class
+
+## Slides
+
+Open the slides in a separate window: <a href="https://sph-r-programming.netlify.com/slides/04-dplyr-ggplot2-part2#1" target="_blank">https://sph-r-programming.netlify.com/slides/04-dplyr-ggplot2-part2#1</a>
+
+```{r echo=FALSE}
+knitr::include_url('https://sph-r-programming.netlify.com/slides/04-dplyr-ggplot2-part2#1')
+```
+
+## Midterm will be assigned next week
+
+For this week, identify 1 dataset from the `tidytuesday` datasets and identify a research question that you think can be answered by the data. Be curious!
+
+Your dataset should have:
+
+- categorical variables
+- continuous variables
+
+https://github.com/rfordatascience/tidytuesday
+
+We will take part of next class doing short meetings to discuss the midterm and the datasets individually.
+
+### Post-Class
+
+Please fill out the following survey and we will discuss the results during the next lecture. All responses will be anonymous.
+
+- Clearest Point: What was the most clear part of the lecture?
+- Muddiest Point: What was the most unclear part of the lecture to you?
+- Anything Else: Is there something you'd like me to know?
+
+http://bit.ly/sph504_survey
+

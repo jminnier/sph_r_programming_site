@@ -36,7 +36,7 @@ Please make sure to sign up for a slot for the function of the week assignment i
 
 Please refer to the `function_assignment` project in the RStudio Cloud workspace. We will go over this in class.
 
-### Post-Class
+## Post-Class
 
 Please fill out the following survey and we will discuss the results during the next lecture. All responses will be anonymous.
 
@@ -45,4 +45,57 @@ Please fill out the following survey and we will discuss the results during the 
 - Anything Else: Is there something you'd like me to know?
 
 https://ohsu.ca1.qualtrics.com/jfe/form/SV_0rjxy6FgXapnMk5
+
+## Muddiest Points
+
+### Checking your Data Types
+
+We will discuss assignment 2.
+
+As an aside, it's important to deal with data type issues as soon as you can. That's why it's important to check your data and use the `na` argument in `read_excel()` or `read_csv()`.
+
+### Why `here()`?
+
+> here() and why you'd use that if everything is already in the project
+
+> The here function is still really muddy for me. I do not quite understand the purpose of it.
+
+We'll talk more about this with a demonstration.
+
+### Questions about `{ggplot2}`
+
+> I still struggle with understanding how to read ggplot2 code.
+
+If you are still struggline, please contact Eric or Me for a review session.
+
+> How to deal with lots of missing data when creating ggplots
+
+This is something to be aware of - `ggplot2` does give you a warning when a variable that you've mapped to an aesthetic has a lot of missing values - it will tell you the number of rows dropped. The default ggplot2 behavior is to drop rows that have missing values.
+
+In general, missing values should be dealt with `{tidyr}` or `{dplyr}` before you plot. I will talk about one approach next time when we talk about reshaping data.
+
+> I think it would be interesting to learn more about ggplot (can we do more with facet_wrap() for example or is there any other useful tricks we should know)
+
+I've added a short section on more ggplot2 fundamentals (scales and colors).
+
+### Questions about `{dplyr}`
+
+> Still wrapping my head around how exactly to use select(), filter() and arrange(), especially in sequence.
+
+> Still trying to understand the tidyverse data-wrangling functions, but I think practice will help!
+
+Some thoughts. I have found it helpful to compare them to operations in Excel.
+
+- `filter()` is much like a Data Filter in Excel.
+- `select()` is much like selecting columns in Excel (such as A1-G1).
+- `arrange()` is the equivalent of Sorting your data.
+
+### This would have been helpful
+
+> What %>% is and its function were very clear. That info would have been so helpful for BSTA!
+
+> Learning about the %>% function was soooo clarifying
+
+Glad to help. Again, I feel your frustration.
+
 
