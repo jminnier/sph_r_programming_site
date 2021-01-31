@@ -1,5 +1,5 @@
 ---
-title: 'tidyr::fill'
+title: 'tidyr::fill()'
 author: "Jessica Tran"
 date: "1/28/2021"
 output: html_document
@@ -12,8 +12,6 @@ type: docs
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
-# Into the Tidyverse! 
 
 ## Jessica Tran
 
