@@ -1,5 +1,5 @@
 ---
-title: 'dplyr::count'
+title: 'dplyr::count()'
 author: "Nathalie Garimella"
 date: "`r Sys.Date()`"
 output: html_document
