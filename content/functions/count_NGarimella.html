@@ -1,0 +1,112 @@
+---
+title: 'dplyr::count'
+author: "Nathalie Garimella"
+date: "2021-01-31"
+output: html_document
+menu:
+  functions:
+    weight: 5
+type: docs
+
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+
+<div id="nathalie-garimella" class="section level2">
+<h2>Nathalie Garimella</h2>
+<p>In this document, I will introduce the count function and show what it’s for.</p>
+<pre class="r"><code>#load libraries
+library(tidyverse)</code></pre>
+<pre><code>## -- Attaching packages --------------------------------------- tidyverse 1.3.0 --</code></pre>
+<pre><code>## v ggplot2 3.3.2     v purrr   0.3.4
+## v tibble  3.0.4     v dplyr   1.0.2
+## v tidyr   1.1.2     v stringr 1.4.0
+## v readr   1.4.0     v forcats 0.5.0</code></pre>
+<pre><code>## Warning: package &#39;tibble&#39; was built under R version 4.0.3</code></pre>
+<pre><code>## Warning: package &#39;readr&#39; was built under R version 4.0.3</code></pre>
+<pre><code>## Warning: package &#39;dplyr&#39; was built under R version 4.0.3</code></pre>
+<pre><code>## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()</code></pre>
+<pre class="r"><code>library(dplyr)
+#read in example dataset
+data(mtcars)</code></pre>
+<pre class="r"><code>?count()</code></pre>
+<pre><code>## starting httpd help server ... done</code></pre>
+</div>
+<div id="what-is-it-for" class="section level2">
+<h2>What is it for?</h2>
+<p>As we can see from the “R Help” information, the count function from the dplyr package allows us to count the number of each different item in a group; it will therefore tell us the different available options within a variable and how many of each is present. It is a quick way to understand how your data grouped within a given variable or variables. It is best used with the pipe, and it can be used for one variable or more than one variable at once, and additional add-ons can allow you to sort, weight your output by a second variable, and also to name the count columns in your output table.</p>
+<p>The following is an example; I am using the mtcars dataset which has data regarding a number of car models. I wanted to look at the “cyl” variable (number of cylinders), and know how many cylinder types we had an how many of each type. Count shows us that within this dataset, we have cars with 4, 6, and 8 cylinders, and how many of each type is present.</p>
+<pre class="r"><code>mtcars %&gt;% 
+  count(cyl)</code></pre>
+<pre><code>##   cyl  n
+## 1   4 11
+## 2   6  7
+## 3   8 14</code></pre>
+<p>If I wanted to utilize more of the functionality, and get a summary of two variables, while also naming my output column, I could do that as well (see below). This will count the number of each combination, ie the number of 4 cylinder 3 gear cars, the number of 4 cylinder 4 gear cars, etc.</p>
+<pre class="r"><code>newcars &lt;- mtcars %&gt;%
+  count(cyl, gear, wt = NULL, sort = FALSE, name = &quot;Number of Obs&quot;)
+newcars</code></pre>
+<pre><code>##   cyl gear Number of Obs
+## 1   4    3             1
+## 2   4    4             8
+## 3   4    5             2
+## 4   6    3             2
+## 5   6    4             4
+## 6   6    5             1
+## 7   8    3            12
+## 8   8    5             2</code></pre>
+<p>I was a bit confused by the weight functionality while researching it, so I wanted to go into that briefly; the weight argument “wt” allows you to get the weighted count of data that has already been grouped into a table once, ie below we can see that I am using the dataframe we created in the previous example (called newcars), where I did a count of cyl and gear. If we do a weighted county of cyl from newcars, we get the total observations for each number of cylinders adding up to the 32 observations in the actual mtcars dataset. However, if we do the unweighted count, we see that we only get the number of times each cylinder type appears in the newcars dataframe.</p>
+<pre class="r"><code>newcars %&gt;%
+  count(cyl, wt = gear)</code></pre>
+<pre><code>##   cyl  n
+## 1   4 12
+## 2   6 12
+## 3   8  8</code></pre>
+<pre class="r"><code>newcars %&gt;%
+  count(cyl)</code></pre>
+<pre><code>##   cyl n
+## 1   4 3
+## 2   6 3
+## 3   8 2</code></pre>
+</div>
+<div id="is-it-helpful" class="section level2">
+<h2>Is it helpful?</h2>
+<p>I would imagine that count would be most useful when you have a smaller number of possible values, and you want to see how many of each you have. Quickly knowing how many types engines we have an how many of each engine is definitely useful. I would think that the usefulness would likely decrease if you only had one or two each of 100 different values, for example if we look at weight in mtcars, we can see from the example below that we end up with 29 rows, when our original dataset had 32 rows, and we only have more than one of the same weight for 3 entries. This is much less useful than the cylinder example. My conclusion is that this is a useful function for quickly understanding your dataset, but only if used thoughtfully, as it can very easily give you a result that isn’t helpful when used on the wrong type of variable.</p>
+<pre class="r"><code>mtcars %&gt;%
+  count(wt)</code></pre>
+<pre><code>##       wt n
+## 1  1.513 1
+## 2  1.615 1
+## 3  1.835 1
+## 4  1.935 1
+## 5  2.140 1
+## 6  2.200 1
+## 7  2.320 1
+## 8  2.465 1
+## 9  2.620 1
+## 10 2.770 1
+## 11 2.780 1
+## 12 2.875 1
+## 13 3.150 1
+## 14 3.170 1
+## 15 3.190 1
+## 16 3.215 1
+## 17 3.435 1
+## 18 3.440 3
+## 19 3.460 1
+## 20 3.520 1
+## 21 3.570 2
+## 22 3.730 1
+## 23 3.780 1
+## 24 3.840 1
+## 25 3.845 1
+## 26 4.070 1
+## 27 5.250 1
+## 28 5.345 1
+## 29 5.424 1</code></pre>
+</div>

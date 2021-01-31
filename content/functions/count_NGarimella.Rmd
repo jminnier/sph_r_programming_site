@@ -1,0 +1,73 @@
+---
+title: 'dplyr::count'
+author: "Nathalie Garimella"
+date: "`r Sys.Date()`"
+output: html_document
+menu:
+  functions:
+    weight: 5
+type: docs
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Nathalie Garimella
+
+In this document, I will introduce the count function and show what it's for.
+
+```{r}
+#load libraries
+library(tidyverse)
+library(dplyr)
+#read in example dataset
+data(mtcars)
+```
+
+```{r}
+?count()
+```
+
+## What is it for?
+
+As we can see from the "R Help" information, the count function from the dplyr package allows us to count the number of each different item in a group; it will therefore tell us the different available options within a variable and how many of each is present. It is a quick way to understand how your data grouped within a given variable or variables. It is best used with the pipe, and it can be used for one variable or more than one variable at once, and additional add-ons can allow you to sort, weight your output by a second variable, and also to name the count columns in your output table.
+
+The following is an example; I am using the mtcars dataset which has data regarding a number of car models. I wanted to look at the "cyl" variable (number of cylinders), and know how many cylinder types we had an how many of each type. Count shows us that within this dataset, we have cars with 4, 6, and 8 cylinders, and how many of each type is present. 
+
+
+```{r}
+mtcars %>% 
+  count(cyl)
+```
+
+If I wanted to utilize more of the functionality, and get a summary of two variables, while also naming my output column, I could do that as well (see below). This will count the number of each combination, ie the number of 4 cylinder 3 gear cars, the number of 4 cylinder 4 gear cars, etc. 
+
+```{r}
+newcars <- mtcars %>%
+  count(cyl, gear, wt = NULL, sort = FALSE, name = "Number of Obs")
+newcars
+```
+
+I was a bit confused by the weight functionality while researching it, so I wanted to go into that briefly; the weight argument "wt" allows you to get the weighted count of data that has already been grouped into a table once, ie below we can see that I am using the dataframe we created in the previous example (called newcars), where I did a count of cyl and gear. If we do a weighted county of cyl from newcars, we get the total observations for each number of cylinders adding up to the 32 observations in the actual mtcars dataset. However, if we do the unweighted count, we see that we only get the number of times each cylinder type appears in the newcars dataframe. 
+
+```{r}
+newcars %>%
+  count(cyl, wt = gear)
+```
+```{r}
+newcars %>%
+  count(cyl)
+```
+
+
+
+## Is it helpful?
+
+I would imagine that count would be most useful when you have a smaller number of possible values, and you want to see how many of each you have. Quickly knowing how many types engines we have an how many of each engine is definitely useful. I would think that the usefulness would likely decrease if you only had one or two each of 100 different values, for example if we look at weight in mtcars, we can see from the example below that we end up with 29 rows, when our original dataset had 32 rows, and we only have more than one of the same weight for 3 entries. This is much less useful than the cylinder example. My conclusion is that this is a useful function for quickly understanding your dataset, but only if used thoughtfully, as it can very easily give you a result that isn't helpful when used on the wrong type of variable. 
+
+```{r}
+mtcars %>%
+  count(wt)
+```

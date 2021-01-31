@@ -1,0 +1,121 @@
+---
+title: 'tidyr::fill'
+author: "Jessica Tran"
+date: "1/28/2021"
+output: html_document
+menu:
+  functions:
+    weight: 4
+type: docs
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Into the Tidyverse! 
+
+## Jessica Tran
+
+In this document, I will introduce the fill function and show why it's useful.   
+
+```{r}
+#load tidyverse up
+library(tidyverse)
+```
+
+## What is it for?
+**The Problem:**    
+Missing values.  
+
+**What Fill does:**  
+Fills missing values with the previous entry. It's like putting in values for a "" ditto mark.  
+
+**Why would I need this function?**  
+Fixes redundant info. Sometimes in Excel, people don't fill in the data if it's redundant, which needs to be fixed before working the the data in R.  
+
+## Arguments  
+**Data:** A data frame  
+**Command:** Fill(*name of column of interest*)  
+**.direction**: Direction to fill missing values. "Down" is default. Other options: "up", "downup" (down, then up), or "updown" (up, then down).  
+*Use context to identify which direction.*  
+
+## Examples  
+```{r}
+#load the palmerpenguins library
+library(palmerpenguins)
+#load the dataset using data()
+data(penguins)
+penguins
+```
+
+```{r}
+summary(penguins)
+```
+We will use a different dataset since penguins doesn't have many missing values.      
+
+#### Continuous Variables
+*Note: Tibble is a tidy data frame. It makes data easier to view.*  
+```{r}
+sales <- tibble::tribble(
+  ~quarter, ~year, ~sales,
+  "Q1",    2000,    66013,
+  "Q2",      NA,    69182,
+  "Q3",      NA,    53175,
+  "Q4",      NA,    21001,
+  "Q1",    2001,    46036,
+  "Q2",      NA,    58842,
+  "Q3",      NA,    44568,
+  "Q4",      NA,    50197,
+  "Q1",    2002,    39113,
+  "Q2",      NA,    41668,
+  "Q3",      NA,    30144,
+  "Q4",      NA,    52897,
+  "Q1",    2004,    32129,
+  "Q2",      NA,    67686,
+  "Q3",      NA,    31768,
+  "Q4",      NA,    49094
+)
+```
+
+In the above dataset, the 'year' is missing in the subsequent quarters, so we will use the default setting for fill().      
+
+```{r}
+# 'fill()' defaults to replacing missing data from top to bottom
+# set the column of interest as the argument 
+sales %>% fill(year)
+```
+
+#### Categorical Variables
+```{r}
+# Value (pet_type) is missing above
+tidy_pets <- tibble::tribble(
+  ~rank, ~pet_type, ~breed,
+  1L,        NA,    "Boston Terrier",
+  2L,        NA,    "Retrievers (Labrador)",
+  3L,        NA,    "Retrievers (Golden)",
+  4L,        NA,    "French Bulldogs",
+  5L,        NA,    "Bulldogs",
+  6L,     "Dog",    "Beagles",
+  1L,        NA,    "Persian",
+  2L,        NA,    "Maine Coon",
+  3L,        NA,    "Ragdoll",
+  4L,        NA,    "Exotic",
+  5L,        NA,    "Siamese",
+  6L,     "Cat",    "American Short"
+)
+```
+
+In the above dataset, the 'pet_type' is missing values. From the values in the 'breed' column we see that we must fill from bottom to the top.   
+
+```{r}
+# For values that are missing above you can use `.direction = "up"`
+tidy_pets %>%
+  fill(pet_type, .direction = "up")
+```
+
+## Is it helpful?
+Yes! Addressing missing data is important for cleaning data before analysis. And we don't want to delete missing data because it leads to information loss and can lower statistical power.   
+
+## References
+https://rdrr.io/github/tidyverse/tidyr/man/fill.html
