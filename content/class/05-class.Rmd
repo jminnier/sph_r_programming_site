@@ -1,6 +1,6 @@
 ---
-title: "**Part 5. More about manipulating factors (`forcats`)/doing things with multiple tables/functions()**"
-linktitle: "**Part 5. More about manipulating factors (`forcats`)/doing things with multiple tables/functions()**"
+title: "Part 5. More about manipulating factors (`forcats`)/doing things with multiple tables/functions()"
+linktitle: "Part 5. More about manipulating factors (`forcats`)/doing things with multiple tables/functions()"
 date: "2021-02-03"
 class_date: "2021-02-03"
 output:
