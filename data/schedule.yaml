@@ -22,9 +22,10 @@ lessons:
     reading: "04-reading"
     class: "04-class"
 
-  - title: '**Part 5. More about manipulating factors (`forcats`) and dates (`lubridate`)/doing things with multiple tables**'
+  - title: '**Part 5. More about manipulating factors (`forcats`)/doing things with multiple tables/functions()**'
     date: "February 4"
-#    class: "04-class"
+    class: "05-class"
+    reading: "05-reading"
 
   - title: '<span class="fake-header-table">Part 2: Intermediate Topics</span>'
     header: True

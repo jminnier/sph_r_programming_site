@@ -1,0 +1,42 @@
+---
+title: "**Part 5. More about manipulating factors (`forcats`)/doing things with multiple tables/functions()**"
+linktitle: "**Part 5. More about manipulating factors (`forcats`)/doing things with multiple tables/functions()**"
+date: "2021-02-03"
+class_date: "2021-02-03"
+output:
+  blogdown::html_page:
+    toc: true
+menu:
+  class:
+    parent: Class sessions
+    weight: 5
+type: docs
+weight: 5
+# pdf: 
+# thumb: 
+editor_options: 
+  chunk_output_type: console
+---
+
+## Class Video
+
+To be added after class.
+
+## Slides
+
+No Slides this week.
+
+## Midterm assigned (Due February 12 @ 11:55 PM)
+
+RStudio Project is now available. Please come to office hours or stay for class to discuss your data set.
+
+### Post-Class
+
+Please fill out the following survey and we will discuss the results during the next lecture. All responses will be anonymous.
+
+- Clearest Point: What was the most clear part of the lecture?
+- Muddiest Point: What was the most unclear part of the lecture to you?
+- Anything Else: Is there something you'd like me to know?
+
+http://bit.ly/sph504_survey
+
