@@ -44,7 +44,7 @@ class: center, middle
 # One format to Rule them All
 
 --
-- Variant of Markdown
+- Variant of Markdown (made for websites)
 
 --
 - Lets you mix code and text
@@ -53,10 +53,21 @@ class: center, middle
 - Can be made into many different formats
 
 ---
+# Parts of an RMarkdown Document
+
+- Metadata (front matter)
+  - lets you set formatting options, document type
+- Text 
+  - Uses [Markdown Formatting](https://sph-r-programming.netlify.app/reference/markdown/)
+  - Can mix in HTML tags as well (such as twitter embed code)
+- Code Chunks
+  - Executes code and generates output in order, from scratch
+
+---
 # How does this work?
 
-- knitting: generating outputs from codeblocks
-- Output + markdown is then passed down to a "rendering engine"
+- knitting: generating outputs (tables, figures) from codeblocks
+- Output + markdown is then passed down to a "rendering engine" which makes the document
   - Pandoc (html, word documents, EPUB, many others)
   - reveal.js (slide presentations)
   - LaTeX (PDFs)
@@ -66,7 +77,7 @@ class: center, middle
 ---
 class: center, middle
 
-# Let's learn about Front Matter
+# Let's learn about Front Matter/Metadata
 
 ---
 # Front Matter: YAML
@@ -137,11 +148,7 @@ decorate_chunk("yaml_ex", eval=FALSE) %>%
 
 .pull-right[
 - `date` can be in a regular format, such as `08/20/2012`
-- using the inline code chunk 
-```
-`r Sys.Date()`
-```
-- updates the date automatically!
+- using the inline code chunk updates the date automatically!
 ]
 ---
 # `output`
@@ -165,13 +172,18 @@ decorate_chunk("yaml_ex", eval=FALSE) %>%
 # Let's look at three output types
 
 .pull-left[
-- `html_document`
+- `html_document` 
 - `distill::distill_article`
 - `slidy_presentation`
 ]
 
 .pull-right[
-- Many, many others!
+- Many, many other output formats
+- `{xaringan}` presentations (like this)
+- Shiny web apps
+- LearnR tutorials
+- Book format (`{bookdown}`)
+- Websites (`{blogdown}`/`{distill}`)
 
 ]
 ---
