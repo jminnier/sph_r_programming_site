@@ -43,22 +43,22 @@ lessons:
 
 
   - title: "**Part 7: Functions/batch processing/`purrr`**"
-    date: "February 18"
+    date: "February 17"
 
 
   - title: "**Part 8. Intro to stats/formulas/`broom`**"
-    date: "February 25"
+    date: "February 24"
 #    class: "05-class"
 #    reading: "03-reading"
     
   - title: "**Part 9. `tidymodels`/machine learning basics/simulation**"
-    date: "March 4"
+    date: "March 3"
     
   - title: "**Final Project Assigned**"
-    date: "March 4"
+    date: "March 3"
 
   - title: "**Wrap Up/Your choice: `shiny/plotly` (interactive graphics), `leaflet` (interactive maps), `tidytext` (text processing)**"
-    date: "March 11"
+    date: "March 10"
 #    class: "08-class"
   - title: "Final Project Due"
     date: "March 17"
