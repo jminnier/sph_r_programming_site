@@ -33,16 +33,18 @@ lessons:
   - title: '**Take Home Midterm Assigned**'
     date: "February 4"
 
-  - title: 'Lists/RMarkdown/Work on Midterm'
-    date: "February 11"
+  - title: '**Part 6. Lists/RMarkdown/Work on Midterm**'
+    date: "February 10"
     class: "06-class"
     reading: "06-reading"
+
+  - title: 'Take home midterm due'
+    date: "February 12"
+
 
   - title: "**Part 7: Functions/batch processing/`purrr`**"
     date: "February 18"
 
-  - title: 'Take home midterm due'
-    date: "February 12"
 
   - title: "**Part 8. Intro to stats/formulas/`broom`**"
     date: "February 25"
