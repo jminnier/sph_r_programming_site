@@ -286,18 +286,23 @@ Nick Tierney suggests that you always have these 3 chunks in your file
 
 ```
 {r setup}
-#this chunk is always run, even if you hit play on a later chunk
 ```
+
+Note: this chunk is always run, even if you hit play on a later chunk
+
 
 ```
 {r library}
-#put your library statements here
 ```
+
+Put your library statements here
+
 
 ```
 {r functions}
-#put functions here
 ```
+
+Put functions here
 
 .footnote[https://rmd4sci.njtierney.com/using-rmarkdown.html#nicks-rmarkdown-hygiene-recommendations]
 ---
