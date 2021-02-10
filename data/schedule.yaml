@@ -33,30 +33,30 @@ lessons:
   - title: '**Take Home Midterm Assigned**'
     date: "February 4"
 
-  - title: "**Part 6: Functions/batch processing/`purrr`**"
-    date: "February 10"
+  - title: 'Lists/RMarkdown/Work on Midterm'
+    date: "February 11"
+    class: "06-class"
+    reading: "06-reading"
+
+  - title: "**Part 7: Functions/batch processing/`purrr`**"
+    date: "February 18"
 
   - title: 'Take home midterm due'
     date: "February 12"
 
-  - title: "**Part 7. Intro to stats/formulas/`broom`**"
-    date: "February 18"
+  - title: "**Part 8. Intro to stats/formulas/`broom`**"
+    date: "February 25"
 #    class: "05-class"
 #    reading: "03-reading"
     
-  - title: "**Part 8. `tidymodels`/machine learning basics/simulation**"
-    date: "February 25"
+  - title: "**Part 9. `tidymodels`/machine learning basics/simulation**"
+    date: "March 4"
     
   - title: "**Final Project Assigned**"
-    date: "February 25"
+    date: "March 4"
 
-  - title: "**Part 9. Intro to `Bioconductor`**"
-    date: "March 3"
-#    class: "07-class"
-#    reading: "04-reading"
-    
   - title: "**Wrap Up/Your choice: `shiny/plotly` (interactive graphics), `leaflet` (interactive maps), `tidytext` (text processing)**"
-    date: "March 10"
+    date: "March 11"
 #    class: "08-class"
   - title: "Final Project Due"
     date: "March 17"

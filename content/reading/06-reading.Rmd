@@ -1,0 +1,18 @@
+---
+title: "Part 6. Lists and RMarkdown"
+linktitle: "Part 6. Lists and RMarkdown"
+date: "2020-02-10"
+menu:
+  reading:
+    parent: Readings
+    weight: 6
+type: docs
+---
+
+## Optional
+
+The following resources are optional reading, but quite helpful in your RMarkdown Journey.
+
+- [RMarkdown Cheatsheet](https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
+- [RMarkdown Cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/)
+- [RMarkdown for Scientists](https://rmd4sci.njtierney.com/)

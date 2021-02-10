@@ -1,0 +1,65 @@
+---
+title: 'scales::breaks_pretty()'
+author: "Sarah Gothard"
+date: "`r Sys.Date()`"
+menu:
+  functions:
+    weight: 7
+type: docs
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Sarah Gothard
+
+
+In this document, I will introduce the breaks_pretty() function and show what it's for.
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+library(scales)
+data(penguins)
+
+```
+
+The "breaks_pretty" function is used to find best fit "breaks" or intervals in a data set. 
+```{r}
+
+#creating simple breaks in a month
+one_month <- as.POSIXct(c("2020-05-01", "2020-06-01"))
+demo_datetime(one_month, breaks = breaks_pretty(2))
+demo_datetime(one_month, breaks = breaks_pretty(4))
+
+```
+```{r}
+#more complex breaks and/or data sets will sometimes lead to greater or fewer intervals than desgnated by your "n" because the breaks_pretty package intuitively finds breaks near your desired number of intervals that fits the data assigned best.
+
+demo_datetime(one_month, breaks = breaks_pretty(12))
+#output has more than 12 breaks
+```
+
+Funciton Discussion and Use
+
+Breaks_pretty is found in the "scales" package and takes advantage of an existing r package/algorithm, "pretty()". In practice, breaks_pretty() is most commonly used to designate the tics/intervals of dates/times/continuous variables in ggplot visualizations. 
+```{r}
+#when using breaks_pretty() add you can either designate your argument's n explicity, (n = 6) or it defaults to that as the first argument and pass in just the number of breaks you'd like to see (6).
+
+ggplot(penguins,
+       aes(x = bill_length_mm,
+           y = body_mass_g)) +
+  geom_point() +
+  geom_smooth() +
+  scale_x_continuous(name = "Bill Length (mm)",
+                     breaks = breaks_pretty(6)) +     # breaks_pretty
+  scale_y_continuous(name = "Body Mass (g)",
+                     breaks = breaks_pretty(n = 8)) +
+  theme_light()
+
+```
+
+Is it helpful?
+
+Breaks_pretty is very useful as it simplifies how we desginate intervals (tics) in our ggplots. Instead of hardcoding the intervals we want to see, breaks_pretty intuitively designates tics close to our desired widths.  

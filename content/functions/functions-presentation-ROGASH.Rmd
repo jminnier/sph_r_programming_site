@@ -1,0 +1,131 @@
+---
+title: 'forcats::fct_relevel'
+author: "Lisa Rogash"
+date: "`r Sys.Date()`"
+menu:
+  functions:
+    weight: 10
+type: docs
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Lisa Rogash
+
+> In this document, I will introduce the `fct_relevel` function and show what it's for.
+
+```{r}
+#load tidyverse up
+library(tidyverse)
+#dataset
+data(diamonds)
+```
+
+## What is it for?
+
+> fct_relevel allows you to move any number of levels to any location. To demonstrate this function, I am using the tidyverse's built-in dataset, diamonds.
+
+
+> Factor levels can be ordered or unordered. In the diamonds dataset, "cut" is an ordered factor vector. We often use factor vectors to aid in data visualization. In the boxplot below, we are comparing the depths of diamonds by cut. R automatically sorts the boxplots from "Fair" to "Ideal".
+
+```{r}
+levels(diamonds$cut)
+diamonds %>%
+ ggplot(aes(x=cut,y=depth,fill=cut)) +
+  geom_boxplot()
+
+  
+```
+
+> What if your factor levels aren't in the correct order?
+
+```{r}
+diamonds <- diamonds %>% 
+  mutate(cut = fct_shuffle(cut))
+levels(diamonds$cut)
+diamonds %>%
+ ggplot(aes(x=cut,y=depth,fill=cut)) +
+  geom_boxplot()
+
+
+```
+
+
+
+
+> We can use `fct_relevel()` to fix this! If you want to move a single value to the beginning of the levels vector, you can use the `fct_relevel()` function with only the factor vector and the value you wish to move as the arguments.
+
+
+```{r}
+diamonds <- diamonds %>% 
+  mutate(cut = fct_relevel(cut, "Fair"))
+levels(diamonds$cut)
+
+```
+
+> If you want to move a value to a different spot, you add in the argument "after" which you set to the integer value of the spot you want the value to be after. If you want the value at the end, but you don't know how many levels there are, you can use `after=Inf` (don't forget the capital 'I'!).
+
+
+```{r}
+diamonds <- diamonds %>% 
+  mutate(cut = fct_relevel(cut, "Good", after=1))
+levels(diamonds$cut)
+```
+
+> If you want to move multiple values, you can set your second argument to a vector of the elements you want to move.
+
+
+```{r}
+diamonds <- diamonds %>% 
+  mutate(cut = fct_relevel(cut, c("Very Good","Premium"), after=2))
+levels(diamonds$cut)
+
+```
+
+
+> You can also use functions in `fct_relevel`.
+
+
+
+```{r}
+
+#sorts to alphabetical order or numerical order
+diamondssort <- diamonds %>% 
+  mutate(cut = fct_relevel(cut, sort))
+levels(diamondssort$cut)
+
+#randomly selects them
+diamondssample <- diamonds %>% 
+  mutate(cut = fct_relevel(cut, sample))
+levels(diamondssample$cut)
+
+#reverses the order
+diamondsrev <- diamonds %>% 
+  mutate(cut = fct_relevel(cut, rev))
+levels(diamondsrev$cut)
+
+```
+
+> Lastly, remember that you cannot use it to create new levels.
+
+
+
+```{r}
+
+
+diamonds <- diamonds %>% 
+  mutate(cut = fct_relevel(cut, "Fake",after=1))
+levels(diamonds$cut)
+
+
+```
+
+## Is it helpful?
+
+> `fct_relevel` is helpful if you have many factor levels and only need to switch a few things around.
+
+
+
+

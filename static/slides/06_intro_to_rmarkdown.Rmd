@@ -301,7 +301,7 @@ Nick Tierney suggests that you always have these 3 chunks in your file
 ```
 ]
 .pull-right[
-- Don't have to just be R! Can be `python` as well
+- Doesn't have to just be R! Can be `python` as well
 - Other languages are supported, including SQL for databases
 ]
 ---
@@ -374,6 +374,11 @@ Can set the default chunk options with the following in your `setup` chunk:
 ```
 knitr::opts_chunk$set(echo = TRUE, fig.width=8, fig.height=8)
 ```
+---
+# Netlify Drop Demo
+
+Go to https://app.netlify.com/drop
+
 
 ---
 # Table and figure references
@@ -471,12 +476,7 @@ yml() %>%
 ```
 - can cut and paste this into your new document
 ]
----
-# Citations and Such
 
-A whole other kettle of fish!
-
-https://rmd4sci.njtierney.com/
 
 ---
 # Resources for Further Learning

@@ -1,0 +1,84 @@
+---
+title: "tidyr::drop_na()"
+linktitle: "tidyr::drop_na"
+author: "Amy Olyaei"
+date: "2021-02-03"
+read_date: "2021-02-03"
+menu:
+  functions:
+    weight: 8
+type: docs---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Amy Olyaei
+
+In this document, I will introduce the `drop_na()` function and show what it's for.
+
+```{r}
+#load tidyr up
+library(tidyverse)
+library(tidyr)
+library(dplyr)
+#example dataset
+library(palmerpenguins)
+data(penguins)
+```
+
+## What is it for?
+
+The `drop_na()` function accepts two arguments: the first is the `dataset`, and the second is `...` which is the columns you want to inspect for missing values. The second argument makes this function most appropriately used within a tidy workflow and essential when wanting to specify for a specific column. 
+
+Within this first example, we can see how to use the function within a tidy workflow. The `drop_na()` is removing rows from the data set based off the 'NA' arguments within the sex column. As one can see, the original tibble contained 12 rows; however, after applying the function it only contains 7 rows. 
+
+```{r}
+
+#Slicing the data
+penguins%>%
+  slice(1:12)
+
+#Dropping based on sex
+penguins%>%
+  slice(1:12) %>%
+  drop_na(sex)
+
+```
+
+Within the second examples, we can see that without specifying by a column all rows containing 'NA' will be removed from the data set. I chose to use a tidy work flow in this example so the removing of the rows could be easily visualized; however, if the ultimate desire is to remove all the 'NA' arguments from the data one could simply go 'drop_na(dataset)'.
+
+
+```{r}
+#Dropping all Na variables
+penguins%>%
+  slice(1:12) %>%
+  drop_na()
+
+```
+
+Additionally, the `drop_na()` function is useful when plotting data. When the 'drop_na()' function is not applied to the tidy workflow one can see that the 'NA' values are treated as a category within the sex column. However, when `drop_na()` is included the values are removed providing a better display of the data. 
+
+```{r}
+
+#Using in graph pipe 
+library(ggplot2)
+
+#Keeping the NA values of sex within the graphical display
+penguins %>%
+  count(sex, species) %>%
+  ggplot() + geom_col(aes(x = species, y = n, fill = species)) + 
+  facet_wrap(~sex) 
+
+#Removing the NA values of sex within the graphical display
+penguins %>%
+  drop_na() %>%
+  count(sex, species) %>%
+  ggplot() + geom_col(aes(x = species, y = n, fill = species)) +
+  facet_wrap(~sex) 
+
+```
+
+## Is it helpful?
+
+Yes, I believe this function is helpful especially if you want to remove missing values from only a specific column. 
