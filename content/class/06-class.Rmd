@@ -44,3 +44,48 @@ Please fill out the following survey and we will discuss the results during the 
 
 http://bit.ly/sph504_survey
 
+## Muddiest Points
+
+> Lists are a little confusing. I think the homework will help.
+
+> Lists are still very new, so I'm planning to go through the part 6 file again.
+
+Yes, lists are weird. But after part 7, hopefully you'll see they're very useful.
+
+> Still trying to wrap my head around [[]] vs [].
+
+I will say that almost 99% of the time, you should be using double brackets `[[]]`, because you want what's in the list slot. 
+
+
+```{r}
+my_list <- list(cat_names = c("Morris", "Julia"), 
+                hedgehog_names = "Spiny", 
+                dog_names = c("Rover", "Spot"))
+```
+
+```{r}
+df <- my_list[["cat_names"]]
+class(df)
+```
+
+Again, using `[]` returns a list of length 1, which is usually not what you want.
+
+```{r}
+single_list <-  my_list["cat_names"]
+class(single_list)
+single_list
+```
+
+To actually access the `character` vector in `single_list`, we need to access it out of the list structure with `[[]]`.
+
+```{r}
+single_list[["cat_names"]]
+```
+
+> Posting r html file on the website
+
+> Websites
+
+That was a really quick demo and I will go over it more in detail when we get to working with websites.
+
+If you want a preview, you can check out [Sharing Online on Short Notice](https://rstudio.com/resources/webinars/sharing-on-short-notice-how-to-get-your-materials-online-with-r-markdown/.)

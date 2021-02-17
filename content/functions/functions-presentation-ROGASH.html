@@ -1,7 +1,7 @@
 ---
 title: 'forcats::fct_relevel'
 author: "Lisa Rogash"
-date: "2021-02-12"
+date: "2021-02-17"
 menu:
   functions:
     weight: 10
@@ -54,7 +54,7 @@ data(diamonds)</code></pre>
 <pre class="r"><code>diamonds &lt;- diamonds %&gt;% 
   mutate(cut = fct_shuffle(cut))
 levels(diamonds$cut)</code></pre>
-<pre><code>## [1] &quot;Premium&quot;   &quot;Good&quot;      &quot;Fair&quot;      &quot;Very Good&quot; &quot;Ideal&quot;</code></pre>
+<pre><code>## [1] &quot;Premium&quot;   &quot;Good&quot;      &quot;Ideal&quot;     &quot;Fair&quot;      &quot;Very Good&quot;</code></pre>
 <pre class="r"><code>diamonds %&gt;%
  ggplot(aes(x=cut,y=depth,fill=cut)) +
   geom_boxplot()</code></pre>
@@ -65,14 +65,14 @@ levels(diamonds$cut)</code></pre>
 <pre class="r"><code>diamonds &lt;- diamonds %&gt;% 
   mutate(cut = fct_relevel(cut, &quot;Fair&quot;))
 levels(diamonds$cut)</code></pre>
-<pre><code>## [1] &quot;Fair&quot;      &quot;Premium&quot;   &quot;Good&quot;      &quot;Very Good&quot; &quot;Ideal&quot;</code></pre>
+<pre><code>## [1] &quot;Fair&quot;      &quot;Premium&quot;   &quot;Good&quot;      &quot;Ideal&quot;     &quot;Very Good&quot;</code></pre>
 <blockquote>
 <p>If you want to move a value to a different spot, you add in the argument “after” which you set to the integer value of the spot you want the value to be after. If you want the value at the end, but you don’t know how many levels there are, you can use <code>after=Inf</code> (don’t forget the capital ‘I’!).</p>
 </blockquote>
 <pre class="r"><code>diamonds &lt;- diamonds %&gt;% 
   mutate(cut = fct_relevel(cut, &quot;Good&quot;, after=1))
 levels(diamonds$cut)</code></pre>
-<pre><code>## [1] &quot;Fair&quot;      &quot;Good&quot;      &quot;Premium&quot;   &quot;Very Good&quot; &quot;Ideal&quot;</code></pre>
+<pre><code>## [1] &quot;Fair&quot;      &quot;Good&quot;      &quot;Premium&quot;   &quot;Ideal&quot;     &quot;Very Good&quot;</code></pre>
 <blockquote>
 <p>If you want to move multiple values, you can set your second argument to a vector of the elements you want to move.</p>
 </blockquote>
@@ -92,7 +92,7 @@ levels(diamondssort$cut)</code></pre>
 diamondssample &lt;- diamonds %&gt;% 
   mutate(cut = fct_relevel(cut, sample))
 levels(diamondssample$cut)</code></pre>
-<pre><code>## [1] &quot;Good&quot;      &quot;Very Good&quot; &quot;Premium&quot;   &quot;Ideal&quot;     &quot;Fair&quot;</code></pre>
+<pre><code>## [1] &quot;Premium&quot;   &quot;Fair&quot;      &quot;Very Good&quot; &quot;Good&quot;      &quot;Ideal&quot;</code></pre>
 <pre class="r"><code>#reverses the order
 diamondsrev &lt;- diamonds %&gt;% 
   mutate(cut = fct_relevel(cut, rev))

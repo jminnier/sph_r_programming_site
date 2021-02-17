@@ -30,6 +30,7 @@ editor_options:
 <ul>
 <li><a href="#post-class">Post-Class</a></li>
 </ul></li>
+<li><a href="#muddiest-points">Muddiest Points</a></li>
 </ul>
 </div>
 
@@ -57,4 +58,42 @@ editor_options:
 </ul>
 <p><a href="http://bit.ly/sph504_survey" class="uri">http://bit.ly/sph504_survey</a></p>
 </div>
+</div>
+<div id="muddiest-points" class="section level2">
+<h2>Muddiest Points</h2>
+<blockquote>
+<p>Lists are a little confusing. I think the homework will help.</p>
+</blockquote>
+<blockquote>
+<p>Lists are still very new, so I’m planning to go through the part 6 file again.</p>
+</blockquote>
+<p>Yes, lists are weird. But after part 7, hopefully you’ll see they’re very useful.</p>
+<blockquote>
+<p>Still trying to wrap my head around [[]] vs [].</p>
+</blockquote>
+<p>I will say that almost 99% of the time, you should be using double brackets <code>[[]]</code>, because you want what’s in the list slot.</p>
+<pre class="r"><code>my_list &lt;- list(cat_names = c(&quot;Morris&quot;, &quot;Julia&quot;), 
+                hedgehog_names = &quot;Spiny&quot;, 
+                dog_names = c(&quot;Rover&quot;, &quot;Spot&quot;))</code></pre>
+<pre class="r"><code>df &lt;- my_list[[&quot;cat_names&quot;]]
+class(df)</code></pre>
+<pre><code>## [1] &quot;character&quot;</code></pre>
+<p>Again, using <code>[]</code> returns a list of length 1, which is usually not what you want.</p>
+<pre class="r"><code>single_list &lt;-  my_list[&quot;cat_names&quot;]
+class(single_list)</code></pre>
+<pre><code>## [1] &quot;list&quot;</code></pre>
+<pre class="r"><code>single_list</code></pre>
+<pre><code>## $cat_names
+## [1] &quot;Morris&quot; &quot;Julia&quot;</code></pre>
+<p>To actually access the <code>character</code> vector in <code>single_list</code>, we need to access it out of the list structure with <code>[[]]</code>.</p>
+<pre class="r"><code>single_list[[&quot;cat_names&quot;]]</code></pre>
+<pre><code>## [1] &quot;Morris&quot; &quot;Julia&quot;</code></pre>
+<blockquote>
+<p>Posting r html file on the website</p>
+</blockquote>
+<blockquote>
+<p>Websites</p>
+</blockquote>
+<p>That was a really quick demo and I will go over it more in detail when we get to working with websites.</p>
+<p>If you want a preview, you can check out <a href="https://rstudio.com/resources/webinars/sharing-on-short-notice-how-to-get-your-materials-online-with-r-markdown/.">Sharing Online on Short Notice</a></p>
 </div>

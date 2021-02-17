@@ -1,0 +1,14 @@
+---
+title: "Part 7. purrr"
+linktitle: "Part 7. purrr"
+date: "2020-02-17"
+menu:
+  reading:
+    parent: Readings
+    weight: 7
+type: docs
+---
+
+## Required
+
+- [Learn to purrr](http://www.rebeccabarter.com/blog/2019-08-19_purrr/)

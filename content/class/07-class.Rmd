@@ -1,17 +1,17 @@
 ---
-title: "Part 6. Lists and RMarkdown"
-linktitle: "Part 6. Lists and RMarkdown"
-date: "2021-02-10"
-class_date: "2021-02-10"
+title: "Part 7. purrr"
+linktitle: "Part 7. purrr"
+date: "2021-02-17"
+class_date: "2021-02-17"
 output:
   blogdown::html_page:
     toc: true
 menu:
   class:
     parent: Class sessions
-    weight: 6
+    weight: 7
 type: docs
-weight: 6
+weight: 7
 # pdf: 
 # thumb: 
 editor_options: 
@@ -20,19 +20,18 @@ editor_options:
 
 ## Class Video
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7c3xGQBmjIs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+To be updated after class
 
 ## Slides
 
-Open the slides in a separate window: <a href="https://sph-r-programming.netlify.com/slides/06_intro_to_rmarkdown#1" target="_blank">https://sph-r-programming.netlify.com/slides/06_intro_to_rmarkdown#1</a>
+Open the slides in a separate window: <a href="https://sph-r-programming.netlify.com/slides/07_purrr#1" target="_blank">https://sph-r-programming.netlify.com/slides/07_purrr#1</a>
 
 ```{r echo=FALSE}
-knitr::include_url('https://sph-r-programming.netlify.com/slides/06_intro_to_rmarkdown#1')
+knitr::include_url('https://sph-r-programming.netlify.com/slides/07_purrr#1')
 ```
 
-## Midterm assigned (Due February 12 @ 11:55 PM)
+## Midterm will be returned by Friday (2/19)
 
-RStudio Project is now available. Please come to office hours or stay for class to discuss your data set.
 
 ### Post-Class
 
