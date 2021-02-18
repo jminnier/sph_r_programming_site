@@ -44,7 +44,8 @@ lessons:
 
   - title: "**Part 7: Functions/batch processing/`purrr`**"
     date: "February 17"
-
+    class: "07-class"
+    reading: "07-reading"
 
   - title: "**Part 8. Intro to stats/formulas/`broom`**"
     date: "February 24"
