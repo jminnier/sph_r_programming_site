@@ -10,8 +10,6 @@ type: docs
 ---
 
 <script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
-<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
-<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
 
 
 <div id="jessica-tran" class="section level2">
@@ -19,14 +17,20 @@ type: docs
 <p>In this document, I will introduce the fill function and show why it’s useful.</p>
 <pre class="r"><code>#load tidyverse up
 library(tidyverse)</code></pre>
+<pre><code>## Warning: package &#39;tidyverse&#39; was built under R version 4.0.3</code></pre>
 <pre><code>## -- Attaching packages --------------------------------------- tidyverse 1.3.0 --</code></pre>
-<pre><code>## v ggplot2 3.3.2     v purrr   0.3.4
-## v tibble  3.0.4     v dplyr   1.0.2
+<pre><code>## v ggplot2 3.3.3     v purrr   0.3.4
+## v tibble  3.0.6     v dplyr   1.0.4
 ## v tidyr   1.1.2     v stringr 1.4.0
-## v readr   1.4.0     v forcats 0.5.0</code></pre>
+## v readr   1.4.0     v forcats 0.5.1</code></pre>
+<pre><code>## Warning: package &#39;ggplot2&#39; was built under R version 4.0.3</code></pre>
 <pre><code>## Warning: package &#39;tibble&#39; was built under R version 4.0.3</code></pre>
+<pre><code>## Warning: package &#39;tidyr&#39; was built under R version 4.0.3</code></pre>
 <pre><code>## Warning: package &#39;readr&#39; was built under R version 4.0.3</code></pre>
+<pre><code>## Warning: package &#39;purrr&#39; was built under R version 4.0.3</code></pre>
 <pre><code>## Warning: package &#39;dplyr&#39; was built under R version 4.0.3</code></pre>
+<pre><code>## Warning: package &#39;stringr&#39; was built under R version 4.0.3</code></pre>
+<pre><code>## Warning: package &#39;forcats&#39; was built under R version 4.0.3</code></pre>
 <pre><code>## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
 ## x dplyr::filter() masks stats::filter()
 ## x dplyr::lag()    masks stats::lag()</code></pre>
@@ -50,8 +54,9 @@ Fixes redundant info. Sometimes in Excel, people don’t fill in the data if it�
 <div id="examples" class="section level2">
 <h2>Examples</h2>
 <pre class="r"><code>#load the palmerpenguins library
-library(palmerpenguins)
-#load the dataset using data()
+library(palmerpenguins)</code></pre>
+<pre><code>## Warning: package &#39;palmerpenguins&#39; was built under R version 4.0.3</code></pre>
+<pre class="r"><code>#load the dataset using data()
 data(penguins)
 penguins</code></pre>
 <pre><code>## # A tibble: 344 x 8

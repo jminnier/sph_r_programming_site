@@ -1,7 +1,7 @@
 ---
 title: 'forcats::fct_relevel'
 author: "Lisa Rogash"
-date: "2021-02-18"
+date: "2021-02-22"
 menu:
   functions:
     weight: 10
@@ -9,8 +9,6 @@ type: docs
 ---
 
 <script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
-<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
-<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
 
 
 <div id="lisa-rogash" class="section level2">
@@ -20,14 +18,20 @@ type: docs
 </blockquote>
 <pre class="r"><code>#load tidyverse up
 library(tidyverse)</code></pre>
+<pre><code>## Warning: package &#39;tidyverse&#39; was built under R version 4.0.3</code></pre>
 <pre><code>## -- Attaching packages --------------------------------------- tidyverse 1.3.0 --</code></pre>
-<pre><code>## v ggplot2 3.3.2     v purrr   0.3.4
-## v tibble  3.0.4     v dplyr   1.0.2
+<pre><code>## v ggplot2 3.3.3     v purrr   0.3.4
+## v tibble  3.0.6     v dplyr   1.0.4
 ## v tidyr   1.1.2     v stringr 1.4.0
-## v readr   1.4.0     v forcats 0.5.0</code></pre>
+## v readr   1.4.0     v forcats 0.5.1</code></pre>
+<pre><code>## Warning: package &#39;ggplot2&#39; was built under R version 4.0.3</code></pre>
 <pre><code>## Warning: package &#39;tibble&#39; was built under R version 4.0.3</code></pre>
+<pre><code>## Warning: package &#39;tidyr&#39; was built under R version 4.0.3</code></pre>
 <pre><code>## Warning: package &#39;readr&#39; was built under R version 4.0.3</code></pre>
+<pre><code>## Warning: package &#39;purrr&#39; was built under R version 4.0.3</code></pre>
 <pre><code>## Warning: package &#39;dplyr&#39; was built under R version 4.0.3</code></pre>
+<pre><code>## Warning: package &#39;stringr&#39; was built under R version 4.0.3</code></pre>
+<pre><code>## Warning: package &#39;forcats&#39; was built under R version 4.0.3</code></pre>
 <pre><code>## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
 ## x dplyr::filter() masks stats::filter()
 ## x dplyr::lag()    masks stats::lag()</code></pre>
@@ -54,7 +58,7 @@ data(diamonds)</code></pre>
 <pre class="r"><code>diamonds &lt;- diamonds %&gt;% 
   mutate(cut = fct_shuffle(cut))
 levels(diamonds$cut)</code></pre>
-<pre><code>## [1] &quot;Good&quot;      &quot;Premium&quot;   &quot;Very Good&quot; &quot;Ideal&quot;     &quot;Fair&quot;</code></pre>
+<pre><code>## [1] &quot;Good&quot;      &quot;Premium&quot;   &quot;Very Good&quot; &quot;Fair&quot;      &quot;Ideal&quot;</code></pre>
 <pre class="r"><code>diamonds %&gt;%
  ggplot(aes(x=cut,y=depth,fill=cut)) +
   geom_boxplot()</code></pre>
@@ -92,7 +96,7 @@ levels(diamondssort$cut)</code></pre>
 diamondssample &lt;- diamonds %&gt;% 
   mutate(cut = fct_relevel(cut, sample))
 levels(diamondssample$cut)</code></pre>
-<pre><code>## [1] &quot;Good&quot;      &quot;Very Good&quot; &quot;Premium&quot;   &quot;Fair&quot;      &quot;Ideal&quot;</code></pre>
+<pre><code>## [1] &quot;Good&quot;      &quot;Fair&quot;      &quot;Ideal&quot;     &quot;Very Good&quot; &quot;Premium&quot;</code></pre>
 <pre class="r"><code>#reverses the order
 diamondsrev &lt;- diamonds %&gt;% 
   mutate(cut = fct_relevel(cut, rev))
@@ -103,9 +107,6 @@ levels(diamondsrev$cut)</code></pre>
 </blockquote>
 <pre class="r"><code>diamonds &lt;- diamonds %&gt;% 
   mutate(cut = fct_relevel(cut, &quot;Fake&quot;,after=1))</code></pre>
-<pre><code>## Warning: Problem with `mutate()` input `cut`.
-## i Unknown levels in `f`: Fake
-## i Input `cut` is `fct_relevel(cut, &quot;Fake&quot;, after = 1)`.</code></pre>
 <pre><code>## Warning: Unknown levels in `f`: Fake</code></pre>
 <pre class="r"><code>levels(diamonds$cut)</code></pre>
 <pre><code>## [1] &quot;Fair&quot;      &quot;Good&quot;      &quot;Very Good&quot; &quot;Premium&quot;   &quot;Ideal&quot;</code></pre>

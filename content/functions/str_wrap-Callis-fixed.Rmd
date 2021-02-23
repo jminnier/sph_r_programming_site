@@ -1,0 +1,44 @@
+---
+title: 'stringr::str_wrap()'
+author: "Sam Callis"
+date: "`r Sys.Date()`"
+menu:
+  functions:
+    weight: 8
+type: docs
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Sam Callis
+
+In this document, I will introduce the `str_wrap()` function and show what it's for.
+
+```{r}
+#load tidyverse up
+library(tidyverse)
+
+#example dataset
+string1 <- "This is a string"
+string2 <- "Most programming languages have a data type called a string, which is used for data values that are made up of ordered sequences of characters, such as 'hello world'. A string can contain any sequence of characters, visible or invisible, and characters may be repeated."
+```
+
+## What is it for?
+
+The str_wrap() function gives us a way to wrap strings into paragraphs. The formatting of the paragraphs can be adjusted by width and can include an indent or exdent. str_wrap() is typically combined with the cat() (concatenate) function.
+
+```{r}
+#without cat() function
+str_wrap(string2, width = 80)
+
+#with cat() function
+cat(str_wrap(string2, width = 80), "\n")
+cat(str_wrap(string2, width = 40, indent = 2),"\n")
+cat(str_wrap(string1, width = 1, exdent = 2), "\n")
+```
+
+## Is it helpful?
+
+I have not personally worked with many datasets that includes strings, but I would imagine str_wrap() would be very helpful for managing them. Especially if the strings are long.

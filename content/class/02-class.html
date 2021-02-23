@@ -19,8 +19,6 @@ editor_options:
 ---
 
 <script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
-<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
-<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
 
 <div id="TOC">
 <ul>
@@ -87,8 +85,9 @@ editor_options:
 <li>The numbers before the comma refer to the <em>rows</em></li>
 <li>The number after the comma refers to the <em>columns</em>.</li>
 </ul>
-<pre class="r"><code>library(palmerpenguins)
-data(penguins)</code></pre>
+<pre class="r"><code>library(palmerpenguins)</code></pre>
+<pre><code>## Warning: package &#39;palmerpenguins&#39; was built under R version 4.0.3</code></pre>
+<pre class="r"><code>data(penguins)</code></pre>
 <pre class="r"><code>knitr::kable(penguins[1:10,])</code></pre>
 <table>
 <colgroup>
