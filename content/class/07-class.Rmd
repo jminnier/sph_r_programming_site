@@ -43,3 +43,34 @@ Please fill out the following survey and we will discuss the results during the 
 
 http://bit.ly/sph504_survey
 
+## Muddiest Points
+
+> Purrr was a lot to take in, but with practice it should be vary useful
+
+> [...] it seemed a lot more complicated actually seeing these functions used to perform tasks like performing linear regressions on multiple items in a list. I think I need to practice this to understand better.
+
+> Most of the class was pretty muddy this time
+
+> I think I just need to get more comfortable with all the purr functions
+
+> The notation for building functions still confuses me. When I look back at the class Rmd, it gets overwhelming pretty fast. Writing functions is still pretty new, though.
+
+Please reach out. I want you to understand this.
+
+> dot notation
+
+Stay tuned during class.
+
+## Dear Ted
+
+> Everyone's midterm project sounds really cool. It also seems like everyone came up with really creative ways to visualize the data. We don't have time to present them in class, but would it be a possibility to have classmates publish their midterms on the website if they are comfortable so we can see them and learn from what others did?
+
+Check it out here: https://sph-midterm-projects.netlify.app
+
+> When I first looked at part 7, I thought, oh, I'm not going to understand any of this! But you did a great job of teaching it, and I felt really comfortable with everything at the end. I think you'll do a great job teaching . notation too!
+
+Thank you!
+
+> There was a function you showed us that allowed us to arrange plots in the RMD by saving them as objects and then ordering them within the function, but now I can't find it.
+
+That would be the `{patchwork}` package here: https://sph-r-programming.netlify.app/functions/patchwork_kempton/
