@@ -47,10 +47,10 @@ lessons:
     class: "07-class"
     reading: "07-reading"
 
-  - title: "**Part 8. Intro to stats/formulas/`broom`**"
+  - title: "**Part 8. Intro to stats/formulas/`broom`/More Purrr**"
     date: "February 24"
-#    class: "05-class"
-#    reading: "03-reading"
+    class: "08-class"
+    reading: "08-reading"
     
   - title: "**Part 9. `tidymodels`/machine learning basics/simulation**"
     date: "March 3"
