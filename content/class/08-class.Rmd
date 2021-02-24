@@ -1,8 +1,8 @@
 ---
-title: "Part 7. purrr"
-linktitle: "Part 7. purrr"
-date: "2021-02-17"
-class_date: "2021-02-17"
+title: "Part 8. Statistical Modeling/More purrr"
+linktitle: "Part 8. Statistical Modeling/More purrr"
+date: "2021-02-24"
+class_date: "2021-02-24"
 output:
   blogdown::html_page:
     toc: true
