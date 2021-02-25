@@ -1,7 +1,7 @@
 ---
 title: 'forcats::fct_relevel'
 author: "Lisa Rogash"
-date: "2021-02-24"
+date: "2021-02-25"
 menu:
   functions:
     weight: 10
@@ -58,7 +58,7 @@ data(diamonds)</code></pre>
 <pre class="r"><code>diamonds &lt;- diamonds %&gt;% 
   mutate(cut = fct_shuffle(cut))
 levels(diamonds$cut)</code></pre>
-<pre><code>## [1] &quot;Ideal&quot;     &quot;Good&quot;      &quot;Very Good&quot; &quot;Fair&quot;      &quot;Premium&quot;</code></pre>
+<pre><code>## [1] &quot;Ideal&quot;     &quot;Good&quot;      &quot;Very Good&quot; &quot;Premium&quot;   &quot;Fair&quot;</code></pre>
 <pre class="r"><code>diamonds %&gt;%
  ggplot(aes(x=cut,y=depth,fill=cut)) +
   geom_boxplot()</code></pre>
@@ -96,7 +96,7 @@ levels(diamondssort$cut)</code></pre>
 diamondssample &lt;- diamonds %&gt;% 
   mutate(cut = fct_relevel(cut, sample))
 levels(diamondssample$cut)</code></pre>
-<pre><code>## [1] &quot;Premium&quot;   &quot;Fair&quot;      &quot;Good&quot;      &quot;Ideal&quot;     &quot;Very Good&quot;</code></pre>
+<pre><code>## [1] &quot;Ideal&quot;     &quot;Very Good&quot; &quot;Fair&quot;      &quot;Good&quot;      &quot;Premium&quot;</code></pre>
 <pre class="r"><code>#reverses the order
 diamondsrev &lt;- diamonds %&gt;% 
   mutate(cut = fct_relevel(cut, rev))
