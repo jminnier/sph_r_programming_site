@@ -41,7 +41,6 @@ lessons:
   - title: 'Take home midterm due'
     date: "February 12"
 
-
   - title: "**Part 7: Functions/batch processing/`purrr`**"
     date: "February 17"
     class: "07-class"
@@ -52,13 +51,15 @@ lessons:
     class: "08-class"
     reading: "08-reading"
     
-  - title: "**Part 9. `tidymodels`/machine learning basics/simulation**"
+  - title: "**Part 9. `tidymodels`/Unsupervised Learning/Logistic Regression**"
     date: "March 3"
+    class: "09-class"
+    reading: "09-reading"
     
   - title: "**Final Project Assigned**"
     date: "March 3"
 
-  - title: "**Wrap Up/Your choice: `shiny/plotly` (interactive graphics), `leaflet` (interactive maps), `tidytext` (text processing)**"
+  - title: "**Part 10. `tidymodels`/Supervised Learning**"
     date: "March 10"
 #    class: "08-class"
   - title: "Final Project Due"
