@@ -20,7 +20,7 @@ editor_options:
 
 ## Class Video
 
-To be added after class
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BbrUnjNE3Yk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Slides
 
@@ -31,6 +31,13 @@ Open the slides in a separate window: <a href="https://sph-r-programming.netlify
 knitr::include_url('https://sph-r-programming.netlify.com/slides/09_machine_learning#1')
 ```
 
+## PCA Video (from StatQuest)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HMOI_lkzW08" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## KMeans Video (from StatQuest)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4b5d3muPQmA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Post-Class
 
