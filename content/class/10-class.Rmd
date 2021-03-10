@@ -29,6 +29,14 @@ Open the slides in a separate window: <a href="https://sph-r-programming.netlify
 knitr::include_url('https://sph-r-programming.netlify.com/slides/09_machine_learning#23')
 ```
 
+## Percentage Adjustment
+
+- Attendance 10%
+- Midterm Project 20%
+- Function of the Week 5%
+- Homework Assignments 55%
+- Final Project 10%
+
 ### Post-Class
 
 Please fill out the following survey and we will discuss the results during the next lecture. All responses will be anonymous.
