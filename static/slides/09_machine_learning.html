@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Machine Learning: Unsupervised Methods</title>
+    <title>Machine Learning</title>
     <meta charset="utf-8" />
     <meta name="author" content="Ted Laderas" />
-    <meta name="date" content="2021-03-03" />
+    <meta name="date" content="2021-03-10" />
     <script src="libs/header-attrs-2.6/header-attrs.js"></script>
     <link href="libs/tachyons-4.12.0/tachyons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
@@ -13,10 +13,10 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# Machine Learning: Unsupervised Methods
+# Machine Learning
 ## BSTA 504
 ### Ted Laderas
-### 2021-03-03
+### 2021-03-10
 
 ---
 
@@ -230,13 +230,27 @@ recipe(species ~., data = penguins) %&gt;%
 ---
 # Clustering: Examining groupings in the data
 
-&lt;img src="image/week9/kmeans.gif" width =800&gt; 
+&lt;img src="image/week9/kmeans.gif" width =700&gt; 
+
+---
+
+&lt;img src="image/week9/workflow.JPG" width = 700&gt;
 
 
 ---
-# Logistic Regression
+# Training Data Workflow
 
-Talk more about this in RStudio cloud notebook.
+&lt;img src="image/week9/train_data.JPG" width = 700&gt;
+
+---
+# Test Data Workflow
+
+&lt;img src="image/week9/test_data.JPG" width = 700&gt;
+
+---
+# Fitting the Model
+
+&lt;img src="image/week9/training_model.JPG" width = 700&gt;
 
 ---
 # {yardstick} for evaluating on test set
@@ -245,14 +259,35 @@ Talk more about this in RStudio cloud notebook.
 
 - Accuracy
 - Balanced Accuracy
+- Sensitivity (requires an "event_level", such as "depressed")
+- Specificity (requires an "event_level", such as "depressed")
 - Area under the Reciever Operating Curve (ROC)
 
 ---
 &lt;img src="image/week9/testing_model.JPG" width = 700&gt; 
 
 ---
-# Further Reading
+# Logistic Regression
 
+Talk more about this in RStudio cloud notebook.
+
+
+---
+# K-nearest Neighbor
+
+&lt;img src="image/week9/knn1.jpg" width = 700&gt;
+
+---
+
+# K-nearest Neighbor
+
+&lt;img src="image/week9/knn2.jpg" width = 700&gt;
+
+---
+
+# K-nearest Neighbor
+
+&lt;img src="image/week9/knn3.jpg" width = 700&gt;
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

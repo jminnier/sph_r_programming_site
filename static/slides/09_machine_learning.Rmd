@@ -1,5 +1,5 @@
 ---
-title: "Machine Learning: Unsupervised Methods"
+title: "Machine Learning"
 subtitle: "BSTA 504"  
 author: "Ted Laderas"
 date: '`r Sys.Date()`'
@@ -193,13 +193,27 @@ read.csv("steps.csv") %>%
 ---
 # Clustering: Examining groupings in the data
 
-<img src="image/week9/kmeans.gif" width =800> 
+<img src="image/week9/kmeans.gif" width =700> 
+
+---
+
+<img src="image/week9/workflow.JPG" width = 700>
 
 
 ---
-# Logistic Regression
+# Training Data Workflow
 
-Talk more about this in RStudio cloud notebook.
+<img src="image/week9/train_data.JPG" width = 700>
+
+---
+# Test Data Workflow
+
+<img src="image/week9/test_data.JPG" width = 700>
+
+---
+# Fitting the Model
+
+<img src="image/week9/training_model.JPG" width = 700>
 
 ---
 # {yardstick} for evaluating on test set
@@ -208,11 +222,32 @@ Talk more about this in RStudio cloud notebook.
 
 - Accuracy
 - Balanced Accuracy
+- Sensitivity (requires an "event_level", such as "depressed")
+- Specificity (requires an "event_level", such as "depressed")
 - Area under the Reciever Operating Curve (ROC)
 
 ---
 <img src="image/week9/testing_model.JPG" width = 700> 
 
 ---
-# Further Reading
+# Logistic Regression
 
+Talk more about this in RStudio cloud notebook.
+
+
+---
+# K-nearest Neighbor
+
+<img src="image/week9/knn1.jpg" width = 700>
+
+---
+
+# K-nearest Neighbor
+
+<img src="image/week9/knn2.jpg" width = 700>
+
+---
+
+# K-nearest Neighbor
+
+<img src="image/week9/knn3.jpg" width = 700>
