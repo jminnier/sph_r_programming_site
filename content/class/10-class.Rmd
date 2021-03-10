@@ -1,0 +1,41 @@
+---
+title: "Part 10. `tidymodels`/Supervised Learning/Logistic Regression"
+linktitle: "Part 10. `tidymodels`/Supervised Learning/Logistic Regression"
+date: "2021-03-10"
+class_date: "2021-03-10"
+output:
+  blogdown::html_page:
+    toc: true
+menu:
+  class:
+    parent: Class sessions
+    weight: 10
+type: docs
+weight: 10
+# pdf: 
+# thumb: 
+editor_options: 
+  chunk_output_type: console
+---
+
+## Class Video
+
+
+## Slides
+
+Open the slides in a separate window: <a href="https://sph-r-programming.netlify.com/slides/09_machine_learning#23" target="_blank">https://sph-r-programming.netlify.com/slides/09_machine_learning#23</a>
+
+```{r echo=FALSE}
+knitr::include_url('https://sph-r-programming.netlify.com/slides/09_machine_learning#23')
+```
+
+### Post-Class
+
+Please fill out the following survey and we will discuss the results during the next lecture. All responses will be anonymous.
+
+- Clearest Point: What was the most clear part of the lecture?
+- Muddiest Point: What was the most unclear part of the lecture to you?
+- Anything Else: Is there something you'd like me to know?
+
+http://bit.ly/sph504_survey
+
