@@ -49,3 +49,31 @@ Please fill out the following survey and we will discuss the results during the 
 
 http://bit.ly/sph504_survey
 
+## Muddiest Points
+
+> The concept of clustering is still a bit muddy for me.
+
+> PCA the graph showing contributions from each variable section was muddy for me.
+
+> Still struggling to understand what a principal component analysis is
+
+> To be honest, I wasn't really at 100% for this lecture and I wasn't able to follow what was going on that well, but I plan to review this on my own.
+
+> Clustering
+
+> still feeling a little confused on PCA. Will be rewatching the videos on the site.
+
+> Clustering
+
+> Pca
+
+> Still trying to wrap my head around PCA/clustering. The homework will help.
+
+> A lot of this was muddy. This jumped pretty far ahead of what we've learned in our other classes. It's hard for me to understand the code when I don't know the math and whatnot behind it.
+
+Points taken. Hope the videos helped.
+
+> What we're doing for our final project/what our options are for models
+
+We will talk about this in class.
+
