@@ -51,7 +51,7 @@ lessons:
     class: "08-class"
     reading: "08-reading"
     
-  - title: "**Part 9. `tidymodels`/Unsupervised Learning/Logistic Regression**"
+  - title: "**Part 9. `tidymodels`/Unsupervised Learning**"
     date: "March 3"
     class: "09-class"
     reading: "09-reading"
@@ -59,9 +59,11 @@ lessons:
   - title: "**Final Project Assigned**"
     date: "March 3"
 
-  - title: "**Part 10. `tidymodels`/Supervised Learning**"
+  - title: "**Part 10. `tidymodels`/Supervised Learning/Logistic Regression**"
     date: "March 10"
-#    class: "08-class"
+    class: "10-class"
+    reading: "10-reading"
+
   - title: "Final Project Due"
-    date: "March 17"
+    date: "March 19"
 
