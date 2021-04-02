@@ -1,0 +1,25 @@
+---
+title: "Course Reviews"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Below are some selected reviews and comments from students in the course. I have left them anonymous.
+
+> Ted was so clear, patient and approachable and really did a wonderful job making sure we understood every line of code we were writing. I'm no pro at R now but I definitely have an excellent foundation upon which to build and I feel like I enjoy it so much more. 
+
+> I just wanna say again, thank you for this class and for the way you set it up. I can tell you’ve thought a lot about how to foster a good learning environment, and I always felt like you were more concerned with our learning and wellbeing than anything else. I really appreciated the way the class was structured—the result of which was that I gained incredible amount of useful information without constantly stressing about the level of time commitment necessary to complete assignments / readings. In an environment where depth of information is often a 1 for 1 trade for mental health, this was a refreshing and welcome change.
+
+> Dear Ted, I enjoyed and learned from this course so much, I will be using all these skills for however long I use R. Thank you!
+
+> Dear Ted, Thanks for an awesome class. I know you were juggling a lot, but you did a stellar job. Really appreciated how you were actively making changes to the course to fit the needs of students. This class taught me so much and I know it would have made the biostats series so much easier if it had been available earlier. Definitely one of my favorite classes in the whole program and one that I think should be required for all students because of how helpful it has been.
+
+> Dear Ted, I just wanted to thank you for this term and for everything you did to make this a positive learning environment. My goal in taking this class was to become better at R so that my other classes would be easier, and I am very confident that that has happened. As a general suggestion for OHSU, I think this would be an excellent class to take in the summer term before the stats classes start or possibly in the first Fall term. Especially what was taught in the second half of the term has cut off about 25-50% of the work for more difficult tasks in my stats classes. This class has taught me valuable skills that I will continue to use long after I am finished with this degree. Thanks again for everything!
+
+> Dear Ted, Thanks for all the work you have put into the class. It is so refreshing having a professor who cares this much :)
+
+> Dear Ted, I got to reprimand my husband for poor spreadsheet hygiene this week and I thought you'd appreciate that.
+
+> Dear Ted, I just wanted to thank you for trying your best to make this class fun and stress-free. This term was probably the hardest on me compared to any other since I started college and I appreciated having the relaxing and fun atmosphere for this class. I don't know that I would be so sure that I would have wanted to to continue with this degree if it weren't for this class. Thanks!
