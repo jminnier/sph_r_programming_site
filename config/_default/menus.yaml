@@ -17,9 +17,9 @@ main:
   - name: Midterm Projects
     url: https://sph-midterm-projects.netlify.app
     weight: 5
-#  - name: RStudio.cloud
-#    url: https://rstudio.cloud/
-#    weight: 7
+  - name: Course Reviews
+    url: /reviews/
+    weight: 7
 #assignment:
 #  - name: Assignments
 #    weight: 1
