@@ -16,7 +16,7 @@ main:
     weight: 4
   - name: Midterm Projects
     url: https://sph-midterm-projects.netlify.app
-    weight: 5
+    weight: 6
   - name: Course Reviews
     url: /reviews/
     weight: 7
