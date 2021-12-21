@@ -20,5 +20,5 @@ design:
     text_color_light: true
 
 cta_note:
-  label: Winter 2021<br>OHSU/PSU School of Public Health<br>Oregon Health & Science University
+  label: Winter 2022<br>OHSU/PSU School of Public Health<br>Oregon Health & Science University
 ---
