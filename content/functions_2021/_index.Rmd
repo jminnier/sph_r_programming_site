@@ -1,0 +1,11 @@
+---
+title: Function of the Week
+menu:
+  functions:
+    parent: Function of the Week
+    weight: 1
+type: docs
+weight: 1
+---
+
+Function of the week posts are here.
