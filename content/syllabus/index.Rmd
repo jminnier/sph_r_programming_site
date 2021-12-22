@@ -32,7 +32,7 @@ This course is meant to be a gentle introduction to data wrangling and visualiza
 7. **Automate** repetitive tasks in R, such as loading a folder of files.
 8. **Execute** basic machine learning workflows using `tidymodels`.
 9. **Learn** about Bioconductor Data Structures and conduct simple analysis with these structures.
-10. **Your Choice**: `shiny`, `leaflet` or `tidytext`.
+10. **If we have time**: `shiny`
 
 ## Course Website
 
