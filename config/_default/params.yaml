@@ -74,7 +74,7 @@ privacy_pack: false
 # Enable visitors to edit pages?
 #   `repo` defines the repository URL. `editable` defines which page types can be edited.
 edit_page:
-  repo_url: 'https://github.com/laderast/sph_r_programming_site'
+  repo_url: 'https://github.com/jminnier/sph_r_programming_site'
   content_dir: ''
   repo_branch: master
   editable:
@@ -92,25 +92,25 @@ edit_page:
 author: ted
 
 instructor: 
-  name: Dr. Ted Laderas
-  email: laderast@ohsu.edu
-  url: "https://laderast.github.io"
-  twitter: tladeras
-  github: laderast
-  office: "School of Nursing 630"
+  name: Dr. Jessica Minnier
+  email: minnier@ohsu.edu
+  url: "http://jessicaminnier.com"
+  twitter: datapointier
+  github: jminnier
+  office: "KCRB"
   contact_policy: >-
     E-mail or Slack is the best way to get in contact with me. I will try to respond to all course-related e-mails within 1 business day.
 #  appointment_url: https://calendly.com/andrewheiss/meeting/
 
 course:
   number: "BSTA 504"
-  semester: "Winter 2021"
+  semester: "Winter 2022"
   days: "Wednesdays"
   time: "3:15–6:05 PM"
   location: "Online"
-  dates: "January 6 – March 17, 2021"
-  github: "laderast/sph_r_programming_site"
-  copyrightYear: "2021"
+  dates: "January 3 – March 14, 2022"
+  github: "jminnier/sph_r_programming_site"
+  copyrightYear: "2022"
 
 university: 
   name: Oregon Health & Science University / Portland State University
@@ -129,7 +129,7 @@ school:
 sharing_image: "social-image.png"
 
 # Twitter username (without @). Used when a visitor shares your site on Twitter.
-twitter: "tladeras"
+twitter: "datapointier"
 
 
 ############################
