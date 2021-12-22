@@ -5,8 +5,11 @@
 .DS_Store
 public/*
 private/*
+resources/*
 resources/_gen/*
 *.zip
 temp_figs/*
 Thumbs.db
 .hugo_build.lock
+/public/
+/resources/
