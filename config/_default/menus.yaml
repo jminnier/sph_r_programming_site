@@ -8,18 +8,18 @@ main:
   - name: Readings
     url: /reading/
     weight: 3
-  - name: Functions
-    url: /functions/
-    weight: 5
   - name: Classes
     url: /class/
     weight: 4
-  - name: Midterm Projects
-    url: https://sph-midterm-projects.netlify.app
-    weight: 6
-  - name: Course Reviews
-    url: /reviews/
-    weight: 7
+  - name: Functions
+    url: /functions/
+    weight: 5
+  # - name: Midterm Projects
+  #   url: https://sph-midterm-projects.netlify.app
+  #   weight: 6
+  # - name: Course Reviews
+  #   url: /reviews/
+  #   weight: 7
 #assignment:
 #  - name: Assignments
 #    weight: 1
