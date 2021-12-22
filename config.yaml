@@ -1,4 +1,4 @@
-baseurl: https://sph_r_programming.netlify.com/
+baseurl: https://sph-r-programming-2022.netlify.app/
 defaultContentLanguage: en
 title: "R Programming"
 theme: hugo-academic
@@ -66,7 +66,6 @@ ignoreFiles:
   - .ipynb_checkpoints$
   - \.Rmd$
   - \.Rmarkdown$
-  - _files$
   - _cache$
   - \.Rproj.user$
   - \.Rhistory$
