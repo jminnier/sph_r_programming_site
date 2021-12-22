@@ -1,8 +1,8 @@
 ---
 authors:
-- Ted
-name: Ted Laderas
+- Jessica
+name: Jessica Minnier
 superuser: true
 ---
 
-Ted Laderas is an Assistant Professor in the Division of Bioinformatics and Computational Biology in the Department of Medical Informatics and Clinical Epidemiology. He is a certified RStudio Instructor in both the Tidyverse and Shiny. He is also a co-founder of the Cascadia R conference and BioData Club.
+Jessica Minnier is an Associate Professor in the OHSU-PSU School of Public Health and the Knight Cancer Institute Biostatistics Shared Resource. 
