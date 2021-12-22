@@ -11,4 +11,5 @@ Deployed on Netlify:  https://sph-r-programming-2022.netlify.app/
 The Hugo Academic theme is installed as submodule. After cloning this repo, you should run these commands in the terminal.
 
 > git submodule init
+> 
 > git submodule update
