@@ -1,7 +1,7 @@
 ---
 title: "BSTA 504 Introduction"
 subtitle: "R Programming"
-author: "Ted Laderas"
+author: "Jessica Minnier"
 date: "`r Sys.Date()`"
 output:
   xaringan::moon_reader:
@@ -41,25 +41,18 @@ class: center, middle
 
 ---
 
-# Ted Laderas, PhD
+# Jessica Minnier, PhD
 
-.pull-left[
-- Assistant Professor, Department of Medical Informatics and Clinical Epidemiology 
-- Interactive Visualization/Flow Cytometry
-- Certified RStudio/Carpentries Instructor
-- Co-founder of
-  - [BioData Club](http://biodata-club.github.io)
-  - [Cascadia-R Conference](https://cascadiarconf.com)
-- https://laderast.github.io 
-]
-.pull-right[
-<img src="image/week1/ted.jpg" width = 400>
-]
+- Associate Professor, Biostatistics, OHSU-PSU School of Public Health
+- Knight Cancer Institute Biostatistics Shared Resource
+- OCTRI BERD [R Workshops](https://github.com/jminnier/berd_r_courses)
+- Co-founder of [Cascadia-R Conference](https://cascadiarconf.com)
+
 
 ---
 # Class Facilitator/TA
 
-- Meet Eric Leung from DMICE
+- Meet XXXX
 - He will be helping me faciliate online sessions
 - Also will be grading and will be available for questions
 
@@ -72,14 +65,14 @@ class: center, middle
 - Class Logistics
 
 ---
-# First of All
+# About this course
 
-- This is a brand new course
-- Let's support each other
-    - Be gentle with each other
-- I expect to make many mistakes
-    - I don't mind you pointing them out, but be gentle
-    - You can end up as a collaborator!
+- This is a (almost) brand new course
+- Winter 2021 version developed and taught by [Ted Laderas](https://laderast.github.io/)
+- Previous materials (and videos) are available on last year's course website https://sph-r-programming.netlify.app/
+- This course will be very similar
+- Assume new to R, though many of you will not be new to R
+
 
 ---
 class:center, middle
@@ -99,7 +92,7 @@ If you are disruptive to class learning or disparaging to other students, I may 
 ---
 # Code of Conduct Violations
 
-Please report them to me directly or to Eric if you feel comfortable.
+Please report them to me directly or to TA if you feel comfortable.
 
 If not, please use the anonymous reporting form here: https://forms.gle/7CTv1p573MAHEdX69
 
@@ -239,8 +232,8 @@ You'll be assigned a buddy at the beginning of each class
 # Format of Class
 
 - Review of muddiest points (10-15 minutes)
-- Main Learning (2 hours)
 - Function of the Week presentations (20 minutes)
+- Main Learning (2 hours)
 - Wrap Up/Questions (remaining time)
 
 We'll take 5 minute breaks at the top of each hour.
@@ -250,9 +243,9 @@ We'll take 5 minute breaks at the top of each hour.
 
 - Attendance 10%
 - Midterm Project 15%
-- Function of the Week 5%
+- Function of the Week 10%
 - Homework Assignments 45%
-- Final Project 25%
+- Final Project 20%
 
 ---
 # Class Attendance Policy
@@ -294,9 +287,9 @@ We will highlight any points of confusion.
   - Schedule a meeting to discuss the dataset
 
 ---
-# Class Discord
+# Class Slack
 
-- Invitation to Class Discord is on Sakai and emailed to you
+- Invitation to our Slack channel is on Sakai and emailed to you
 - Use to ask questions
 - If you know the answer, try to help out
 - I will try and review once a day
@@ -326,18 +319,6 @@ It's a *hub* language in that you can access many different kinds of systems (Te
 - We'll try to make it a fun process for you
 
 ---
-# Testimonies (You Can Do It!)
-
-.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
-"I started out very anxious about being able to learn R effectively and your class was a very gentle entry point that covered quite a lot of material. I feel like I'm going to be able to search and figure out much of what I want to accomplish now."]
-
----
-# Testimonies
-
-.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
- "I have used other standard softwares for my stats during my doctoral program and was always intimidated by R. I am so glad I found this course, after going through numerous online videos & courses. It is taking me time to learn through your course, but I am confident that this time I will get through it."]
-
----
 # R and RStudio
 
 - In-class labs and assignments will be done with [RStudio.cloud](http://rstudio.cloud)
@@ -348,8 +329,8 @@ It's a *hub* language in that you can access many different kinds of systems (Te
 
 - [PDX R User Group Meetup](https://www.meetup.com/portland-r-user-group/) (monthly)
   - Intro to tidyselect (1/21 @ 6:30) 
-- BioData Club: Intro to Shiny Workshop (1/21 @ 3-5 PM) 
-- Cascadia R Conference 2021 will be online in late May or early June
+- BioData Club
+- Cascadia R Conference 2022 will be online in late May or early June
 
 ---
 class: center, middle
