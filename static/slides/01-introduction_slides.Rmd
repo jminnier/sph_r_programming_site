@@ -45,15 +45,15 @@ class: center, middle
 
 - Associate Professor, Biostatistics, OHSU-PSU School of Public Health
 - Knight Cancer Institute Biostatistics Shared Resource
-- OCTRI BERD [R Workshops](https://github.com/jminnier/berd_r_courses)
+- Co-instructor of many OCTRI BERD [R Workshops](https://github.com/jminnier/berd_r_courses)
 - Co-founder of [Cascadia-R Conference](https://cascadiarconf.com)
-
+- I am not a programmer (CS minor does not count, believe me)! I learned R in graduate school in 2007.
 
 ---
 # Class Facilitator/TA
 
 - Meet XXXX
-- He will be helping me faciliate online sessions
+- They will be helping me facilitate online sessions
 - Also will be grading and will be available for questions
 
 ---
@@ -67,7 +67,7 @@ class: center, middle
 ---
 # About this course
 
-- This is a (almost) brand new course
+- This is a new-ish course
 - Winter 2021 version developed and taught by [Ted Laderas](https://laderast.github.io/)
 - Previous materials (and videos) are available on last year's course website https://sph-r-programming.netlify.app/
 - This course will be very similar
@@ -81,7 +81,7 @@ class:center, middle
 ---
 # Code of Conduct
 
-This class is governed by the [BioData Club Code of Conduct](https://biodata-club.github.io/code_of_conduct/).
+This class is governed by the [BioData Club Code of Conduct](https://biodata-club.github.io/code_of_conduct/) and the [OHSU Code of Conduct](https://www.ohsu.edu/integrity-department/code-conduct).
 
 This class is meant to be a psychologically safe space where it's ok to ask questions.
 
@@ -94,7 +94,7 @@ If you are disruptive to class learning or disparaging to other students, I may 
 
 Please report them to me directly or to TA if you feel comfortable.
 
-If not, please use the anonymous reporting form here: https://forms.gle/7CTv1p573MAHEdX69
+If not, please use the anonymous reporting form here: https://forms.gle/yAAGx7bkZYhgsdqVA
 
 
 ---
@@ -104,7 +104,14 @@ If not, please use the anonymous reporting form here: https://forms.gle/7CTv1p57
 - Let's do a quick guided tour
 
 ---
-<iframe width="1000" height = "600" src="https://www.youtube.com/embed/5iap0Ffl5Lg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+# Change your Zoom name, if you wish
+
+This class is being recorded, and will be posted to the public-facing website.
+
+To protect your privacy, you may wish to change your visible zoom name. I will try to call you by this name, and won't use last names. I will try not to show your video in the recording as well.
+
+- [See instructions](https://teaching.nmc.edu/knowledgebase/changing-your-name-in-a-zoom-meeting/)
+- Basically, click on "Participants", then "Rename" next to your name.
 
 ---
 # Letting me Know
@@ -123,7 +130,7 @@ Open the chat window (if we are in full screen, press the escape key, and then c
 Type in Chat:
 
 - Your Name
-- Your Year
+- Your Program
 - What you hope to learn from this course
 
 ---
@@ -132,7 +139,7 @@ Type in Chat:
 During Class
 
 - Post questions in Chat
-    - Eric will interrupt me to make sure these questions are answered
+    - Our TA will interrupt me to make sure these questions are answered
 - Post answers to questions in chat if you know them
 - You can unmute to ask questions as well
 
@@ -141,7 +148,7 @@ During Class
 
 During Class
 
-- Work with your buddy if we're working on a lab 
+- Work with your breakout room buddies if we're working on a lab 
 - Share screens to talk about issues
 
 ---
@@ -159,25 +166,26 @@ During Class
 ---
 # Zoom Recordings/Attendance
 
-- I will record each session and Eric will post it as soon it is ready
+- I will record each session and we will post it as soon it is ready
 - I will pause recording for breakout rooms (that won't be recorded)
-- Remind me to start recording when class starts
+- Remind me to start recording when class starts/restarts
 
 ---
 # Learning Objectives
 
 By the end of this course you will be able to:
 
-1. **Understand** and **utilize** **R/RStudio**.
+1. **Understand** and **utilize** **R/RStudio** (hopefully with minimal pain).
 2. **Understand** basic data types and data structures in R.
 3. **Familiarize** and **load** data files (Excel, Comma Separated Value files) into R/Rstudio, with tips on formatting.
 4. **Visualize** datasets using **ggplot2** and understand how to build basic plots using **ggplot2** syntax.
 5. **Filter** and **format** data in R for use with various routines.
-6. **Manipulate** and **combine** multiple files.
+6. **Execute** and **Interpret** some basic statistics in R.
 7. **Automate** repetitive tasks in R, such as loading a folder of files.
-8. **Execute** and **Interpret** some basic statistics in R.
-9. **Execute** basic machine learning workflows using `tidymodels`, including PCA, resampling, and Supervised Learning.
-10. **Your Choice**: `shiny`, `leaflet`, `tidytext` or `Bioconductor`.
+
+*__If time allows (perhaps one or two of these)__*:
+
+We may explore fancy tables in our R markdown reports with `gt`, or Bioconductor Data Structures, or machine learning workflows using `tidymodels`, or basic interactive applications with `shiny`.
 
 ---
 class: center, middle
@@ -187,7 +195,7 @@ class: center, middle
 class: center, middle
 
 # Let's look at the website:
-## http://sph-r-programming.netlify.app
+## http://sph-r-programming-2022.netlify.com
 
 ---
 # Caveat Emptor
@@ -217,6 +225,8 @@ We'll be using the following for reference:
 ---
 # My Approach to Teaching
 
+(aka Dr. Laderas' approach, also my approach)
+
 I think students learn the best when they're actually looking and thinking about data.
 
 This means we will be looking at lots of data.
@@ -226,7 +236,9 @@ This means we will be looking at lots of data.
 
 I also think that we learn best when we are discussing data together.
 
-You'll be assigned a buddy at the beginning of each class
+We will be using breakout rooms to work on activities with 2-3 people in a room. Please discuss the problem together, and one of you should share your screen to code along together.
+
+The breakout rooms will be randomly assigned each class, to mix things up.
 
 ---
 # Format of Class
@@ -237,6 +249,11 @@ You'll be assigned a buddy at the beginning of each class
 - Wrap Up/Questions (remaining time)
 
 We'll take 5 minute breaks at the top of each hour.
+
+---
+# Syllabus
+
+There is a syllabus on the [website](https://sph-r-programming-2022.netlify.app/syllabus/), as well as on [Sakai](https://sakai.ohsu.edu/portal/site/BSTA-504-1-22151-W22/page/73c051e0-0b37-4956-853a-95ced6138d53). Let me know if you notice discrepancies.
 
 ---
 # Grading Breakdown
@@ -254,12 +271,18 @@ Please try to attend class.
 
 There is a post-class survey that will be posted. Please fill it out, as it counts as attendance.
 
-If you can't attend class, please let me know.
+If you can't attend class, please let me know. If you can't attend, please watch the recording and then fill out the survey.
+
+- Clearest Point: What was the most clear part of the lecture?
+- Muddiest Point: What was the most unclear part of the lecture to you?
+- Anything Else: Is there something you’d like me to know?
+
+https://ohsu.ca1.qualtrics.com/jfe/form/SV_0kNJK7E56UyKvVs
 
 ---
 # Class Assignments
 
-Class Assignments will be done in RStudio Notebooks 
+Class Assignments will be done in RStudio Notebooks. 
 
 Assignments will be submitted through Sakai. 
 
@@ -271,7 +294,7 @@ We will highlight any points of confusion.
 # Function of the Week
 
 - Starts in Week 3
-- Learn and share about an underrated `tidyverse()` function (5 minutes max)
+- Learn and share about a lesser known `tidyverse()` function (5 minutes max)
 - Share your experience with the function
   - Is it useful?
   - Is it hard to use?
@@ -298,11 +321,13 @@ We will highlight any points of confusion.
 ---
 # Office Hours
 
-I will be available for office hours/drop in time 2 Hours a week. You're free to sign in to the Zoom Room and work on homework at this time.
+I will be available for office hours/drop in time 1-2 hours a week. You're free to sign in to the Zoom Room and work on homework at this time. You also may request individual meetings with me to discuss projects.
 
-When is good link: 
+When is good link: http://whenisgood.net/w9m5yh2
 
-Highlight all times that work for you.
+Highlight all times that work for you (make up a name if you wish).
+
+
 
 ---
 # Why R?
@@ -321,16 +346,16 @@ It's a *hub* language in that you can access many different kinds of systems (Te
 ---
 # R and RStudio
 
-- In-class labs and assignments will be done with [RStudio.cloud](http://rstudio.cloud)
-- We'll take a guided tour of RStudio Cloud next
+- Last year this course used [RStudio.cloud](http://rstudio.cloud), but for various reasons we're going to try using our own computers and Rstudio desktop.
+- Or, if you prefer, PSU students have access to a virtual environment that has Rstudio on it.
 
 ---
 # Other Resources/Events (Optional)
 
+- [OCTRI BERD R Workshops](https://github.com/jminnier/berd_r_courses)
 - [PDX R User Group Meetup](https://www.meetup.com/portland-r-user-group/) (monthly)
-  - Intro to tidyselect (1/21 @ 6:30) 
-- BioData Club
-- Cascadia R Conference 2022 will be online in late May or early June
+- [BioData Club](https://biodata-club.github.io/)
+- [Cascadia R Conference](https://cascadiarconf.com/) in late May or early June
 
 ---
 class: center, middle
