@@ -20,7 +20,7 @@ editor_options:
 
 ## Class Video
 
-View last year's class [here](https://sph-r-programming.netlify.app/class/01-class/)
+View last year's class [here](https://sph-r-programming.netlify.app/class/01-class/).
 
 <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/yCPcijCj15c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
@@ -47,10 +47,17 @@ https://ohsu.ca1.qualtrics.com/jfe/form/SV_0kNJK7E56UyKvVs
 
 ## Muddiest Points 
 
-
+I will add the muddiest points from the survey after the first class.
 
 ## Slack Intro
 
 Slack invite link is on Sakai, and will be emailed before class.
 
-[How to use slack video](https://youtu.be/m2JuAa6-ors)
+
+<iframe width="800" height = "600" src="https://www.youtube.com/embed/m2JuAa6-ors" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Zoom Intro
+
+We will be using zoom. Here's a short video on how to use zoom:
+
+<iframe width="800" height = "600" src="https://www.youtube.com/embed/5iap0Ffl5Lg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
