@@ -30,9 +30,13 @@ This course is meant to be a gentle introduction to data wrangling and visualiza
 5. **Filter** and **format** data in R for use with various routines.
 6. **Execute** and **Interpret** some basic statistics in R.
 7. **Automate** repetitive tasks in R, such as loading a folder of files.
-8. **Execute** basic machine learning workflows using `tidymodels`.
+
+*__If time allows__*:
+
+8. **Create** fancy tables in our R markdown reports with `gt`.
 9. **Learn** about Bioconductor Data Structures and conduct simple analysis with these structures.
-10. **If we have time**: `shiny`
+10. **Execute** basic machine learning workflows using `tidymodels`.
+11. **Build** basic interactive applications with `shiny`.
 
 ## Course Website
 
@@ -59,7 +63,7 @@ No Prerequisites
 [Jessica Minnier, PhD](http://jessicaminnier.com/)  
 minnier@ohsu.edu  
 **Preferred Method of Contact**: Email/Slack  
-**Expected Response Time**: 24hrs  
+**Expected Response Time**: 1 business day 
 
 ### Teaching Assistant
 
@@ -71,6 +75,8 @@ minnier@ohsu.edu
 
 This class is governed by the BioData Club Code of Conduct:
 <https://biodata-club.github.io/code_of_conduct/>
+
+And as students of an OHSU course, we must abide by the OHSU Code of Conduct: <https://www.ohsu.edu/integrity-department/code-conduct>
 
 This class is meant to be a psychologically safe space where it's ok to ask questions. We want to normalize your own curiosity and fuel your desire to learn more.
 
@@ -130,10 +136,9 @@ Classes will be recorded, but please do not use this as an excuse to miss class.
 
 - Attendance 10%
 - Midterm Project 15%
-- Function of the Week 5%
+- Function of the Week 10%
 - Homework Assignments 45%
-- Final Project 25%
-
+- Final Project 20%
 
 ### Late Policy
 
@@ -153,7 +158,7 @@ All students are responsible for following the policies and expectations outline
 
 ## Syllabus Changes and Retention
 
-This syllabus is not to be considered a contract between the student and the School of Public Health It is recognized that changes may be made as the need arises. Students are responsible for keeping a copy of the course syllabus for their records.
+This syllabus is not to be considered a contract between the student and the School of Public Health. It is recognized that changes may be made as the need arises. Students are responsible for keeping a copy of the course syllabus for their records.
 
 ## Syllabus Statement Regarding Disability Services
 
@@ -168,12 +173,19 @@ Please see Student Access & Accomodations section for more details on the Sakai 
 ## Commitment of Equity and Inclusion
 
 The School of Public Health is committed to providing an environment free of all forms of prohibited discrimination and discriminatory harassment. The School of Public Health students who have questions about an incident related to Title IX are welcome to contact either the OHSU or PSU's Title IX Coordinator and they will direct you to the appropriate resource or office. Title IX pertains to any form of sex/gender discrimination, discriminatory harassment, sexual harassment or sexual violence.
+
 PSU’s Title IX Coordinator is Julie Caron, she may be reached at titleixccordinator@pdx.edu or 503-725-4410. Julie's office is located at 1600 SW 4th Ave, In the Richard and Maureen Neuberger Center RMNC - Suite 830.
+
 The OHSU Title IX Coordinator’s may be reached at 503-494-0258 or titleix@ohsu.edu and is located at 2525 SW 3rd St.
+
 Please note that faculty and the Title IX Coordinators will keep the information you disclose private but are not confidential. If you would like to speak with a confidential advocate, who will not disclose the information to a university official without your written consent, you may contact an advocate at PSU or OHSU.
+
 PSU’s confidential advocates are available in Women’s Resource Center (serving all genders) in Smith Student Memorial Union 479. You may schedule an appointment by (503-725-5672) or schedule on line at https://psuwrc.youcanbook.me. For more information about resources at PSU, please see PSU’s Response to Sexual Misconduct website.
+
 OHSU’s advocates are available through the Confidential Advocacy Program (CAP) at 833-495-CAPS (2277) or by email CAPsupport@ohsu.edu, but please note, email is not a secure form of communication. Also visit www.ohsu.edu/CAP.
+
 At OHSU, if you encounter any harassment, or discrimination based on race, color, religion, age, national origin or ancestry, veteran or military status, sex, marital status, pregnancy or parenting status, sexual orientation, gender identity or expression, disability or any other protected status, please contact the Affirmative Action and Equal Opportunity (AAEO) Department at 503- 494-5148 or aaeo@ohsu.edu.
+
 At PSU, you may contact the Office of Equity and Compliance if you experience any form of discrimination or discriminatory harassment as listed above at equityandcompliance@pdx.edu or by calling 503-725-5919.
 
 ## Academic Honesty
@@ -226,24 +238,4 @@ requirements in the Course Materials.
 
 Policy number: 02-70-050
 (<http://www.ohsu.edu/xd/education/student-services/academic-programs-and-assessment/academic-policy/approved-policies/upload/Online-Exam-Proctoring-02-70-050.pdf>)
-
-## Inclement Weather Policy
-
-When the weather forecaster is calling for ice or snow, call the **OHSU
-Alert Line, 503 494-9021**, for information regarding weather conditions
-that may affect operations at OHSU. This hot line will offer specific
-recorded messages for road conditions on OHSU\'s Marquam Hill and West
-campuses (option 1), and for patients (option 2), students (option 3)
-and employees (option 4).
-
-If extreme weather conditions present potentially unsafe situations, the
-provost of the university may choose to delay or cancel classes, or
-alter office and research activities. If classes are canceled or
-delayed, residents and students who have patient care responsibilities
-must meet those obligations.
-
-For more information, please view the website
-<http://www.ohsu.edu/xd/about/visiting/weather/index.cfm> or call the
-above hotline.
-
 
