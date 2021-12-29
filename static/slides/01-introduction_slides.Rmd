@@ -103,6 +103,8 @@ If not, please use the anonymous reporting form here: https://forms.gle/yAAGx7bk
 - We'll be using zoom for our classes
 - Let's do a quick guided tour
 
+<center><img src="image/week1/horst_monster_support.jpg" width="70%" height="75%"><a href="https://github.com/allisonhorst/stats-illustrations"><br>Allison Horst</a></center>
+
 ---
 # Change your Zoom name, if you wish
 
@@ -186,6 +188,15 @@ By the end of this course you will be able to:
 *__If time allows (perhaps one or two of these)__*:
 
 We may explore fancy tables in our R markdown reports with `gt`, or Bioconductor Data Structures, or machine learning workflows using `tidymodels`, or basic interactive applications with `shiny`.
+
+
+---
+# Words of Encouragement
+
+Programming *is* for everyone who is motivated to learn, and willing to keep trying.
+
+[You can do it! (It ~~might~~ will be hard and frustrating at times.)](https://sph-r-programming-2022.netlify.app/syllabus/#words-of-encouragement)
+
 
 ---
 class: center, middle
@@ -277,7 +288,7 @@ If you can't attend class, please let me know. If you can't attend, please watch
 - Muddiest Point: What was the most unclear part of the lecture to you?
 - Anything Else: Is there something you’d like me to know?
 
-https://ohsu.ca1.qualtrics.com/jfe/form/SV_0kNJK7E56UyKvVs
+https://forms.gle/4tVx1mL7SzQx7MCu5
 
 ---
 # Class Assignments
