@@ -26,12 +26,12 @@ lessons:
     date: "February 2"
     class: "05-class"
     reading: "05-reading"
+    
+  - title: '**Take Home Midterm Assigned**'
+    date: "February 2"
 
   - title: '<span class="fake-header-table">Part 2: Intermediate Topics</span>'
     header: True
-
-  - title: '**Take Home Midterm Assigned**'
-    date: "February 2"
 
   - title: '**Part 6. Lists/RMarkdown/Work on Midterm**'
     date: "February 9"
@@ -51,7 +51,7 @@ lessons:
     class: "08-class"
     reading: "08-reading"
     
-  - title: "**Part 9. `tidymodels`/Unsupervised Learning**"
+  - title: "**Part 9. Stats in Tables"
     date: "March 3"
     class: "09-class"
     reading: "09-reading"
@@ -59,10 +59,14 @@ lessons:
   - title: "**Final Project Assigned**"
     date: "March 2"
 
-  - title: "**Part 10. `tidymodels`/Supervised Learning/Logistic Regression**"
+  - title: "**Part 10. More stats stuff (TBD)"
     date: "March 9"
     class: "10-class"
     reading: "10-reading"
+
+  - title: "**Part 11. TBD"
+    date: "March 16"
+    class: "11-class"
 
   - title: "Final Project Due"
     date: "March 16"

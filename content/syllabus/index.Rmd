@@ -33,10 +33,9 @@ This course is meant to be a gentle introduction to data wrangling and visualiza
 
 *__If time allows__*:
 
-8. **Create** fancy tables in our R markdown reports with `gt`.
+8. **Create** fancy tables in our R markdown reports with `gt` and/or `kableExtra`.
 9. **Learn** about Bioconductor Data Structures and conduct simple analysis with these structures.
-10. **Execute** basic machine learning workflows using `tidymodels`.
-11. **Build** basic interactive applications with `shiny`.
+10. **Build** basic interactive applications with `shiny`.
 
 ## Course Website
 
