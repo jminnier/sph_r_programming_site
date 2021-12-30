@@ -1,21 +1,6 @@
 ---
-title: "Part 6. Lists and RMarkdown"
-linktitle: "Part 6. Lists and RMarkdown"
-date: "2021-02-10"
-class_date: "2021-02-10"
-output:
-  blogdown::html_page:
-    toc: true
-menu:
-  class:
-    parent: Class sessions
-    weight: 6
-type: docs
-weight: 6
-# pdf: 
-# thumb: 
-editor_options: 
-  chunk_output_type: console
+title: "tmp"
+output: html_document
 ---
 
 
@@ -27,7 +12,7 @@ Before each class, I will load an R project on github, and provide the download 
 
 The video will be uploaded after class.
 
-View last year's class and materials [here](https://sph-r-programming.netlify.app/class/06-class/).
+View last year's class and materials [here](https://sph-r-programming.netlify.app/class/01-class/).
 
 <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/yCPcijCj15c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
