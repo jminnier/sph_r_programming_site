@@ -51,7 +51,7 @@ lessons:
     class: "08-class"
     #reading: "08-reading"
     
-  - title: "**Part 9. Stats in Tables"
+  - title: "**Part 9. Stats in Tables**"
     date: "March 3"
     class: "09-class"
     #reading: "09-reading"
@@ -59,12 +59,12 @@ lessons:
   - title: "**Final Project Assigned**"
     date: "March 2"
 
-  - title: "**Part 10. More stats stuff (TBD)"
+  - title: "**Part 10. More stats stuff (TBD)**"
     date: "March 9"
     class: "10-class"
     #reading: "10-reading"
 
-  - title: "**Part 11. TBD"
+  - title: "**Part 11. TBD**"
     date: "March 16"
     class: "11-class"
 
