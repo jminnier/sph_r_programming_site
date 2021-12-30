@@ -1,8 +1,8 @@
 ---
 title: "Part 2: Loading Data, data.frames, and ggplot2"
 linktitle: "Part 2: Loading Data, data.frames, and ggplot2"
-date: "2021-01-12"
-class_date: "2021-01-12"
+date: "2022-01-12"
+class_date: "2022-01-12"
 output:
   blogdown::html_page:
     toc: true

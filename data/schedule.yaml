@@ -36,7 +36,7 @@ lessons:
   - title: '**Part 6. Lists/RMarkdown/Work on Midterm**'
     date: "February 9"
     class: "06-class"
-    reading: "06-reading"
+    #reading: "06-reading"
 
   - title: 'Take home midterm due'
     date: "February 11"
@@ -44,17 +44,17 @@ lessons:
   - title: "**Part 7: Functions/batch processing/`purrr`**"
     date: "February 16"
     class: "07-class"
-    reading: "07-reading"
+    #reading: "07-reading"
 
   - title: "**Part 8. Intro to stats/formulas/`broom`/More Purrr**"
     date: "February 23"
     class: "08-class"
-    reading: "08-reading"
+    #reading: "08-reading"
     
   - title: "**Part 9. Stats in Tables"
     date: "March 3"
     class: "09-class"
-    reading: "09-reading"
+    #reading: "09-reading"
     
   - title: "**Final Project Assigned**"
     date: "March 2"
@@ -62,7 +62,7 @@ lessons:
   - title: "**Part 10. More stats stuff (TBD)"
     date: "March 9"
     class: "10-class"
-    reading: "10-reading"
+    #reading: "10-reading"
 
   - title: "**Part 11. TBD"
     date: "March 16"

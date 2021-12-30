@@ -1,8 +1,8 @@
 ---
 title: "Part 9. Stats in Tables"
 linktitle: "Part 9. Stats in Tables"
-date: "2021-03-02"
-class_date: "2021-03-02"
+date: "2022-03-02"
+class_date: "2022-03-02"
 output:
   blogdown::html_page:
     toc: true

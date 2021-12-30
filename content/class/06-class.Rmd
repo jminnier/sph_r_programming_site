@@ -1,8 +1,8 @@
 ---
 title: "Part 6. Lists and RMarkdown"
 linktitle: "Part 6. Lists and RMarkdown"
-date: "2021-02-10"
-class_date: "2021-02-10"
+date: "2022-02-10"
+class_date: "2022-02-10"
 output:
   blogdown::html_page:
     toc: true

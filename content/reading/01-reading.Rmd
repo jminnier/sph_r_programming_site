@@ -1,7 +1,7 @@
 ---
 title: "Introduction to R/RStudio/Vectors/For Loops"
 linktitle: "Part 1: Introduction to R/RStudio/Vectors/"
-date: "2021-01-07"
+date: "2022-01-05"
 menu:
   reading:
     parent: Readings
@@ -13,9 +13,10 @@ type: docs
 
 Remember, this reading is mostly supplemental and will help you if there are concepts that are unclear in class.
 
-- [Introduction to RStudio Cloud Video](https://www.youtube.com/watch?v=uK1Va_UWQFc) 
 - [R and RStudio Basics](https://ismayc.github.io/rbasics-book/3-rstudiobasics.html) - make sure to watch the videos.
 - [Vectors and Data Frames](https://ubc-dsci.github.io/introduction-to-datascience/wrangling.html#vectors-and-data-frames)
+- [Rstudio projects](https://r4ds.had.co.nz/workflow-projects.html)
+
 
 ## Optional 
 
@@ -23,7 +24,7 @@ Remember, this reading is mostly supplemental and will help you if there are con
 
 This is a short reference on how to do formatting in Markdown. This is optional, but may be a helpful reference as you continue on and work with Markdown and RMarkdown. 
 
-https://sph-r-programming.netlify.app/reference/markdown.html
+https://sph-r-programming-2022.netlify.app/reference/markdown.html
 
 
 ### Swirl Basics
