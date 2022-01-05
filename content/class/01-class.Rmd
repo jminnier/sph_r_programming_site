@@ -42,6 +42,12 @@ Open the class introduction slides in a separate window: <a href="https://sph-r-
 knitr::include_url('https://sph-r-programming-2022.netlify.com/slides/01-introduction_slides#1')
 ```
 
+We will also cover a few of these slides on for loops: <a href="https://sph-r-programming-2022.netlify.app/slides/02-for_loops#1" target="_blank">https://sph-r-programming-2022.netlify.app/slides/02-for_loops#1</a>
+
+```{r echo=FALSE}
+knitr::include_url('https://sph-r-programming-2022.netlify.app/slides/02-for_loops#1')
+```
+
 ## Class Video
 
 View last year's class [here](https://sph-r-programming.netlify.app/class/01-class/).
