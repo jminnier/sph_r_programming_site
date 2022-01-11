@@ -20,7 +20,7 @@ editor_options:
 
 ## R Project files
 
-Please download the `part2` and `function_of_the_week` folders from [this dropbox folder link](https://www.dropbox.com/sh/q4z72523kl84ywp/AAASb1YIFRpxzrjOeq1FVcXua?dl=0) Be sure to unzip if necessary.
+Please download the `part2` and `function_of_the_week` folders from [this dropbox folder link](https://www.dropbox.com/sh/q4z72523kl84ywp/AAASb1YIFRpxzrjOeq1FVcXua?dl=0) Be sure to unzip if necessary. In advance of class, please open the `part2` Rstudio project (double click on the `.rproj` file), open `part2.Rmd` and `knit` (click the Knit button at the top of the file) this file. This will install packages that you need for the Rmd to run.
 
 ## Readings
 
