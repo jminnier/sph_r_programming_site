@@ -82,6 +82,10 @@ Remember, all of this is anonymous.
 
 Yes! Most comments were on loops. With 30 minutes in class I weighed the option of just ending early and starting this when we were fresh, or with doing a quick intro and finishing more in depth later (and maybe chose the wrong option ;)). Don't worry if you're still confused because I didn't explain things very thoroughly! Class 2 we will go over it all again.
 
+> Loops- not technically, more why we would want to do this in reality
+
+Loops in the very simplistic way we learned them are less useful in practice due to the vectorization of most functions in R, but we will later see how they can be useful with data operations. Also understanding them gives us the building block knowledge to understand more complex iteration tasks we will cover in the future (`purrr::map()` for example, possibly `lapply()` and  `apply()` if we have time).
+
 > loops without indexing - Does R always end the loop once the end of the vector referenced is reached? Are there ever situations where R gets stuck in a continuous loop?
 
 Great question, I remember learning about for loops in other programming classes and dealing with situations where we got stuck in an infinite loop but I honestly can't think of an example where I've had this happen in real life with R. This can definitely happen, but in real data scenarios I don't think it's common because you usually have a finite vector or data frame. More often than not, R will exit the for loop early due to some error. I will try to show an example of this in class. (I imagine a `while()` loop could get stuck, but I never ever use that function.) If you ever get stuck with something happening in R, you can press ESC over and over or click top bar "Session" -> "Terminate R" or "Restart R".
