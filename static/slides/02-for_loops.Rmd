@@ -1,7 +1,7 @@
 ---
-title: "For Loops"
+title: "Intro to Working with Data: for loops, Rstudio proj, tidy data, ggplot intro"
 subtitle: "R Programming"
-author: "Ted Laderas"
+author: "Jessica Minnier"
 date: "`r Sys.Date()`"
 output:
   xaringan::moon_reader:
@@ -64,7 +64,7 @@ class: center, middle
 
 ---
 
-<img src = "image/week2/project2.JPG" width = 800>
+<img src = "image/week2/rstudio_proj_pic.png" width = 900>
 
 ---
 class: center, middle
