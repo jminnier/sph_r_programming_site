@@ -1,5 +1,5 @@
 ---
-title: "Intro to Working with Data: for loops, Rstudio proj, tidy data, ggplot intro"
+title: "Class 2 Intro to Working with Data: for loops, Rstudio proj, tidy data, ggplot intro"
 subtitle: "R Programming"
 author: "Jessica Minnier"
 date: "`r Sys.Date()`"
@@ -34,6 +34,29 @@ xaringanExtra::use_tachyons()
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
 ```
+
+
+# Class 2
+
+- Muddiest/clearest points
+- Some details
+    * Youtube video (on website) vs. zoom video link (in slack)
+- Go back to for loops from Class 1 Rmd
+    * another example
+    * `print()`-ing what's going on
+- Function of the week
+    * Open new project in existing folder
+    * Sign up sheet and details
+- Class 2 Rproj/Rmd
+    * Rstudio projects and file paths
+    * Importing data
+    * Tidy data
+    * Ggplot *__intro__* (advanced stuff later)
+- Assignment 2 due date depends on how far we get today
+    
+
+---
+
 
 class: center, middle
 
