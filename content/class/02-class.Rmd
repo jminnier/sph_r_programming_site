@@ -37,7 +37,7 @@ knitr::include_url('https://sph-r-programming-2022.netlify.app/slides/02-for_loo
 
 ## Class Video
 
-The video will be uploaded after class.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0-_luKuYo_E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 View last year's class and materials [here](https://sph-r-programming.netlify.app/class/02-class/).
 
