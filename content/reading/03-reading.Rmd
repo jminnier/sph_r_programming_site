@@ -39,7 +39,7 @@ Remember, `select()` works on columns.
 
 `tidyselect` lets you select columns by matching names. In conjunction with the `across()` command, you can apply the same operation to multiple columns at once. This is especially handy when you need to produce a summary on all numeric columns.
 
-You can run the `tidyselect` tutorial by first installing the `tidyowl` package by Ted Laderas:
+You can run the `tidyselect` tutorial by first installing the [`tidyowl` package by Ted Laderas](https://github.com/laderast/tidyowl):
 
 ```
 install.packages("remotes")
