@@ -68,7 +68,7 @@ Please fill out the following survey and we will discuss the results during the 
 
 ## Pacing
 
-I won't always talk about the pacing feedback but in the beginning I think it's useful: Mean 2.94, median 3. So on average the pace seemed to be on target, most people chose 3, though I was trying to balance going slowly at first and also adding in a couple challenging topics. So depending on your experince with R this might have gone ok or not. Please ask questions in the chat (or unmute to ask) during class for anything that's unclear!
+I won't always talk about the pacing feedback but in the beginning I think it's useful: Mean 2.94, median 3. So on average the pace seemed to be on target, most people chose 3, though I was trying to balance going slowly at first and also adding in a couple challenging topics. So depending on your experience with R this might have gone ok or not. Please ask questions in the chat (or unmute to ask) during class for anything that's unclear!
 
 ## Muddiest Points
 
