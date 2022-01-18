@@ -108,6 +108,8 @@ cesc_clinical <- read_excel("data/tcga_clinical_data.xlsx",
                             )
 ```
 
+I highly recommend reading the [introduction/vignette for the `readxl`](https://readxl.tidyverse.org/) package and looking at the [cheatsheet.](https://raw.githubusercontent.com/rstudio/cheatsheets/main/data-import.pdf)
+
 > how to use haven package
 
 Oh yes, I didn't really cover this since I wasn't sure of the interest, but I can since there were a couple requests to do that. I'll go over this more in depth next time.
@@ -129,5 +131,7 @@ Wonderful, I was hoping to incorporate more breakout room tasks in class 3, so I
 > Please go slower with how to upload items such as excel files, installing packages, et cetera.
 
 Thank you, will definitely try to do this. If there is ever a time you want me to fully go over a step again, maybe with different explanations, please let me know (ask in chat during class or send message this way) and I am happy to. 
+
+I highly recommend reading the [introduction/vignette for the `readxl`](https://readxl.tidyverse.org/) package!
 
 Thank you for the feedback, everyone, it's super helpful!
