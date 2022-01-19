@@ -20,7 +20,7 @@ editor_options:
 
 ## R Project files
 
-Before each class, I will update [this folder link](https://www.dropbox.com/sh/q4z72523kl84ywp/AAASb1YIFRpxzrjOeq1FVcXua?dl=0) with the appropriate "part" folder. Please download this sub-folder for class materials. Be sure to unzip if necessary.
+Please download the [part3](https://www.dropbox.com/sh/6071l3w2c7janda/AACbC_iGdedvuOfBA9Jy25Soa?dl=0) folder for class materials. Use the grey "download" button to download the whole folder, please keep the file structure and folder organization exactly the same as we need this for class. Be sure to unzip if necessary. You may move the folder `part3` wherever you like on your computer.
 
 ## Readings
 
@@ -36,13 +36,12 @@ View last year's class and materials [here](https://sph-r-programming.netlify.ap
 
 ## Slides
 
-To be posted.
+Open the class introduction slides in a separate window: <a href="https://sph-r-programming-2022.netlify.app/slides/03-ggplot2-dplyr-part1#1" target="_blank">https://sph-r-programming-2022.netlify.app/slides/03-ggplot2-dplyr-part1s#1</a>
 
-<!-- Open the class introduction slides in a separate window: <a href="https://sph-r-programming-2022.netlify.app/slides/01-introduction_slides#1" target="_blank">https://sph-r-programming-2022.netlify.app/01-introduction_slides#1</a> -->
+```{r echo=FALSE}
+knitr::include_url('https://sph-r-programming-2022.netlify.app/slides/03-ggplot2-dplyr-part1#1')
+```
 
-<!-- ```{r echo=FALSE} -->
-<!-- knitr::include_url('https://sph-r-programming-2022.netlify.com/slides/01-introduction_slides#1') -->
-<!-- ``` -->
 
 ### Post-Class
 
