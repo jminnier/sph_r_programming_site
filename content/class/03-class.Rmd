@@ -28,7 +28,10 @@ Required and suggested class readings can be found on the Readings tab by class.
 
 ## Class Video
 
-The video will be uploaded after class.
+The class video is here, but I forgot to video tape the part about `here::here()`. If I have a chance I will re-record myself talking about it, but in the meantime, [click here for Ted's video from last year](https://youtu.be/7KZWcICwF54?t=1463), which explains similar ideas.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gLTl_9AAMjo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 View last year's class and materials [here](https://sph-r-programming.netlify.app/class/01-class/).
 
