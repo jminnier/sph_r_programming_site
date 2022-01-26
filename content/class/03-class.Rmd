@@ -145,6 +145,12 @@ But you can also use the more sophisticated tidyselect methods here. Say we want
 smoke_complete %>% select(-contains("day"))
 ```
 
+> Class is going well!
+
+> Thank you! This class is always so interesting and useful!
+
+Yay!!
+
 ## Related to homework
 
 > I'm glad we have homework this week - the practice really helps :)
