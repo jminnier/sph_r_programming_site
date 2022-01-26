@@ -9,10 +9,10 @@ menu:
 type: docs
 ---
 
-## Optional
+## Required
 
-The following resources are optional reading, but quite helpful in your RMarkdown Journey.
+- [Introduction to Functions and Arguments](https://hbctraining.github.io/Intro-to-R-flipped/lessons/03_introR-functions-and-arguments.html)
+- [Introduction to Lists](http://statseducation.com/Introduction-to-R/modules/getting%20data/lists/) - be sure to read this before class next week.
+- [Control your Factors Using Forcats](https://sciencificity-blog.netlify.app/posts/2021-01-30-control-your-factors-with-forcats/)
 
-- [RMarkdown Cheatsheet](https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
-- [RMarkdown Cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/)
-- [RMarkdown for Scientists](https://rmd4sci.njtierney.com/)
+
