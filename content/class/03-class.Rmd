@@ -82,7 +82,7 @@ Ah yes this will take practice. In future classes I will try to show more exampl
 
 > Read excel and how to select for tabs within the file
 
-Please see the explanation in Class 2 page for the answer to a similar question under Muddiest Points, and re-watch the loading data review from last class. If it's still troublesome please set up a 1:1 with me or Colin for more help. I may be misunderstanding the question!
+Please see the explanation in Class 2 page for the answer to a similar question under Muddiest Points, and re-watch the loading data review from last class. I think the key here is that "tab" is called "sheet" in excel and in the `read_excel()` function. So `read_excel("filename.xlsx", sheet = 1)` is the first tab/sheet. If it's still troublesome please set up a 1:1 with me or Colin for more help. I may be misunderstanding the question!
 
 > "here" function. I wonder how the here function to indicate the specific data folder. Since each part folder has a data folder.
 
