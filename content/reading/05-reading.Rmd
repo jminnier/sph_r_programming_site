@@ -1,6 +1,6 @@
 ---
+title: "Part 5. summarize() and group_by(), doing things with multiple tables (left_join() etc), reshaping data (i.e. pivot_longer())"
 linktitle: "Part 5. summarize() and group_by(), doing things with multiple tables (left_join() etc), reshaping data (i.e. pivot_longer())"
-title: "Part 5. `summarize()` and `group_by()`, doing things with multiple tables (`left_join()` etc), reshaping data (i.e. `pivot_longer()`)"
 date: "2022-01-26"
 menu:
   reading:
@@ -12,7 +12,7 @@ type: docs
 ## Required
 
 - [Data Transformation (5.6-5.7)](https://r4ds.had.co.nz/transform.html) from R for Data Science
-- [Aggregating data with `summarize` and `map`](https://ubc-dsci.github.io/introduction-to-datascience/wrangling.html#aggregating-data-with-summarize-and-map) - we will cover `map()` and `rowwise()` later, but `summarize` and `mutate` with `across` are described here. You may want to visit when we get to `purrr`.
+- [Aggregating data with `summarize` and `map`](https://ubc-dsci.github.io/introduction-to-datascience/wrangling.html#aggregating-data-with-summarize-and-map) - we will cover `map()` and `rowwise()` later, but `summarize` and `mutate` with `across` are described here. You may want to re-visit this when we get to `purrr`.
 
 ## Optional
 
