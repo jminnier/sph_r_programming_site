@@ -18,4 +18,5 @@ type: docs
 
 ## Optional
 
+- [Tidyverse style guide](https://style.tidyverse.org/index.html)
 - This [column-wise operations vignette](https://cran.r-project.org/web/packages/dplyr/vignettes/colwise.html) will be useful for the next couple classes.
