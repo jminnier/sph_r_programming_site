@@ -86,7 +86,7 @@ Please see the explanation in Class 2 page for the answer to a similar question 
 
 > "here" function. I wonder how the here function to indicate the specific data folder. Since each part folder has a data folder.
 
-`here()` is relative to your project folder. Since each part has it's own Rstudio project associated with it (there is a .Rproj file in each part folder) it only looks in the "data/" folder that is inside that root folder (defined as where the .Rproj file lives). See [the excerpt on here from Ted's video, as well.](https://youtu.be/7KZWcICwF54?t=1463). I will keep using here examples as well to get more practice.
+`here()` is relative to your project folder. Since each part has it's own Rstudio project associated with it (there is a .Rproj file in each part folder) it only looks in the "data/" folder that is inside that root folder (defined as where the .Rproj file lives). See [the excerpt on here from Ted's video, as well.](https://youtu.be/7KZWcICwF54?t=1463) I will keep using here examples as well to get more practice.
 
 > I keep getting confused on which variables are independent/dependent, which ones go on x-axis and y-axis. It's so simple, this is not a reflection of your teaching, but in all of my classes throughout the years my brain struggles with knowing how to figure it out
 
@@ -105,7 +105,7 @@ Excellent point, I haven't really merged those ideas together yet. Often, data w
 
 > What makes tidyselect stuff different from normal select? The ability to select names based on partial matches? (eg "ends in s")
 
-Yeah this is confusing for sure, and honestly I am still somewhat confused as it's a newish concept to tidyverse. `tidyselect` we can think of as a language (or a backend), it is used in multiple functions, including `select()` but also `across()` as we will see in class 4,`pivot_longer()`, `rename_with()`, and many more, but it also has to do with the tidyverse's use of "unquoted" variable names in all the functions, and how to deal with that. There are some examples in [this vignette](https://tidyselect.r-lib.org/articles/syntax.html) that involve `enquo()`, `expr()`, etc (but I don't recommend going down that rabbit hole just yet). For now, I would just get familiar with all of the selection helpers listed in this [vignette.](https://tidyselect.r-lib.org/reference/language.html)
+Yeah this is confusing for sure, and honestly I am still somewhat confused as it's a newish concept to tidyverse. `tidyselect` we can think of as a language (or a backend), it is used in multiple functions, including `select()` but also `across()` as we will see in class 4, `pivot_longer()`, `rename_with()`, and many more. However, it also has to do with the tidyverse's use of "unquoted" variable names in all the functions, and how to deal with that when making your own functions. There are some examples in [this vignette](https://tidyselect.r-lib.org/articles/syntax.html) that involve `enquo()`, `expr()`, etc (but I don't recommend going down that rabbit hole just yet). For now, I would just get familiar with all of the selection helpers listed in this [vignette.](https://tidyselect.r-lib.org/reference/language.html) They do show how you would select names based on partial matches or other characteristics.
 
 # Clearest Points
 
