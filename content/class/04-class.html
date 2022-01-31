@@ -108,13 +108,13 @@ ggsave(plot = p_boxplot, filename = &quot;myboxlot.png&quot;)</code></pre>
 <blockquote>
 <p><code>smoke_new &lt;- smoke_complete %&gt;% mutate( alive = (vital_status == "alive"), alive1 = 1*(vital_status == "alive") )</code> Not 100% clear what R is doing to create the T/F then 0/1 binary variables.</p>
 </blockquote>
-<p>Let’s break this down in parts, starting with just vectors, not a data.frame:</p>
+<p>Let’s break this down in parts, showing what’s happening with just vectors, not a data.frame:</p>
 <pre class="r"><code># here is a character vector, a subset of vital_status
 myvec &lt;- c(&quot;dead&quot;,&quot;alive&quot;, &quot;dead&quot;, &quot;alive&quot;, &quot;alive&quot;)
 # R will tell us this is a character vector:
 class(myvec)</code></pre>
 <pre><code>## [1] &quot;character&quot;</code></pre>
-<pre class="r"><code># Now let&#39;s run that first code &quot;test&quot; which is a boolean statement
+<pre class="r"><code># Now let&#39;s run that first code &quot;test&quot; which is a boolean statement using a logical operator ==
 myvec == &quot;alive&quot;</code></pre>
 <pre><code>## [1] FALSE  TRUE FALSE  TRUE  TRUE</code></pre>
 <pre class="r"><code># we see that this gives TRUE, FALSE, TRUE
@@ -134,6 +134,8 @@ myvec_numeric &lt;- 1*myvec_boolean
 # now we&#39;ve turned myvec from a character vector into a binary numeric vector
 class(myvec_numeric)</code></pre>
 <pre><code>## [1] &quot;numeric&quot;</code></pre>
+<pre class="r"><code>myvec_numeric</code></pre>
+<pre><code>## [1] 0 1 0 1 1</code></pre>
 <pre class="r"><code># We could have done this all at once:
 1*(myvec==&quot;alive&quot;)</code></pre>
 <pre><code>## [1] 0 1 0 1 1</code></pre>
@@ -146,7 +148,7 @@ class(myvec_numeric)</code></pre>
 <blockquote>
 <p>This time I watched the lecture the day after, while I do enjoy the social aspect of class, I did find it very helpful to pause, go back to my code, rewind if needed, etc.</p>
 </blockquote>
-<p>I like the pairing of these comments because both are excellent points about the benefits of a class like this! It almost seems too luxurious to spend 11 weeks and tuition dollars on a class just about R, especially when there are approximately 12 million resources online teaching the same thing. But when else would we have a chance to do this in our busy lives, outside of school? The community of learners and having someone to bounce questions and ideas off of is indeed priceless.</p>
+<p>I like the pairing of these comments because both are excellent points about the benefits of a class like this! It almost seems too luxurious to spend 11 weeks and tuition dollars on a class just about R, especially when there are approximately 12 million resources online teaching the same thing. But when else would we have a chance to do this in our busy lives, outside of school? The community of learners and having someone to bounce questions and ideas off of is indeed priceless. It’s also great to have the course recorded in such a way that it’s accessible after class. If we were having this class in person, that would be a lot more difficult.</p>
 <blockquote>
 <p>Please add more tricks for displaying data (i.e. ncol and other commands) that help with displaying multiple datapoints.</p>
 </blockquote>
@@ -154,7 +156,7 @@ class(myvec_numeric)</code></pre>
 <blockquote>
 <p>Thanks for excellent teaching! It’s very useful for me to learn the foundation of R systematically. Is there possible to add some example of actual project data processing in class?</p>
 </blockquote>
-<p>Yes…I have a a couple data sets in mind for this and will try to implement it in the next couple weeks.</p>
+<p>Yes! I have a a couple data sets in mind for this and will try to implement it in the next couple weeks.</p>
 <blockquote>
 <p>ggplots are becoming a lot more clear to me - they confused me last quarter, so thank you !</p>
 </blockquote>
