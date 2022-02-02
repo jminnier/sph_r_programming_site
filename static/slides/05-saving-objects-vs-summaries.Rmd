@@ -147,6 +147,7 @@ Some things you *__don't__* usually want to save
 
 - `glimpse()` prints a snapshot of your data, not useful to save
 - `head()` or `tail()`, there's almost no reason to save just the first few lines of your data, except for educational purposes!
+- Similarly, you can pipe on `nrow()` or `dim()` or `colnames()` or `class()` and so on, these are pulling out meta-data/information from your data; you can save this as an object but make sure you know what the output is! (probably a vector of information)
 - `skim()` prints a visual summary of your data, you can save it if you want to do fancy things with it
 - `view()`/`View()` pops up a window that shows your data, don't save this and don't keep this code in your Rmd
 
