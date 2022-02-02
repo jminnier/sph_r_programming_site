@@ -39,6 +39,12 @@ During "Muddiest  Parts" review, we will go over [these slides](https://sph-r-pr
 knitr::include_url('https://sph-r-programming-2022.netlify.app/slides/05-saving-objects-vs-summaries#1')
 ```
 
+## Another useful video
+
+[Dr. Kelly Bodwin's Reshaping Data Video](https://youtu.be/4ZIFb1BoIB4)
+
+For a short version, watch the [pivot_longer excerpt](https://youtu.be/4ZIFb1BoIB4?t=365) about "working backwards" from a plot. Then watch the [pivot_wider excerpt](https://youtu.be/4ZIFb1BoIB4?t=620)
+
 ## Post-Class
 
 Please fill out the following survey and we will discuss the results during the next lecture. All responses will be anonymous.
