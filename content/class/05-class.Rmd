@@ -33,9 +33,13 @@ View last year's class and materials [here](https://sph-r-programming.netlify.ap
 
 ## Slides
 
-No slides this week.
+During "Muddiest  Parts" review, we will go over [these slides](https://sph-r-programming-2022.netlify.app/slides/05-saving-objects-vs-summaries)
 
-### Post-Class
+```{r echo=FALSE}
+knitr::include_url('https://sph-r-programming-2022.netlify.app/slides/05-saving-objects-vs-summaries#1')
+```
+
+## Post-Class
 
 Please fill out the following survey and we will discuss the results during the next lecture. All responses will be anonymous.
 

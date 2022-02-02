@@ -134,8 +134,8 @@ penguins_f_table %>%
   write_csv(file = "table_of_species_in_females.csv")
 
 # or save as tibble object and then write tibble to csv file
-penguins_f_table <- penguins_f_table %>% 
-  arrange(n)
+penguins_f_table <- penguins_f_table %>% arrange(n)
+
 write_csv(penguins_f_table, file = "table_of_species_in_females.csv")
 ```
 
@@ -146,6 +146,7 @@ write_csv(penguins_f_table, file = "table_of_species_in_females.csv")
 Some things you *__don't__* usually want to save
 
 - `glimpse()` prints a snapshot of your data, not useful to save
+- `head()` or `tail()`, there's almost no reason to save just the first few lines of your data, except for educational purposes!
 - `skim()` prints a visual summary of your data, you can save it if you want to do fancy things with it
 - `view()`/`View()` pops up a window that shows your data, don't save this and don't keep this code in your Rmd
 
@@ -231,10 +232,10 @@ pview
 
 # Saving ggplot
 
-- Save a ggplot as an object if you want to "call it" later to add more layers, or if you want to save it
-- `ggsave()` by default saves the last plot printed, but to be extra careful you can use the object name
+- Save a ggplot *as an object* if you want to "call it" later to add more layers, or if you want to save it *as an image file* (i.e .png, .pdf, .tif, etc) on your computer
+- `ggsave()` by default saves the last plot printed to a file, but to be extra careful you can use the object name
 
-```{r}
+```{r, fig.width = 10, fig.height = 3}
 # save as object p_boxplot; will not print out plot
 p_boxplot <- ggplot(penguins, 
                     aes(x = species,
@@ -244,13 +245,16 @@ p_boxplot <- ggplot(penguins,
 
 # it's a ggplot object
 class(p_boxplot)
+# print the plot in output
+p_boxplot
 ```
 
 ---
 
-Now we can add additional layers, and/or save it!
+Now we can add additional layers, and/or save it as a png file!
 
 ```{r, fig.width = 10, fig.height = 3}
+# save as png (default location is same folder where Rmd is)
 ggsave(p_boxplot, file = "p_boxplot.png", height = 6, width = 5)
 # add layers
 p_boxplot + theme_minimal() + labs(title = "Add layers to my boxplot!", x = "")

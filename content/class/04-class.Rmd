@@ -42,7 +42,7 @@ No slides this week.
 <!-- knitr::include_url('https://sph-r-programming-2022.netlify.com/slides/01-introduction_slides#1') -->
 <!-- ``` -->
 
-### Post-Class
+## Post-Class
 
 Please fill out the following survey and we will discuss the results during the next lecture. All responses will be anonymous. The first two questions will count toward your attendance part of the grade.
 
@@ -125,6 +125,34 @@ myvec_numeric
 1*(myvec=="alive")
 ```
 
+> booleans. When are they more useful?
+
+Hopefully the example above gives some insight into how they can be useful. I will say as a data type, I don't use them much, other than to create new variables as above. We also use boolean statements in our filtering and in `case_when()`, for instance
+
+```{r eval = FALSE}
+mtcars %>% filter(cyl==4) # cyl==4 is a TRUE/FALSE value
+mtcars %>% select(where(is.numeric)) # is.numeric is TRUE/FALSE
+mtcars %>% mutate(
+  cyl_cat = case_when(
+    cyl < 6 ~ "low", # cyl < 6 is TRUE/FALSE
+    cyl >=6 ~ "high" # cyl >= 6 is TRUE/FALSE
+  )
+)
+```
+
+
+> NA
+
+I'm not sure if this means "not applicable" or, if `NA` missing values are muddy! I'll keep trying to go over how we deal with missing data, we'll see some challenges with `NA` in class 5.
+
+> Bonus muddy point that I've noticed confusion on. What is our output from piping code vs what are we saving and why?
+
+Remember that when you manipulate your data, you need to save it as a new data frame (`tibble`) but be careful about what you are saving.
+
+See [these slides](https://sph-r-programming-2022.netlify.app/slides/05-saving-objects-vs-summaries) for more info.
+
+
+
 # Clearest points
 
 > I love all the examples in this class and I really appreciate that you take time to answer all our questions about syntax and how you would use these functions! R has so much documentation but it can be really dense and hard to understand, at least for non-programmer me. Having questions answered is just priceless!
@@ -141,7 +169,13 @@ Will do! I want to get through some advanced data wrangling first, but then we w
 
 Yes! I have a a couple data sets in mind for this and will try to implement it in the next couple weeks.
 
+
+> ggplot section
+
+> assigning levels of a factor and ggplot
+
 > ggplots are becoming a lot more clear to me - they confused me last quarter, so thank you !
+
 
 Great news, I'm so glad!
 
