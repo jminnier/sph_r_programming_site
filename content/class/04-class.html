@@ -75,13 +75,14 @@ editor_options:
 library(ggplot2)
 # save each ggplot with an object name
 p_scatter &lt;- ggplot(mtcars, aes(x=mpg, y=disp)) + geom_point()
-p_boxplot &lt;- ggplot(mtcars, aes(x=cyl, y=disp)) + geom_point()
+p_boxplot &lt;- ggplot(mtcars, aes(x=cyl, y=disp)) + geom_boxplot()
 # to print/show the plot, you now need to call it by the object name
 p_scatter</code></pre>
 <p><img src="/class/04-class_files/figure-html/unnamed-chunk-1-1.png" width="192" /></p>
 <pre class="r"><code># save each named plot
 ggsave(plot = p_scatter, filename = &quot;myscatterplot.png&quot;)
-ggsave(plot = p_boxplot, filename = &quot;myboxlot.png&quot;)</code></pre>
+ggsave(plot = p_boxplot, filename = &quot;myboxplot.png&quot;)</code></pre>
+<pre><code>## Warning: Continuous x aesthetic -- did you forget aes(group=...)?</code></pre>
 <p>We now have two plots saved. Note that only one plot was printed in the Rmd output because I only called the name of the scatterplot.</p>
 <blockquote>
 <p>across()</p>

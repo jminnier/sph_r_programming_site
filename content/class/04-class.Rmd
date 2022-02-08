@@ -70,12 +70,12 @@ library(tidyverse)
 library(ggplot2)
 # save each ggplot with an object name
 p_scatter <- ggplot(mtcars, aes(x=mpg, y=disp)) + geom_point()
-p_boxplot <- ggplot(mtcars, aes(x=cyl, y=disp)) + geom_point()
+p_boxplot <- ggplot(mtcars, aes(x=cyl, y=disp)) + geom_boxplot()
 # to print/show the plot, you now need to call it by the object name
 p_scatter
 # save each named plot
 ggsave(plot = p_scatter, filename = "myscatterplot.png")
-ggsave(plot = p_boxplot, filename = "myboxlot.png")
+ggsave(plot = p_boxplot, filename = "myboxplot.png")
 ```
 
 We now have two plots saved. Note that only one plot was printed in the Rmd output because I only called the name of the scatterplot.
