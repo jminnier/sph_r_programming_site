@@ -76,7 +76,7 @@ editor_options:
 <p>when to use fct_collapse vs case when and when you would want to turn a character into a vector</p>
 </blockquote>
 <p>Thanks for this, I went through this too quickly it seems. First, I should say that the two ways of creating the <code>cigarettes10</code> categorical vector – using <code>case_when()</code> or using <code>forcats</code> factor function – are both equally good options. You can always turn a character vector into a factor after using case_when. I will show some benefits of a factor vector in part 6 and also when we talk about statistical modeling. Here is a visual explanation of what I was doing with <code>fct_other()</code> + <code>fct_collapse()</code>:</p>
-<p><img src="cigarettes10_forcats.png" /></p>
+<p><img src = "/img/cigarettes10_forcats.png"></p>
 <blockquote>
 <p>Also the challenge question to change the logical “ever_been_bullied” into a character vector with ifelse() … I have never used ifelse() and that made zero sense to me. Will have to play with it to understand.</p>
 </blockquote>
@@ -128,13 +128,9 @@ mydata</code></pre>
 <p>adorn_percentages: On the species/sex tabyl example, percentages were calculated across rows for sex. Is there a way to change percentages to calculate down columns for species?</p>
 </blockquote>
 <p>Yes!! When I talk more about tables, statistical modeling, etc I was planning to go more in depth with janitor tabyls. But it’s so useful I can’t help but keep showing you tabyl functions along the way. So here’s some more tips:</p>
-<pre class="r"><code>library(janitor)</code></pre>
-<pre><code>## 
-## Attaching package: &#39;janitor&#39;</code></pre>
-<pre><code>## The following objects are masked from &#39;package:stats&#39;:
-## 
-##     chisq.test, fisher.test</code></pre>
-<pre class="r"><code>library(palmerpenguins)
+<pre class="r"><code>library(janitor)
+library(palmerpenguins)
+library(gt)
 
 # simple cross table with counts
 penguins %&gt;% 
@@ -186,8 +182,8 @@ penguins %&gt;%
   adorn_percentages(denominator = &quot;col&quot;) %&gt;%
   adorn_totals(where = c(&quot;row&quot;, &quot;col&quot;)) %&gt;%
   adorn_pct_formatting() %&gt;%
+  # add back in counts in ()
   # need to have adorn_ns AFTER adding pct formatting, otherwise error
-  # add back in counts
   adorn_ns()</code></pre>
 <pre><code>##    species       female         male         NA_        Total
 ##     Adelie  44.2%  (73)  43.5%  (73)  54.5%  (6) 142.2% (152)
@@ -209,7 +205,6 @@ penguins %&gt;%
 ##      Total 48.0% (165) 48.8% (168) 3.2% (11) 100.0% (344)</code></pre>
 <pre class="r"><code>penguins %&gt;% 
   tabyl(species, sex) %&gt;%
-  # percent of total (denominator is the total sum)
   adorn_percentages(denominator = &quot;all&quot;) %&gt;%
   adorn_totals(where = c(&quot;row&quot;, &quot;col&quot;)) %&gt;%
   adorn_pct_formatting() %&gt;%
@@ -217,13 +212,13 @@ penguins %&gt;%
   # add title, need placement = &quot;combined&quot; for gt to work
   adorn_title(placement = &quot;combined&quot;) %&gt;%
   # make it fancy html
-  gt::gt()</code></pre>
-<div id="lcauklxhoj" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+  gt()</code></pre>
+<div id="rwohfsgvtt" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#lcauklxhoj .gt_table {
+#rwohfsgvtt .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -248,7 +243,7 @@ penguins %&gt;%
   border-left-color: #D3D3D3;
 }
 
-#lcauklxhoj .gt_heading {
+#rwohfsgvtt .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -260,7 +255,7 @@ penguins %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#lcauklxhoj .gt_title {
+#rwohfsgvtt .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -270,7 +265,7 @@ penguins %&gt;%
   border-bottom-width: 0;
 }
 
-#lcauklxhoj .gt_subtitle {
+#rwohfsgvtt .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -280,13 +275,13 @@ penguins %&gt;%
   border-top-width: 0;
 }
 
-#lcauklxhoj .gt_bottom_border {
+#rwohfsgvtt .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#lcauklxhoj .gt_col_headings {
+#rwohfsgvtt .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -301,7 +296,7 @@ penguins %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#lcauklxhoj .gt_col_heading {
+#rwohfsgvtt .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -321,7 +316,7 @@ penguins %&gt;%
   overflow-x: hidden;
 }
 
-#lcauklxhoj .gt_column_spanner_outer {
+#rwohfsgvtt .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -333,15 +328,15 @@ penguins %&gt;%
   padding-right: 4px;
 }
 
-#lcauklxhoj .gt_column_spanner_outer:first-child {
+#rwohfsgvtt .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#lcauklxhoj .gt_column_spanner_outer:last-child {
+#rwohfsgvtt .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#lcauklxhoj .gt_column_spanner {
+#rwohfsgvtt .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -353,7 +348,7 @@ penguins %&gt;%
   width: 100%;
 }
 
-#lcauklxhoj .gt_group_heading {
+#rwohfsgvtt .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -375,7 +370,7 @@ penguins %&gt;%
   vertical-align: middle;
 }
 
-#lcauklxhoj .gt_empty_group_heading {
+#rwohfsgvtt .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -390,15 +385,15 @@ penguins %&gt;%
   vertical-align: middle;
 }
 
-#lcauklxhoj .gt_from_md > :first-child {
+#rwohfsgvtt .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#lcauklxhoj .gt_from_md > :last-child {
+#rwohfsgvtt .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#lcauklxhoj .gt_row {
+#rwohfsgvtt .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -417,7 +412,7 @@ penguins %&gt;%
   overflow-x: hidden;
 }
 
-#lcauklxhoj .gt_stub {
+#rwohfsgvtt .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -429,7 +424,7 @@ penguins %&gt;%
   padding-left: 12px;
 }
 
-#lcauklxhoj .gt_summary_row {
+#rwohfsgvtt .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -439,7 +434,7 @@ penguins %&gt;%
   padding-right: 5px;
 }
 
-#lcauklxhoj .gt_first_summary_row {
+#rwohfsgvtt .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -449,7 +444,7 @@ penguins %&gt;%
   border-top-color: #D3D3D3;
 }
 
-#lcauklxhoj .gt_grand_summary_row {
+#rwohfsgvtt .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -459,7 +454,7 @@ penguins %&gt;%
   padding-right: 5px;
 }
 
-#lcauklxhoj .gt_first_grand_summary_row {
+#rwohfsgvtt .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -469,11 +464,11 @@ penguins %&gt;%
   border-top-color: #D3D3D3;
 }
 
-#lcauklxhoj .gt_striped {
+#rwohfsgvtt .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#lcauklxhoj .gt_table_body {
+#rwohfsgvtt .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -482,7 +477,7 @@ penguins %&gt;%
   border-bottom-color: #D3D3D3;
 }
 
-#lcauklxhoj .gt_footnotes {
+#rwohfsgvtt .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -496,13 +491,13 @@ penguins %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#lcauklxhoj .gt_footnote {
+#rwohfsgvtt .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#lcauklxhoj .gt_sourcenotes {
+#rwohfsgvtt .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -516,41 +511,41 @@ penguins %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#lcauklxhoj .gt_sourcenote {
+#rwohfsgvtt .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#lcauklxhoj .gt_left {
+#rwohfsgvtt .gt_left {
   text-align: left;
 }
 
-#lcauklxhoj .gt_center {
+#rwohfsgvtt .gt_center {
   text-align: center;
 }
 
-#lcauklxhoj .gt_right {
+#rwohfsgvtt .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#lcauklxhoj .gt_font_normal {
+#rwohfsgvtt .gt_font_normal {
   font-weight: normal;
 }
 
-#lcauklxhoj .gt_font_bold {
+#rwohfsgvtt .gt_font_bold {
   font-weight: bold;
 }
 
-#lcauklxhoj .gt_font_italic {
+#rwohfsgvtt .gt_font_italic {
   font-style: italic;
 }
 
-#lcauklxhoj .gt_super {
+#rwohfsgvtt .gt_super {
   font-size: 65%;
 }
 
-#lcauklxhoj .gt_footnote_marks {
+#rwohfsgvtt .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 65%;
@@ -593,6 +588,418 @@ penguins %&gt;%
   
 </table>
 </div>
+<pre class="r"><code>penguins %&gt;% 
+  tabyl(species, sex) %&gt;%
+  adorn_percentages(denominator = &quot;all&quot;) %&gt;%
+  adorn_totals(where = c(&quot;row&quot;, &quot;col&quot;)) %&gt;%
+  adorn_pct_formatting() %&gt;%
+  adorn_ns() %&gt;%
+  # make it fancy html
+  # specify that species denotes the name of the rows (removes that column label)
+  # adds line between row names and rest of table
+  gt::gt(rowname_col = &quot;species&quot;) %&gt;%
+  # adds back in Species above rows
+  gt::tab_stubhead(
+    label = &quot;Species&quot;
+  ) %&gt;%
+  # adds header
+  gt::tab_header(
+    title = &quot;Species by sex percentages (counts)&quot;,
+    subtitle = &quot;Palmer penguin data&quot;
+  ) %&gt;%
+  # adds sex label across multiple columns
+  gt::tab_spanner(
+    label = &quot;Sex&quot;,
+    columns = c(female, male, `NA_`)
+  )</code></pre>
+<div id="qfqskhazdu" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#qfqskhazdu .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#qfqskhazdu .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#qfqskhazdu .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#qfqskhazdu .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#qfqskhazdu .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#qfqskhazdu .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#qfqskhazdu .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#qfqskhazdu .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#qfqskhazdu .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#qfqskhazdu .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#qfqskhazdu .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#qfqskhazdu .gt_group_heading {
+  padding: 8px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#qfqskhazdu .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#qfqskhazdu .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#qfqskhazdu .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#qfqskhazdu .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#qfqskhazdu .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 12px;
+}
+
+#qfqskhazdu .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qfqskhazdu .gt_first_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+}
+
+#qfqskhazdu .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qfqskhazdu .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#qfqskhazdu .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#qfqskhazdu .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#qfqskhazdu .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#qfqskhazdu .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding: 4px;
+}
+
+#qfqskhazdu .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#qfqskhazdu .gt_sourcenote {
+  font-size: 90%;
+  padding: 4px;
+}
+
+#qfqskhazdu .gt_left {
+  text-align: left;
+}
+
+#qfqskhazdu .gt_center {
+  text-align: center;
+}
+
+#qfqskhazdu .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#qfqskhazdu .gt_font_normal {
+  font-weight: normal;
+}
+
+#qfqskhazdu .gt_font_bold {
+  font-weight: bold;
+}
+
+#qfqskhazdu .gt_font_italic {
+  font-style: italic;
+}
+
+#qfqskhazdu .gt_super {
+  font-size: 65%;
+}
+
+#qfqskhazdu .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 65%;
+}
+</style>
+<table class="gt_table">
+  <thead class="gt_header">
+    <tr>
+      <th colspan="5" class="gt_heading gt_title gt_font_normal" style>Species by sex percentages (counts)</th>
+    </tr>
+    <tr>
+      <th colspan="5" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style>Palmer penguin data</th>
+    </tr>
+  </thead>
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1">Species</th>
+      <th class="gt_center gt_columns_top_border gt_column_spanner_outer" rowspan="1" colspan="3">
+        <span class="gt_column_spanner">Sex</span>
+      </th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1">Total</th>
+    </tr>
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">female</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">male</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">NA_</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="gt_row gt_left gt_stub">Adelie</td>
+<td class="gt_row gt_left">21.2%  (73)</td>
+<td class="gt_row gt_left">21.2%  (73)</td>
+<td class="gt_row gt_left">1.7%  (6)</td>
+<td class="gt_row gt_left">44.2% (152)</td></tr>
+    <tr><td class="gt_row gt_left gt_stub">Chinstrap</td>
+<td class="gt_row gt_left">9.9%  (34)</td>
+<td class="gt_row gt_left">9.9%  (34)</td>
+<td class="gt_row gt_left">0.0%  (0)</td>
+<td class="gt_row gt_left">19.8%  (68)</td></tr>
+    <tr><td class="gt_row gt_left gt_stub">Gentoo</td>
+<td class="gt_row gt_left">16.9%  (58)</td>
+<td class="gt_row gt_left">17.7%  (61)</td>
+<td class="gt_row gt_left">1.5%  (5)</td>
+<td class="gt_row gt_left">36.0% (124)</td></tr>
+    <tr><td class="gt_row gt_left gt_stub">Total</td>
+<td class="gt_row gt_left">48.0% (165)</td>
+<td class="gt_row gt_left">48.8% (168)</td>
+<td class="gt_row gt_left">3.2% (11)</td>
+<td class="gt_row gt_left">100.0% (344)</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+<p>See the <a href="https://gt.rstudio.com/articles/intro-creating-gt-tables.html">intro to gt package for more examples like this</a>.</p>
 <blockquote>
 <p>sort and deduplicate prior to joining tables: Would you mind sharing an example of how to do this to avoid the multiple key warning when merging tables?</p>
 </blockquote>
@@ -623,7 +1030,8 @@ example_cohort</code></pre>
 ## 1 juan        3
 ## 2 juan        1
 ## 3 jessica     4</code></pre>
-<pre class="r"><code># with duplicate rows in the left and right data, we end up with duplicated rows in the full data
+<pre class="r"><code># with duplicate rows in the left and right data, 
+# we end up with duplicated rows in the full data
 left_join(example_cohort, 
           example_other)</code></pre>
 <pre><code>## Joining, by = &quot;name&quot;</code></pre>
@@ -658,7 +1066,8 @@ left_join(example_cohort,
 ## 3 juan    b         1
 ## 4 jessica c         4
 ## 5 jessica c         4</code></pre>
-<pre class="r"><code># perhaps the example_cohort was a mistake, and we want to remove those duplicated rows first:
+<pre class="r"><code># perhaps the example_cohort was a mistake, 
+# and we want to remove those duplicated rows first:
 example_cohort %&gt;% distinct()</code></pre>
 <pre><code>## # A tibble: 3 × 2
 ##   name    value
@@ -680,8 +1089,8 @@ example_cohort %&gt;% distinct()</code></pre>
 ## 4 jessica c         4</code></pre>
 <pre class="r"><code># the above assumes that juan had two y values on purpose
 
-# what if we weren&#39;t supposed to have two juan values in the &quot;example_other&quot; tibble
-# let&#39;s assume we only want to have the lowest y value in example_other for each name
+# what if we didn&#39;t want two juan values in the &quot;example_other&quot; tibble
+# let&#39;s assume we want only the lowest y value in example_other for each name
 example_other %&gt;%
   group_by(name) %&gt;%
   slice_min(y)</code></pre>
@@ -734,11 +1143,12 @@ inner_join(example_cohort,
 <blockquote>
 <p>Thank you for getting into “messy” data. I still would like more information about primary data.</p>
 </blockquote>
-<p>I have to admit I am not sure what you mean by “primary” data, because to me, this could mean an infinite number of things. It depends on the type of data and who is entering the data: is it coming from a person or a machine? Is it an export from Redcap, an EPIC export, or an excel sheet where a person has entered the data by hand?</p>
+<p>I have to admit I am not sure what you mean by “primary” data, because to me, this could mean an infinite number of things. It depends on the type of data and who is entering the data: is it coming from a person or a machine? Is it an export from Redcap, an EHR query, or an excel sheet where a person has entered the data by hand?</p>
 <p>I would love to hear more about what kind of “primary” data people are interested in. Please send another survey message or comment on my question on slack!</p>
-<p>In part 6 I have used a “real” data example, basically this is the most common type of primary data that I receive as a statistician – and excel sheet where someone in a lab has input data, copied some omics data from another excel sheet into that table, and sent it to me via email. This type of data can lend itself to lots of strange formatting issues, and also lots of data input error.</p>
-<p>I also need to teach you the basic tools for cleaning and manipulating data before I can get you started with “real” data in super messy format, because otherwise it might be overwhelming doing a series of steps! But I think you’re almost ready! You’ll see how the data cleaning steps can really pile on today during the modestly messy example. Most of my “data cleaning” or “importing” or “wrangling” tasks as a statistician involve dealing with weird spreadsheet formats, typos, missing values, and then creating new variables that I need for analyses or graphing. I think you’ve learned most of those tasks by now in this class.</p>
-<p>If anyone has primary data they would like me to go over in class (and can share it), please send it to me!</p>
+<p>In part 6 I have used a “real” data example, basically this is the most common type of primary data that I receive as a statistician – an excel sheet where someone in a lab has input data, copied some omics data from another excel sheet into that table, and sent it to me via email. This type of data can lend itself to lots of strange formatting issues, and also lots of data input error. It is not ideal, but this is where we’re at in science (see again <a href="https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989">Broman &amp; Woo 2017, Data Organization in Spreadsheets</a> or <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7518408/">Ellis &amp; Leek 2018, How to share data for collaboration</a>).</p>
+<p>I also need to teach you the basic tools for cleaning and manipulating data before I can get you started with “real” data in super messy format, because otherwise it might be overwhelming doing a series of steps! But I think you’re almost ready! You’ll see how the data cleaning steps can really pile on today during the modestly messy example. Most of my “data cleaning” or “importing” or “wrangling” tasks as a statistician involve dealing with weird spreadsheet formats, typos, missing values, and then creating new variables that I need for analyses or graphing. I think you’ve learned most of those tasks by now in this class. In part 6 we will practice these more. In future classes we will learn more about how to handle dates/times, more about string manipulation, reshaping data, and additional ways to deal with missing data.</p>
+<p>If anyone has primary data they would like me to go over in class (and can share it), please send it to me! Or describe the data you have in mind.</p>
+<p>There was a helpful suggestion to show data with the kind of demographic or survey variables that are somewhat difficult to keep cleanly categorized, but that are very important, such as sexual identity, race/ethnicitiy, disability, etc. I perused some of the publicly available data out there but haven’t found a good enough example yet; I will keep looking, but if you know of one send it my way, please!</p>
 </div>
 <div id="clearest-points" class="section level1">
 <h1>Clearest points</h1>
@@ -772,7 +1182,7 @@ inner_join(example_cohort,
 <blockquote>
 <p>I hope to spend some time on summary tables</p>
 </blockquote>
-<p>Thank you, we will definitely do this!</p>
+<p>Thank you, we will definitely do this, starting with redo-ing the end of part 5 today, which we didn’t finish.</p>
 <blockquote>
 <p>Is it possible to have a list of all the packages we need for each assignment? I did get marked down for adding too many libraries since I keep getting them all jumbled between homework, practices, and out-of-class practice as well</p>
 </blockquote>
@@ -780,15 +1190,70 @@ inner_join(example_cohort,
 <p>Honestly, I don’t do a very good job myself of only loading the minimal list of packages in each Rmd. In theory, it doesn’t matter too much—it may add some extra time to load the extra packages, but often I am copying my YAML and setup code from other Rmds and forget to take out the packages I don’t need.</p>
 <p>One issue with loading too many packages is that function names can overlap between packages and cause errors or confusion. For instance, the function <code>select()</code> is in both the <code>tidyverse</code> or <code>dplyr</code> package and the <code>AnnotationDBI</code> Bioconductor package which I sometimes use. If I load the <code>AnnotationDbi</code> package after I load <code>dplyr</code>, R thinks I am trying to use <code>AnnotationDBI::select</code> instead of <code>dplyr::select</code>. There are ways around it, such as making sure you load <code>library(dplyr)</code> last, or when using <code>select</code> use <code>dplyr::select</code> explicitly in your code instead, or, redefining select this way:</p>
 <pre class="r"><code>library(dplyr)
-library(AnnotationDbi)
-
-select</code></pre>
+library(AnnotationDbi)</code></pre>
+<pre><code>## Loading required package: stats4</code></pre>
+<pre><code>## Loading required package: BiocGenerics</code></pre>
+<pre><code>## Loading required package: parallel</code></pre>
+<pre><code>## 
+## Attaching package: &#39;BiocGenerics&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:parallel&#39;:
+## 
+##     clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+##     clusterExport, clusterMap, parApply, parCapply, parLapply,
+##     parLapplyLB, parRapply, parSapply, parSapplyLB</code></pre>
+<pre><code>## The following objects are masked from &#39;package:dplyr&#39;:
+## 
+##     combine, intersect, setdiff, union</code></pre>
+<pre><code>## The following objects are masked from &#39;package:stats&#39;:
+## 
+##     IQR, mad, sd, var, xtabs</code></pre>
+<pre><code>## The following objects are masked from &#39;package:base&#39;:
+## 
+##     anyDuplicated, append, as.data.frame, basename, cbind, colnames,
+##     dirname, do.call, duplicated, eval, evalq, Filter, Find, get, grep,
+##     grepl, intersect, is.unsorted, lapply, Map, mapply, match, mget,
+##     order, paste, pmax, pmax.int, pmin, pmin.int, Position, rank,
+##     rbind, Reduce, rownames, sapply, setdiff, sort, table, tapply,
+##     union, unique, unsplit, which.max, which.min</code></pre>
+<pre><code>## Loading required package: Biobase</code></pre>
+<pre><code>## Welcome to Bioconductor
+## 
+##     Vignettes contain introductory material; view with
+##     &#39;browseVignettes()&#39;. To cite Bioconductor, see
+##     &#39;citation(&quot;Biobase&quot;)&#39;, and for packages &#39;citation(&quot;pkgname&quot;)&#39;.</code></pre>
+<pre><code>## Loading required package: IRanges</code></pre>
+<pre><code>## Loading required package: S4Vectors</code></pre>
+<pre><code>## 
+## Attaching package: &#39;S4Vectors&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:dplyr&#39;:
+## 
+##     first, rename</code></pre>
+<pre><code>## The following object is masked from &#39;package:tidyr&#39;:
+## 
+##     expand</code></pre>
+<pre><code>## The following objects are masked from &#39;package:base&#39;:
+## 
+##     expand.grid, I, unname</code></pre>
+<pre><code>## 
+## Attaching package: &#39;IRanges&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:dplyr&#39;:
+## 
+##     collapse, desc, slice</code></pre>
+<pre><code>## The following object is masked from &#39;package:purrr&#39;:
+## 
+##     reduce</code></pre>
+<pre><code>## 
+## Attaching package: &#39;AnnotationDbi&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:dplyr&#39;:
+## 
+##     select</code></pre>
+<pre class="r"><code>select</code></pre>
 <pre><code>## standardGeneric for &quot;select&quot; defined from package &quot;AnnotationDbi&quot;
 ## 
 ## function (x, keys, columns, keytype, ...) 
 ## standardGeneric(&quot;select&quot;)
-## &lt;bytecode: 0x7fc7e8bda480&gt;
-## &lt;environment: 0x7fc7e6ab3218&gt;
+## &lt;bytecode: 0x7fbe9abaa058&gt;
+## &lt;environment: 0x7fbe9abba218&gt;
 ## Methods may be defined for arguments: x
 ## Use  showMethods(select)  for currently available ones.</code></pre>
 <pre class="r"><code>select &lt;- dplyr::select
@@ -798,6 +1263,6 @@ select</code></pre>
 ## {
 ##     UseMethod(&quot;select&quot;)
 ## }
-## &lt;bytecode: 0x7fc7f4e276c8&gt;
+## &lt;bytecode: 0x7fbea67035a0&gt;
 ## &lt;environment: namespace:dplyr&gt;</code></pre>
 </div>

@@ -68,7 +68,7 @@ Please fill out the following survey and we will discuss the results during the 
 
 Thanks for this, I went through this too quickly it seems. First, I should say that the two ways of creating the `cigarettes10` categorical vector -- using `case_when()` or using `forcats` factor function -- are both equally good options. You can always turn a character vector into a factor after using case_when. I will show some benefits of a factor vector in part 6 and also when we talk about statistical modeling. Here is a visual explanation of what I was doing with `fct_other()` + `fct_collapse()`:
 
-<img src = "img/cigarettes10_forcats.png">
+<img src = "/img/cigarettes10_forcats.png">
 
 
 
@@ -116,9 +116,10 @@ mydata %>% mutate(
 
 Yes!! When I talk more about tables, statistical modeling, etc I was planning to go more in depth with janitor tabyls. But it's so useful I can't help but keep showing you tabyl functions along the way. So here's some more tips:
 
-```{r}
+```{r message = FALSE}
 library(janitor)
 library(palmerpenguins)
+library(gt)
 
 # simple cross table with counts
 penguins %>% 
@@ -154,8 +155,8 @@ penguins %>%
   adorn_percentages(denominator = "col") %>%
   adorn_totals(where = c("row", "col")) %>%
   adorn_pct_formatting() %>%
+  # add back in counts in ()
   # need to have adorn_ns AFTER adding pct formatting, otherwise error
-  # add back in counts
   adorn_ns()
 
 
@@ -170,7 +171,6 @@ penguins %>%
 
 penguins %>% 
   tabyl(species, sex) %>%
-  # percent of total (denominator is the total sum)
   adorn_percentages(denominator = "all") %>%
   adorn_totals(where = c("row", "col")) %>%
   adorn_pct_formatting() %>%
@@ -178,9 +178,35 @@ penguins %>%
   # add title, need placement = "combined" for gt to work
   adorn_title(placement = "combined") %>%
   # make it fancy html
-  gt::gt()
+  gt()
+
+penguins %>% 
+  tabyl(species, sex) %>%
+  adorn_percentages(denominator = "all") %>%
+  adorn_totals(where = c("row", "col")) %>%
+  adorn_pct_formatting() %>%
+  adorn_ns() %>%
+  # make it fancy html
+  # specify that species denotes the name of the rows (removes that column label)
+  # adds line between row names and rest of table
+  gt::gt(rowname_col = "species") %>%
+  # adds back in Species above rows
+  gt::tab_stubhead(
+    label = "Species"
+  ) %>%
+  # adds header
+  gt::tab_header(
+    title = "Species by sex percentages (counts)",
+    subtitle = "Palmer penguin data"
+  ) %>%
+  # adds sex label across multiple columns
+  gt::tab_spanner(
+    label = "Sex",
+    columns = c(female, male, `NA_`)
+  )
 ```
 
+See the [intro to gt package for more examples like this](https://gt.rstudio.com/articles/intro-creating-gt-tables.html).
 
 
 > sort and deduplicate prior to joining tables: Would you mind sharing an example of how to do this to avoid the multiple key warning when merging tables?
@@ -203,7 +229,8 @@ example_other <- tibble(
 example_cohort
 example_other
 
-# with duplicate rows in the left and right data, we end up with duplicated rows in the full data
+# with duplicate rows in the left and right data, 
+# we end up with duplicated rows in the full data
 left_join(example_cohort, 
           example_other)
 
@@ -216,7 +243,8 @@ left_join(example_cohort,
           example_other,
           by = c("name" = "name"))
 
-# perhaps the example_cohort was a mistake, and we want to remove those duplicated rows first:
+# perhaps the example_cohort was a mistake, 
+# and we want to remove those duplicated rows first:
 example_cohort %>% distinct()
 
 left_join(
@@ -226,8 +254,8 @@ left_join(
 
 # the above assumes that juan had two y values on purpose
 
-# what if we weren't supposed to have two juan values in the "example_other" tibble
-# let's assume we only want to have the lowest y value in example_other for each name
+# what if we didn't want two juan values in the "example_other" tibble
+# let's assume we want only the lowest y value in example_other for each name
 example_other %>%
   group_by(name) %>%
   slice_min(y)
@@ -254,15 +282,17 @@ You don't need to unless I specifically state "save as a file" (i.e. with `ggsav
 
 > Thank you for getting into "messy" data. I still would like more information about primary data.
 
-I have to admit I am not sure what you mean by "primary" data, because to me, this could mean an infinite number of things. It depends on the type of data and who is entering the data: is it coming from a person or a machine? Is it an export from Redcap, an EPIC export, or an excel sheet where a person has entered the data by hand? 
+I have to admit I am not sure what you mean by "primary" data, because to me, this could mean an infinite number of things. It depends on the type of data and who is entering the data: is it coming from a person or a machine? Is it an export from Redcap, an EHR query, or an excel sheet where a person has entered the data by hand? 
 
 I would love to hear more about what kind of "primary" data people are interested in. Please send another survey message or comment on my question on slack!
 
-In part 6 I have used a "real" data example, basically this is the most common type of primary data that I receive as a statistician -- and excel sheet where someone in a lab has input data, copied some omics data from another excel sheet into that table, and sent it to me via email. This type of data can lend itself to lots of strange formatting issues, and also lots of data input error.
+In part 6 I have used a "real" data example, basically this is the most common type of primary data that I receive as a statistician -- an excel sheet where someone in a lab has input data, copied some omics data from another excel sheet into that table, and sent it to me via email. This type of data can lend itself to lots of strange formatting issues, and also lots of data input error. It is not ideal, but this is where we're at in science (see again [Broman & Woo 2017, Data Organization in Spreadsheets](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989) or [Ellis & Leek 2018, How to share data for collaboration](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7518408/)).
 
-I also need to teach you the basic tools for cleaning and manipulating data before I can get you started with "real" data in super messy format, because otherwise it might be overwhelming doing a series of steps! But I think you're almost ready! You'll see how the data cleaning steps can really pile on today during the modestly messy example. Most of my "data cleaning" or "importing" or "wrangling" tasks as a statistician involve dealing with weird spreadsheet formats, typos, missing values, and then creating new variables that I need for analyses or graphing. I think you've learned most of those tasks by now in this class.
+I also need to teach you the basic tools for cleaning and manipulating data before I can get you started with "real" data in super messy format, because otherwise it might be overwhelming doing a series of steps! But I think you're almost ready! You'll see how the data cleaning steps can really pile on today during the modestly messy example. Most of my "data cleaning" or "importing" or "wrangling" tasks as a statistician involve dealing with weird spreadsheet formats, typos, missing values, and then creating new variables that I need for analyses or graphing. I think you've learned most of those tasks by now in this class. In part 6 we will practice these more. In future classes we will learn more about how to handle dates/times, more about string manipulation, reshaping data, and additional ways to deal with missing data.
 
-If anyone has primary data they would like me to go over in class (and can share it), please send it to me!
+If anyone has primary data they would like me to go over in class (and can share it), please send it to me! Or describe the data you have in mind.
+
+There was a helpful suggestion to show data with the kind of demographic or survey variables that are somewhat difficult to keep cleanly categorized, but that are very important, such as sexual identity, race/ethnicitiy, disability, etc. I perused some of the publicly available data out there but haven't found a good enough example yet; I will keep looking, but if you know of one send it my way, please!
 
 # Clearest points
 
@@ -294,8 +324,7 @@ Great to hear, class 6/part 6 has a toooon of challenges, maybe too many challen
 
 > I hope to spend some time on summary tables
 
-Thank you, we will definitely do this!
-
+Thank you, we will definitely do this, starting with redo-ing the end of part 5 today, which we didn't finish.
 
 > Is it possible to have a list of all the packages we need for each assignment? I did get marked down for adding too many libraries since I keep getting them all jumbled between homework, practices, and out-of-class practice as well
 
@@ -305,7 +334,7 @@ Honestly, I don't do a very good job myself of only loading the minimal list of 
 
 One issue with loading too many packages is that function names can overlap between packages and cause errors or confusion. For instance, the function `select()` is in both the `tidyverse` or `dplyr` package and the `AnnotationDBI` Bioconductor package which I sometimes use. If I load the `AnnotationDbi` package after I load `dplyr`, R thinks I am trying to use `AnnotationDBI::select` instead of `dplyr::select`. There are ways around it, such as making sure you load `library(dplyr)` last, or when using `select` use `dplyr::select` explicitly in your code instead, or, redefining select this way:
 
-```{r, message = FALSE}
+```{r, message = TRUE}
 library(dplyr)
 library(AnnotationDbi)
 
