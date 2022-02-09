@@ -294,6 +294,34 @@ If anyone has primary data they would like me to go over in class (and can share
 
 There was a helpful suggestion to show data with the kind of demographic or survey variables that are somewhat difficult to keep cleanly categorized, but that are very important, such as sexual identity, race/ethnicitiy, disability, etc. I perused some of the publicly available data out there but haven't found a good enough example yet; I will keep looking, but if you know of one send it my way, please!
 
+
+> If we have 100 cvs to import, how to import data quickly?
+
+The best way is to use lists and `purrr`! We will hopefully get to lists by class 7 and `purrr` probably class 8. It also depends on whether these 100 csv files are in the same format and what you want to do with them after you import them. Are they able to be stacked, so you can use `bind_rows()`? If so, it would be something like this:
+
+```{r}
+# have all the csvs in one place
+folder_where_csvs_are <- here::here("static/data")
+# we can list all their names
+list.files(folder_where_csvs_are, pattern = ".csv")
+# list all their names will full file path
+all_csv_files <- list.files(here::here("static/data"), pattern = ".csv", full.names = TRUE)
+# use purrr map to load them in
+list_of_data <- purrr::map(all_csv_files, ~read_csv(.))
+# list of data frames
+class(list_of_data)
+# length of list
+length(list_of_data)
+# see the structure of the data
+# str(list_of_data) # this is long output
+# first element
+glimpse(list_of_data[[1]])
+# if they were all the same columns and able to stack, we could do this
+# big_data_frame <- bind_rows(list_of_data)
+```
+
+
+
 # Clearest points
 
 > joining data, summarize & group_by (we used these a lot in BSTA511)
