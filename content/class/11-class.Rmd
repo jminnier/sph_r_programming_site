@@ -1,6 +1,6 @@
 ---
-title: "Part 11. TBD"
-linktitle: "Part 11. TBD"
+title: "Class 11: TBD"
+linktitle: "Class 11: TBD"
 date: "2022-03-16"
 class_date: "2022-03-16"
 output:
