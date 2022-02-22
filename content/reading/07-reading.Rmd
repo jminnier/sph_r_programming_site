@@ -1,6 +1,6 @@
 ---
-title: "Part 7. purrr"
-linktitle: "Part 7. purrr"
+title: "Part 6 (Class 7): More data wrangling and ggplot"
+linktitle: "Part 6 (Class 7): More data wrangling and ggplot"
 date: "2022-02-16"
 menu:
   reading:
@@ -9,6 +9,4 @@ menu:
 type: docs
 ---
 
-## Required
-
-- [Learn to purrr](http://www.rebeccabarter.com/blog/2019-08-19_purrr/)
+Continue with Part 6 Readings.

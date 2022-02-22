@@ -1,6 +1,6 @@
 ---
-title: "Part 8. Statistical Modeling/More purrr"
-linktitle: "Part 8. Statistical Modeling/More purr"
+title: "Part 7 (Class 8): Lists/Functions/Intro to Purrr"
+linktitle: "Part 7 (Class 8): Lists/Functions/Intro to Purrr"
 date: "2022-02-23"
 menu:
   reading:
@@ -9,9 +9,16 @@ menu:
 type: docs
 ---
 
+
 ## Required
 
-- [Model Basics](https://r4ds.had.co.nz/model-basics.html) from R for Data Science
-- [Model Building](https://r4ds.had.co.nz/model-building.html) from R for Data Science
-- [Many Models](https://r4ds.had.co.nz/many-models.html) - from R for Data science. Covers `group_by()/nest()` and list-columns
+
+- [Learn to purrr](http://www.rebeccabarter.com/blog/2019-08-19_purrr/)
 - [Purrr Tips and Tricks](https://www.hvitfeldt.me/blog/purrr-tips-and-tricks/) by Emil Hvitfeldt.
+
+Re-visit these required readings from earlier:
+
+- [Introduction to Functions and Arguments](https://hbctraining.github.io/Intro-to-R-flipped/lessons/03_introR-functions-and-arguments.html)
+- [Introduction to Lists](http://statseducation.com/Introduction-to-R/modules/getting%20data/lists/) 
+
+
