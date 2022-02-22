@@ -12,9 +12,9 @@ type: docs
 
 ## Required
 
-
+- [Iteration](https://r4ds.had.co.nz/iteration.html)
 - [Learn to purrr](http://www.rebeccabarter.com/blog/2019-08-19_purrr/)
-- [Purrr Tips and Tricks](https://www.emilhvitfeldt.com/post/2018-01-08-purrr-tips-and-tricks/) by Emil Hvitfeldt.
+
 
 Re-visit these required readings from earlier:
 

@@ -1,6 +1,6 @@
 ---
-title: "Part 9. TBD"
-linktitle: "Part 9. TBD"
+title: "Part 9. Purrr continued"
+linktitle: "Part 9. Purrr continued"
 date: "2020-03-03"
 menu:
   reading:
@@ -11,6 +11,7 @@ type: docs
 
 ## Required
 
+- [Purrr Tips and Tricks](https://www.emilhvitfeldt.com/post/2018-01-08-purrr-tips-and-tricks/) by Emil Hvitfeldt.
 
 <!-- - [Model Basics](https://r4ds.had.co.nz/model-basics.html) from R for Data Science -->
 <!-- - [Model Building](https://r4ds.had.co.nz/model-building.html) from R for Data Science -->
