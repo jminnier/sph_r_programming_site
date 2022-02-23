@@ -12,7 +12,8 @@ type: docs
 
 ## Required
 
-- [Iteration](https://r4ds.had.co.nz/iteration.html)
+- [Functions in R for Data Science](https://r4ds.had.co.nz/functions.html)
+- [Iteration in R for Data Science](https://r4ds.had.co.nz/iteration.html)
 - [Learn to purrr](http://www.rebeccabarter.com/blog/2019-08-19_purrr/)
 
 
