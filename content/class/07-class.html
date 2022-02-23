@@ -86,6 +86,8 @@ mouse_tp3 &lt;- mouse_tp3 %&gt;%
               names_to = &quot;biomarker_type&quot;,
               values_to = &quot;biomarker_value&quot;)
 
+colnames(mouse_tp2) &lt;- str_replace(colnames(mouse_tp2), &quot;_ng&quot;, &quot;_pg&quot;)
+
 mouse_tp &lt;- bind_rows(&quot;tp1&quot; = mouse_tp1, 
                       &quot;tp2&quot; = mouse_tp2,
                       &quot;tp3&quot; = mouse_tp3,
