@@ -11,6 +11,7 @@ type: docs
 
 ## Required
 
+- [Introduction to map()](https://jennybc.github.io/purrr-tutorial/ls01_map-name-position-shortcuts.html) - Jenny Bryan
 - [Purrr Tips and Tricks](https://www.emilhvitfeldt.com/post/2018-01-08-purrr-tips-and-tricks/) by Emil Hvitfeldt.
 
 <!-- - [Model Basics](https://r4ds.had.co.nz/model-basics.html) from R for Data Science -->
