@@ -27,13 +27,14 @@ Last class we finished up part5 materials. This is class 7, and we will start wi
 This section is mainly a practice, with some additional ggplot lessons. There will be lots of time for breakout room challenges so that you can get practice working on these data wrangling and graphing problems together.
 
 
-## Class Video
+## Class 7 Video
 
-The video will be uploaded after class.
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/j-eoXIEGQQg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 View last year's class and materials [here](https://sph-r-programming.netlify.app/class/07-class/).
-
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/yCPcijCj15c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
 ## Slides
 
