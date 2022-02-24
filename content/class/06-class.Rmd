@@ -1,8 +1,8 @@
 ---
 title: "Part 5 contd (Class 6): Data summarizing, reshaping, and wrangling with multiple tables (contd)"
 linktitle: "Part 5 contd (Class 6): Data summarizing, reshaping, and wrangling with multiple tables (contd)"
-date: "2022-02-10"
-class_date: "2022-02-10"
+date: "2022-02-09"
+class_date: "2022-02-09"
 output:
   blogdown::html_page:
     toc: true
