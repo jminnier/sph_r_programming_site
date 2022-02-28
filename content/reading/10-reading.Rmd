@@ -11,6 +11,9 @@ type: docs
 
 ## Required
 
+- [Introduction to broom](https://cran.r-project.org/web/packages/broom/vignettes/broom.html)
+- [Dates at times in R for Data Science](https://r4ds.had.co.nz/dates-and-times.html)
+
 <!-- - [Tidymodels with R: Recipes](https://www.tmwr.org/recipes.html) -->
 <!-- - [Tidymodels with R: Fitting Models with Parsnip](https://www.tmwr.org/models.html) -->
 <!-- - [Tidymodels with R: Judging Model Effectiveness](https://www.tmwr.org/performance.html) -->
