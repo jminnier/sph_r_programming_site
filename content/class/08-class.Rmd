@@ -62,6 +62,30 @@ It is extremely weird and confusing! I am hoping homework 7 will help since it r
 
 I hope to have more examples this week for practice.
 
+> function. Could we get multiple outcome (different value or type) in one function?
+
+Yes! I meant to show this after we learned about lists. Here is an example of how you would do that, by returning a list (usually we use a named list for clarity)
+
+```{r}
+# trivial function that returns the mean, length of a vector, as well as the input vector
+my_new_fun <- function(vec) {
+  v_mean <- mean(vec)
+  l_len <- length(vec)
+  return(list(mean = v_mean, length = l_len, input_vec = vec))
+}
+
+# save the output from that function applied to a vector
+myout <- my_new_fun(c(1,4,2,40))
+
+myout
+myout$mean
+myout$length
+myout$input_vec
+```
+
+> I am finding it very difficult to figure out how to take even a clean dataset and translate it into something useable. I think I am understanding the logic of what I want to do, but the syntax is very confusing to me.
+
+Do you mean the syntax of lists and functions? Or of data cleaning? Definitely reach out to me and Colin if you want to talk about anything more in depth.
 
 ## Clearest Points
 
