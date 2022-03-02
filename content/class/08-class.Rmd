@@ -85,7 +85,7 @@ myout$input_vec
 
 > I am finding it very difficult to figure out how to take even a clean dataset and translate it into something useable. I think I am understanding the logic of what I want to do, but the syntax is very confusing to me.
 
-Do you mean the syntax of lists and functions? Or of data cleaning? Definitely reach out to me and Colin if you want to talk about anything more in depth.
+Do you mean the syntax of lists and functions? Or of data cleaning? Or all the syntax of R? Definitely reach out to me and Colin if you want to talk about anything more specific and in depth. If you are brand new to R before this class, it will definitely take more than the 11*3 hours of learning to get used to the syntax, as I agree it can be extremely confusing! It will take many iterations of practice, struggle, succeed. Eventually it will start to click! But it really takes practice writing your own code over and over.
 
 ## Clearest Points
 
