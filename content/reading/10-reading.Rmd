@@ -13,25 +13,18 @@ type: docs
 
 - [Introduction to broom](https://cran.r-project.org/web/packages/broom/vignettes/broom.html)
 
+
 ## Suggested
 
-Resources for learning more statistics:
-
-- Modern Dive / Statistical Inference via Data Science by Chester Ismay and Albert Y Kim is a nice place to start: <https://moderndive.com/>
-- Danielle Navarro's Learning Statistics with R is excellent and talks much more about statistics: <https://learningstatisticswithr.com/>
-
-
-Useful vignettes on table output:
-
-- [gtsummary intro to tbl_summary](https://www.danieldsjoberg.com/gtsummary/articles/tbl_summary.html)
-
-We might not get to dates but in case you want to learn more:
-
-- [Dates and times in R for Data Science](https://r4ds.had.co.nz/dates-and-times.html)
-
-If you want to learn about tidymodels
-
-- [Introduction to Machine Learning with the Tidyverse](https://education.rstudio.com/blog/2020/02/conf20-intro-ml/)
+- [Programming with dplyr](https://dplyr.tidyverse.org/articles/programming.html) - in case I can't get to tidyeval use for functions with tidyverse
+- Resources for learning more statistics:
+  * Modern Dive / Statistical Inference via Data Science by Chester Ismay and Albert Y Kim is a nice place to start: <https://moderndive.com/>
+  * Danielle Navarro's Learning Statistics with R is excellent and talks much more about statistics: <https://learningstatisticswithr.com/>
+- More on using map and nested data with modeling: [R for Data Science: Many Models](https://r4ds.had.co.nz/many-models.html)
+- Useful vignettes on table output: [gtsummary intro to tbl_summary](https://www.danieldsjoberg.com/gtsummary/articles/tbl_summary.html)
+- Ted Laderas's interactive workbook on learning rowwise and nested data: [learning rowwise](https://tladeras.shinyapps.io/learning_rowwise)
+- We might not get to dates but in case you want to learn more: [Dates and times in R for Data Science](https://r4ds.had.co.nz/dates-and-times.html)
+- If you want to learn about tidymodels: [Introduction to Machine Learning with the Tidyverse](https://education.rstudio.com/blog/2020/02/conf20-intro-ml/)
 
 <!-- - [Tidymodels with R: Recipes](https://www.tmwr.org/recipes.html) -->
 <!-- - [Tidymodels with R: Fitting Models with Parsnip](https://www.tmwr.org/models.html) -->
