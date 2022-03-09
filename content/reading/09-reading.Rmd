@@ -17,11 +17,15 @@ type: docs
 
 ## Suggested
 
+
+- [Joy of Functional programming talk by Hadley Wickham](https://learning.acm.org/techtalks/functionalprogramming) - more on nesting/iteration
+
 For learning more about statistics with R:
 
 - Modern Dive / Statistical Inference via Data Science by Chester Ismay and Albert Y Kim is a nice place to start: <https://moderndive.com/>
 - Danielle Navarro's Learning Statistics with R is excellent and talks much more about statistics: <https://learningstatisticswithr.com/>
 - [Model Basics](https://r4ds.had.co.nz/model-basics.html) from R for Data Science
+
 
 <!--  -->
 <!-- - [Model Building](https://r4ds.had.co.nz/model-building.html) from R for Data Science -->
