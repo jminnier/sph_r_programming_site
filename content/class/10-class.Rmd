@@ -32,15 +32,6 @@ View last year's class and materials [here](https://sph-r-programming.netlify.ap
 
 <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/yCPcijCj15c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
-## Slides
-
-To be posted.
-
-<!-- Open the class introduction slides in a separate window: <a href="https://sph-r-programming-2022.netlify.app/slides/01-introduction_slides#1" target="_blank">https://sph-r-programming-2022.netlify.app/01-introduction_slides#1</a> -->
-
-<!-- ```{r echo=FALSE} -->
-<!-- knitr::include_url('https://sph-r-programming-2022.netlify.com/slides/01-introduction_slides#1') -->
-<!-- ``` -->
 
 ### Post-Class
 
