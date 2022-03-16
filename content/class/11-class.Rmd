@@ -1,6 +1,6 @@
 ---
-title: "Class 11: Finish part 9 + part 10: Advanced Functions and Loose Ends"
-linktitle: "Class 11: TBD"
+title: "Class 11: Finish Part 9 + Part 10: Advanced Functions and Loose Ends"
+linktitle: "Class 11: Finish Part 9 + Part 10: Advanced Functions and Loose Ends"
 date: "2022-03-16"
 class_date: "2022-03-16"
 output:
