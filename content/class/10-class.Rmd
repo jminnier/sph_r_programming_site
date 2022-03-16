@@ -94,6 +94,21 @@ I would also read up on all the R Markdown options and advanced uses in
 - [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
 - [Advanced R Markdown Workshop](https://arm.rbind.io/)
 
+### Machine Learning
+
+There was a request for resources to learn more about machine learning and more advanced statistical modeling. I so wish we had more time for this, because this is the truly fun part!
+
+In last year's version of this class, Dr. Ted Laderas covered `tidymodels` and some machine learning topics, so I highly recommend watching those videos in [class 9](https://sph-r-programming.netlify.app/class/09-class/) and [class 10](https://sph-r-programming.netlify.app/class/10-class/).
+
+There are more resources on the [class readings page](https://sph-r-programming-2022.netlify.app/reading/10-reading/), but good places to start are 
+
+- [R for Data Science](https://r4ds.had.co.nz/model-intro.html) chapters on modeling
+- [Tidy Modeling with R](https://www.tmwr.org/) book by Max Kuhn and Julia Silge.
+- Julia Silge's #TidyTuesday prediction screencasts for a quick overview of fitting models and evaluating them, for example [this one on chocolate ratings.](https://juliasilge.com/blog/chocolate-ratings/)
+- The learning materials on [tidymodels.org](https://www.tidymodels.org/learn/)
+- And here's a nice explanation of an unsupervised learning method [PCA](https://allisonhorst.github.io/palmerpenguins/articles/articles/pca.html) by Drs. Alison Horst, Allison Hill (formerly of OHSU, now at Rstudio), and Kristen Gorman.
+
+
 ## Clearest Points
 
 Missing data, data summary with regression tables and table 1 packages, saving excel files, biostats tie in.
