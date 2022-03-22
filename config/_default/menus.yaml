@@ -17,9 +17,9 @@ main:
   - name: Midterm Projects
     url: https://sph-r-programming-2022-midterms.netlify.app/
     weight: 6
-  # - name: Course Reviews
-  #   url: /reviews/
-  #   weight: 7
+  - name: Course Reviews
+    url: /reviews/
+    weight: 7
 #assignment:
 #  - name: Assignments
 #    weight: 1
