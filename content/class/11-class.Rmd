@@ -20,15 +20,15 @@ editor_options:
 
 ## R Project files
 
-In this class we will finish part 9, and if we have time we will start part 10 which will be in [the dropbox folder](https://www.dropbox.com/sh/q4z72523kl84ywp/AAASb1YIFRpxzrjOeq1FVcXua?dl=0). Be sure to unzip if necessary.
+In this class we finished part 9, and covered about half of part 10 in [the dropbox folder](https://www.dropbox.com/sh/q4z72523kl84ywp/AAASb1YIFRpxzrjOeq1FVcXua?dl=0). Be sure to unzip if necessary.
 
 ## Class Video
 
-The video will be uploaded after class.
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/MAgCL61BkH0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
 View last year's class and materials [here](https://sph-r-programming.netlify.app/class/11-class/).
 
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/yCPcijCj15c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
 
 
 ### Post-Class
@@ -42,8 +42,41 @@ Please fill out the following survey and we will discuss the results during the 
 <https://forms.gle/4tVx1mL7SzQx7MCu5>
 
 
-## Muddiest Points/Clearest Points 
+## Muddiest Points
 
-I will add the muddiest/clearest points from the survey after the first class.
+> Overall, not too many muddy points today.
+
+Yay!
+
+> Survival analysis stuff
+
+Yeah, survival is hard and you really need a real stats course on it first, and then seeing the code will make more sense! It's why we (and most biostats programs) have a full course called Survival Analysis!
+
+> Debugging
+
+Understandable, I had to go through that very quickly! You can read more debugging in the [Advanced R Debugging chapter](https://adv-r.hadley.nz/debugging.html).
+
+> I really don't understand embrace, and the double brackets, what does that mean when we have double brackets? also when it was like, }} := {{var}}, why does it need the colon? i just don't understand what's going on with these operators and it feels frustrating to me sometimes. not your fault i'm sure you told us about this it's just not going in my head.
+
+There is a lot going on with tidy evaluation that will take a lot of time to really digest and understand. Basically, the brackets are telling R there's a column name argument here, so use it as such. The `:=` is telling R to use the argument as the new column name. If you don't have the `{{}}}` and colon it won't work because it won't know how to interpret the input. Definitely check out the references I included in that section and in the reading, it will help to see more examples!
+
+## Clearest Points
+
+> I like where we placed the blending of stats and R programming. To me it felt like a breath of fresh air to know how it applied to "real world" data.
+
+> ggplot
+
+> map2
+
+> rmd and knitr options, function stuff with {{embrace}}
+
+> survey data
+
+Glad to hear this!
+
+# Other notes to me
+
+I'm glad to hear from so many of you that the course was helpful, and that you liked the "stats smorgasbord" of the last couple parts! Thanks for all your very useful feedback throughout the quarter!
+
 
 
